@@ -1,0 +1,185 @@
+label
+{
+   font-weight: bold;
+}
+fieldset
+{
+   padding: @line-height;
+    margin: (@border * -1) 0 @line-height;
+    border: @border solid #CCC;
+  position: relative;
+       top: @border;
+}
+legend
+{
+   font-weight: bold;
+   font-size  : @line-height / 5 * 4;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.inputs()
+{
+   .font-stack-helvetica;
+   
+   font-size: @line-height / 3 * 2;
+   
+                 color: inherit;
+      background-color: #FFF;
+      
+      border: @border solid #BBB;
+      
+      margin: (@line-height / 4) 0;
+}
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email]
+{
+   .inputs;
+}
+input.text,
+input.title,
+input.password,
+      textarea,
+        select
+{
+   .inputs;
+}
+
+/* -------------------------------------------------------------------------- */
+
+input.text,
+input.title
+{
+     width: @width-field;
+   padding: (@line-height / 4) (@margin / 2);
+}
+input.title
+{
+   font-size: @line-height;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.inputs-focus()
+{
+   border-color: #666;   
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+   .inputs-focus;
+}
+ input.text:focus,
+input.title:focus,
+   textarea:focus,
+      input.focus,
+   textarea.focus
+{
+   .inputs-focus;
+}
+
+/* -------------------------------------------------------------------------- */
+
+textarea
+{
+         width: @width-field + 90;
+       padding: (@line-height / 4) (@margin / 2);
+      overflow: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.inline()
+{
+   line-height: @line-height * 2;
+   
+   p
+   {
+      margin-bottom: 0;
+   }
+}
+
+/* -------------------------------------------------------------------------- */
+
+.messages()
+{
+   @double-border:         @border * 2;
+   
+   padding:           @line-height / 2;
+   margin-bottom:         @line-height;
+   margin-top: @double-border * 2 * -1;
+   position:                  relative;
+   top:                 @double-border;
+   
+   border-style:                 solid;
+   border-width:        @double-border;
+   
+   zoom: 1; // IE, don’t use conditional comments here
+}
+.alert()
+{
+   .messages;
+
+              color: @color-error-dark;
+   background-color: @color-error-lighter;
+   
+       border-color: @color-error-light;
+       
+   a
+   {
+                 color: @color-error-dark;
+      background-color: inherit;
+   }
+}
+.error()
+{
+   .alert;
+}
+.notice()
+{
+   .messages;
+
+              color: @color-notice-dark;
+   background-color: @color-notice-lighter;
+   
+       border-color: @color-notice-light;
+
+   a
+   {
+                 color: @color-notice-dark;
+      background-color: inherit;
+   }
+}
+.success()
+{
+   .messages;
+
+              color: @color-success-dark;
+   background-color: @color-success-lighter;
+
+       border-color: @color-success-light;
+       
+   a
+   {
+                 color: @color-success-dark;
+      background-color: inherit;
+   }
+}
+.info()
+{
+   .messages;
+
+              color: @color-info-dark;
+   background-color: @color-info-lighter;
+   
+       border-color: @color-info-light;
+
+   a
+   {
+                 color: @color-info-dark;
+      background-color: inherit;
+   }
+}

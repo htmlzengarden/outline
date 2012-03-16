@@ -1,0 +1,218 @@
+body
+{
+   *text-align: center; // lte IE7, don’t use conditional comments here
+}
+.container()
+{
+    width: @width;
+   margin: 0 auto;
+   
+   *text-align: left;   // lte IE7, don’t use conditional comments here
+}
+/*
+.showgrid
+{
+   background-image:url(../img/bg/grid.png)
+}
+*/
+
+/* -------------------------------------------------------------------------- */
+
+.column(@width:auto)
+{
+          float: left;
+   margin-right: @margin;
+          width: @width;
+   
+   _display   : inline; // lte IE6, don’t use conditional comments here
+   _overflow-x: hidden; // lte IE6
+}
+.last()
+{
+   margin-right: 0!important;
+}
+.span(@level:1)
+{
+   .column((@level * @column) + ((@level - 1) * @margin));
+}
+
+/* -------------------------------------------------------------------------- */
+
+.fields()
+{
+    border-left-width: @border;
+   border-right-width: @border;
+   
+    padding-left: @margin / 2;
+   padding-right: @margin / 2;
+}
+.field(@level:1)
+{
+   .fields;
+   width: ((@level * @column) + ((@level - 1) * @margin) - @margin - 2);
+}
+
+/* -------------------------------------------------------------------------- */
+
+.append(@level:1)
+{
+   padding-right: (@column * @level) + (@level * @margin);
+}
+.prepend(@level:1)
+{
+    padding-left: (@column * @level) + (@level * @margin);
+}
+
+/* -------------------------------------------------------------------------- */
+
+.gutterborder()
+{
+   padding-right: @margin / 2 - @border;
+    margin-right: @margin / 2!important;
+    border-right: @border solid #DDD;
+}
+.colborder()
+{
+   padding-right: (@column / 2) + @margin - @border;
+    margin-right: (@column / 2) + @margin!important;
+    border-right: @border solid #DDD;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.pushspulls()
+{
+   float: left;
+   position: relative;
+}
+.pull(@level:1)
+{
+   .pushspulls;
+   margin-left: (@margin + @column) * @level * -1;
+}
+.push(@level:1)
+{
+   .pushspulls;
+   margin: 0 (@margin + @column) * @level * -1 @line-height (@margin + @column) * @level;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.prepend-top()
+{
+   margin-top: @line-height;
+}
+.append-bottom()
+{
+   margin-bottom: @line-height;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.box()
+{
+            padding: @line-height;
+      margin-bottom: @line-height;
+
+              color: inherit;
+   background-color: @color-blueprint-light;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*
+hr
+{
+              color: #DDD;
+   background-color: #DDD;
+   
+      clear: both;
+      float: none;
+      width: 100%;
+     height: @border;
+     margin: @line-height 0 (@border * -1);
+     border: none;
+}
+hr.space
+{
+              color: #FFF;
+   background-color: #FFF;
+   
+   visibility:hidden;
+}
+*/
+.hr()
+{
+              color: inherit;
+   background-color: #DDD;
+   
+   position     : relative;
+   top          : @border;
+   height       : @border;
+   margin-top   : @border * -1;
+   margin-bottom: @line-height;
+   
+   hr
+   {
+      .mask;
+   }
+}
+
+/* -------------------------------------------------------------------------- */
+
+.clearfix
+{
+   display: block;
+   zoom: 1; // IE, don’t use conditional comments here
+   
+   &:after,
+   &:before
+   {
+      content: "";
+      display: table;
+   }
+   &:after
+   {
+      clear: both;
+   }
+}
+.container()
+{
+   .clearfix;   
+}
+.list()
+{
+   .clearfix;
+}
+.clear()
+{
+   clear: both;
+}
+.mask
+{
+   position: absolute;
+   left: -9999em;
+   top: auto;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.list()
+{
+    margin: 0;
+   padding: 0;
+   display: block;
+   
+   li,
+   dt,
+   dd
+   {
+      font-weight: normal;
+      padding: 0;
+      float: left;
+      list-style-type: none;
+   }
+}

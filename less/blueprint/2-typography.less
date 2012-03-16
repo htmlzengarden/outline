@@ -1,0 +1,320 @@
+html
+{
+   font-size: 100.01%;
+}
+body
+{
+   font-size  : 6.25% * @fontsize;
+   .font-stack-helvetica;
+
+              color: #222;
+   background-color: #FFF;
+}
+
+/* -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6
+{
+          	  color: #111;
+	background-color: inherit;
+	
+   font-weight: normal;
+}
+h1
+{
+   .bloc(36,@fontsize,2)
+}
+h2
+{  
+   .bloc(24,@fontsize,2);
+}
+h3
+{
+   .bloc(18);
+}
+h4
+{
+   .bloc(14.4);
+}
+h5,
+h6
+{
+   .bloc;
+   font-weight: bold;
+}
+h6
+{
+   .bottom;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img
+{
+   margin: 0;
+}
+p
+{
+   margin: 0 0 @line-height;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.left()
+{
+   float  : left!important;
+   margin : @line-height @line-height @line-height 0;
+   padding: 0;
+}
+.right()
+{
+   float  : right!important;
+   margin : @line-height 0 @line-height @line-height;
+   padding: 0
+}
+
+/* -------------------------------------------------------------------------- */
+
+a
+{
+                 color:        @color-blueprint;
+      background-color:                 inherit;
+   
+   text-decoration: underline;
+   
+   &:hover,
+   &:focus
+   {
+                 color: @color-blueprint-darker;
+      background-color:                 inherit;
+   }
+}
+.roll()
+{
+   text-decoration: none;
+   
+   &:hover,
+   &:focus
+   {
+      text-decoration: underline;
+   }
+}
+
+/* -------------------------------------------------------------------------- */
+
+blockquote
+{
+   margin: @line-height;
+   font-style: italic;
+   
+              color: #666;
+   background-color: inherit;
+}
+strong, dfn
+{
+   font-weight: bold;
+}
+em, dfn
+{
+   font-style: italic;
+}
+sup, sub
+{
+   line-height: 0;
+}
+   abbr[title],
+acronym[title]
+{
+   border-bottom: 1px dotted #666;
+}
+address
+{
+   margin: 0 0 @line-height;
+   font-style: italic;
+}
+del
+{
+              color: #666;
+   background-color: inherit;
+}
+pre
+{
+   margin: @line-height 0;
+   white-space: pre;
+}
+pre, code, tt
+{
+    font-size  : @line-height / 3 * 2;
+   .font-stack-monospace;
+   line-height: @line-height;
+}
+code, tt, kbd
+{
+   line-height: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+li ul, li ol
+{
+   margin: 0;
+}
+ul, ol
+{
+   margin: 0 @line-height @line-height 0;
+   padding-left: @column + @margin;
+}
+ul
+{
+   list-style-type: disc;
+}
+ol
+{
+   list-style-type: decimal;
+}
+dl
+{
+   margin: 0 0 @line-height 0;
+}
+dl dt
+{
+   font-weight: bold;
+}
+dd
+{
+   padding-left: @column + @margin;
+}
+
+/* -------------------------------------------------------------------------- */
+
+table
+{
+   margin-bottom: @line-height;
+   width: 100%;
+}
+th
+{
+   font-weight: bold;
+}
+thead th
+{
+              color:                   inherit;
+   background-color:     @color-blueprint-dark;
+}
+th, td, caption
+{
+   padding: (@line-height / 2) @margin (@line-height / 2) (@margin / 2);
+}
+tbody tr:nth-child(even) td,
+tbody tr:nth-child(even) th
+{
+              color:                inherit;
+   background-color: @color-blueprint-light;
+}
+tbody tr.even td,
+tbody tr.even th
+{
+              color:                inherit;
+   background-color: @color-blueprint-light;
+}
+tfoot
+{
+   font-style: italic;
+}
+caption
+{
+              color: inherit;
+   background-color: #EEE;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*
+.small()
+{
+   .font-size(9.6);
+}
+.large()
+{
+   .font-size(14.4,12,2);
+}
+*/
+.hide()
+{
+   display: none;
+}
+.quiet()
+{
+              color: #666;
+   background-color: inherit;
+}
+.loud()
+{
+              color: #000;
+   background-color: inherit;
+}
+.highlight()
+{
+              color: inherit;
+   background-color: @color-hig-darker;
+}
+.added()
+{
+              color: #FFF;
+   background-color: @color-add-darker;
+}
+.removed()
+{
+              color: #FFF;
+   background-color: @color-rem-darker;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.first()
+{
+     margin-left : 0;
+    padding-left : 0;
+}
+.last()
+{
+    margin-right : 0;
+   padding-right : 0;
+}
+.top()
+{
+    margin-top   : 0;
+   padding-top   : 0;
+}
+.bottom()
+{
+    margin-bottom: 0;
+   padding-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.font-stack-helvetica()
+{
+   font-family: "Helvetica Neue",
+                "Arial",
+                "Helvetica",
+                sans-serif;
+}
+.font-stack-monospace()
+{
+   font-family: "andale mono",
+                "lucida console",
+                monospace;
+}     
+.font-stack-fancytype()
+{
+   font-family: "Warnock Pro",
+                "Goudy Old Style",
+                "Palatino",
+                "Book Antiqua",
+                "Georgia",
+                serif;  
+}

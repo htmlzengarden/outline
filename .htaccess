@@ -1,0 +1,15 @@
+<IfModule mod_expires.c>
+    <FilesMatch "\.(jpeg|jpg|gif|png|pdf|css|js|swf|ico|svg)$">
+        ExpiresActive On
+        ExpiresDefault "access plus 1 month"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+	SetOutputFilter DEFLATE
+	AddOutputFilterByType DEFLATE text/html text/css text/js application/x-javascript text/plain text/xml application/x-shockwave-flash image/svg+xml
+</IfModule>
+
+FileETag MTime Size
+
+IndexOptions FancyIndexing SuppressHTMLPreamble FoldersFirst IgnoreCase HTMLTable XHTML ShowForbidden SuppressDescription SuppressIcon SuppressRules NameWidth=* Charset=UTF-8

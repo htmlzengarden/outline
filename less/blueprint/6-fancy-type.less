@@ -1,0 +1,48 @@
+/*
+.paragraph + .paragraph
+{
+   text-indent: @line-height / 3 * 4;
+    margin-top: @line-height * -1;
+}
+*/
+
+/* -------------------------------------------------------------------------- */
+
+/*
+p.incr,
+.incr p
+{  
+   .font-size(10);
+   line-height: @line-height / 2;
+}
+*/
+
+/* -------------------------------------------------------------------------- */
+
+.alt()
+{
+              color: #666;
+   background-color: inherit;
+
+   .font-stack-fancytype;
+    font-style : italic;
+    font-weight: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.dquo()
+{
+   text-indent: @line-height / 3 * -1;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.caps()
+{
+   font-variant: small-caps;
+   font-weight : bold;
+   letter-spacing: 1px;
+// text-transform: lowercase;
+   padding: 0 (@border * 2);
+}
