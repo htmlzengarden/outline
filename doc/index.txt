@@ -1,12 +1,10 @@
-[![Clever-garden](../doc/img/clever-garden.png)](http://www.clever-age.com/)
-============================================================================
+[![Clever-garden](img/clever-garden.png)](http://www.clever-age.com/)
+=====================================================================
 
-template
---------
+Outline v. 2
+------------
 
 _[Voir l'index des maquettes](../)_
-
---------------------------------------------------------------------------------
 
 ### Sommaire {#sommaire}
 
@@ -14,7 +12,9 @@ _[Voir l'index des maquettes](../)_
  - [Conventions](#conventions)
  - [Bonnes pratiques](#bonnes-pratiques)
  
+<div class="hr" markdown="1">
 --------------------------------------------------------------------------------
+</div>
 
 ### Conventions {#conventions}
 
@@ -24,15 +24,15 @@ Dans ce document certaines portions de codes sont complétées par des symboles 
  - `code|code` indique un choix ;
  - `(n)` indique une boucle ou "n" est la variable incrémentée.
  
+<div class="hr" markdown="1">
 --------------------------------------------------------------------------------
+</div>
 
 ### Bonnes pratiques {#bonnes-pratiques}
 
 [Voir l'audit OPQUAST](http://reporting.opquast.com/).
 
 N'hésitez pas si nécessaire à [demander un compte](opquast-dev-list@clever-age.com) sur la liste de diffusion dédiée.
-
---------------------------------------------------------------------------------
 
 *[BP]: Bonne Pratique
 *[vs]: Versus
@@ -42,6 +42,7 @@ N'hésitez pas si nécessaire à [demander un compte](opquast-dev-list@clever-ag
 *[etc]: Et cætera
 *[NOK]: Non OK
 *[N/A]: Non applicable
+*[v.]: version
 *[CSS]: 
 *[HTML]: 
 *[XHTML]: 

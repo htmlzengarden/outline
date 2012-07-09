@@ -69,10 +69,10 @@ class Z {
 			else {
 				return Z::returnError('<p>Le bloc <abbr>AJAX</abbr> « '.$ajaxBlock.' » n’est pas autorisé. </p>');
 			}
-			return Z::findInPath("ajax". Z::$ext);
+			return Z::findInPath("z-ajax". Z::$ext);
 		}
 
-		return Z::findInPath("page". Z::$ext);
+		return Z::findInPath("z-index". Z::$ext);
 	}
 
 	/**
@@ -134,7 +134,7 @@ class Z {
 	 */
 	protected static function returnError($message){
 		Z::$error = $message;
-		return Z::findInPath("error".Z::$ext);
+		return Z::findInPath("z-error".Z::$ext);
 	}
 
 	/**

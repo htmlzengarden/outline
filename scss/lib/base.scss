@@ -1,0 +1,17 @@
+$default-rhythm-border-color: #000;
+
+$base-font-size:   14px;
+$base-line-height: 20px;
+
+$blueprint-grid-width:   60px;
+$blueprint-grid-margin:  20px;
+
+$blueprint-grid-columns-screen: 12;
+$blueprint-grid-columns-tablet: 10;
+$blueprint-grid-columns-mobile:  1;
+
+$blueprint-grid-outer-width      : $blueprint-grid-width + $blueprint-grid-margin;
+
+$blueprint-container-size-screen : $blueprint-grid-outer-width * $blueprint-grid-columns-screen - $blueprint-grid-margin;
+$blueprint-container-size-tablet : $blueprint-grid-outer-width * $blueprint-grid-columns-tablet - $blueprint-grid-margin;
+$blueprint-container-size-mobile : $blueprint-grid-outer-width * $blueprint-grid-columns-mobile - $blueprint-grid-margin;

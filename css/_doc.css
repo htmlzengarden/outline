@@ -494,254 +494,58 @@ caption {
   padding-top: 0.714em;
   padding-bottom: 0.714em; }
 
-/**
-* Grid
-*/
-#grid {
-  /* Dimensions - same width as your grid with gutters */
-  width: 940px;
-  overflow: hidden;
-    /* Grid (left-aligned)
-position: absolute;
-top: 0;
-left: 0;
-*/
-  /* Grid (centered) */
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -470px; }
-  @media only screen and (max-width:1000px) {
-    #grid {
-      width: 780px;
-      margin-left: -390px; } }
-  @media only screen and (max-width:840px) {
-    #grid {
-      margin-left: 0;
-      width: auto;
-      left: 20px;
-      right: 20px; }
-      #grid .vert-container {
-        display: none!important; } }
+@media only screen and (max-width:1000px) {
+  #page.index th:nth-child(3),
+  #page.index td:nth-child(3),
+  #page.index th:nth-child(4),
+  #page.index td:nth-child(4),
+  #page.index th:nth-child(5),
+  #page.index td:nth-child(5),
+  #page.index th:nth-child(6),
+  #page.index td:nth-child(6),
+  #page.index th:nth-child(7),
+  #page.index td:nth-child(7),
+  #page.index th:nth-child(8),
+  #page.index td:nth-child(8),
+  #page.index th:nth-child(9),
+  #page.index td:nth-child(9),
+  #page.index th:nth-child(10),
+  #page.index td:nth-child(10),
+  #page.index th:nth-child(11),
+  #page.index td:nth-child(11),
+  #page.index th:nth-child(12),
+  #page.index td:nth-child(12) {
+    display: none;
+    background-color: red; } }
 
-/**
-* Vertical grid lines
-*
-* Set the column width taking the borders into consideration,
-* and use margins to set column gutters.
-*/
-#grid div.vert {
-  width: 20px;
-  margin-right: 60px;
-  *display: inline!important;
-  background-color: rgba(0, 128, 0, 0.25); }
-
-#grid div.vert.first-line {
-  margin-left: 60px; }
-
-/**
-* Horizontal grid lines, defined by your base line height
-*
-* Remember, the CSS properties that define the box model:
-* visible height = height + borders + margins + padding
-*/
-#grid div.horiz {
-  height: 1.429em;
-  padding: 0; }
-
-#grid div.horiz:nth-child(even) {
-  background-color: rgba(0, 128, 0, 0.15); }
-
-/**
-* Classes for multiple grids
-*
-* When using more than one grid, remember to set the numberOfGrids
-* option in the hashgrid.js file.
-*/
-#grid.grid-1 .vert {
-  background-color: transparent; }
-
-#grid.grid-2 .horiz {
-  background-color: transparent!important; }
-
-#page {
+#page.index,
+#page.doc {
   margin: auto;
   width: 940px; }
   @media only screen and (max-width:1000px) {
-    #page {
+    #page.index,
+    #page.doc {
       width: 780px; } }
   @media only screen and (max-width:840px) {
-    #page {
+    #page.index,
+    #page.doc {
       width: auto;
       margin: 0 20px; } }
-
-img,
-audio,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-fieldset {
-  border: none;
-  padding: 0; }
-  fieldset legend span {
-    display: block;
-    margin-bottom: 1.429em; }
-
-form p,
-form .p {
-  min-height: 2.857em;
-  *height: 2.857em; }
-
-input,
-textarea {
-  width: 208px;
-  padding: 5px;
-  border: 1px solid #333; }
-
-input[type=radio],
-input[type=checkbox] {
-  width: auto;
-  padding: 0;
-  border: 0; }
-
-input.radio,
-input.checkbox {
-  width: auto;
-  padding: 0;
-  border: 0; }
-
-button,
-select,
-input[type=reset],
-input[type=button],
-input[type=submit] {
-  width: 220px;
-  padding: 5px;
-  border: 1px solid #333; }
-
-button,
-select,
-input.reset,
-input.button,
-input.submit {
-  width: 220px;
-  padding: 5px;
-  border: 1px solid #333; }
-
-select {
-  padding: 4px; }
-
-#page.demo nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  *zoom: 1; }
-  #page.demo nav ul:after {
-    content: "";
-    display: table;
-    clear: both; }
-  #page.demo nav ul li,
-  #page.demo nav ul dt,
-  #page.demo nav ul dd {
-    margin: 0;
-    float: left; }
-#page.demo .colleft {
-  *display: inline;
-  zoom: 1;
-  float: left;
-  margin-right: 20px;
-  width: 460px;
-  padding-right: 9px;
-  margin-right: 10px;
-  border-right: 1px solid black;
-  margin-bottom: 1.429em;
-  padding-top: 1.429em; }
-  * html #page.demo .colleft {
-    overflow-x: hidden; }
-#page.demo .colright {
-  *display: inline;
-  zoom: 1;
-  float: left;
-  margin-right: 0;
-  width: 460px;
-  margin-bottom: 1.429em;
-  padding-top: 1.429em; }
-  * html #page.demo .colright {
-    overflow-x: hidden; }
-@media only screen and (max-width:840px) {
-  #page.demo form {
-    display: none; } }
-#page.demo .large {
-  font-size: 1.286em;
-  line-height: 2.222em;
-  margin-bottom: 1.111em; }
-  #page.demo .large span {
-    font-size: 0.778em;
-    line-height: 1.429em; }
-#page.demo .small {
-  font-size: 0.714em;
-  line-height: 2em;
-  margin-bottom: 2em; }
-#page.demo header {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: black;
-  margin-top: -1px;
-  position: relative;
-  top: 1px;
-  padding-top: 1.429em;
-  padding-bottom: 1.429em;
-  padding-left: 1.429em;
-  padding-right: 1.429em;
-  margin-bottom: 1.429em;
-  *zoom: 1; }
-#page.demo section {
-  padding-left: 80px;
-  *display: inline;
-  zoom: 1;
-  float: left;
-  margin-right: 20px;
-  width: 380px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  position: relative;
-  margin-top: -2px;
-  margin-left: -2px;
-  top: 1px;
-  left: 1px; }
-  * html #page.demo section {
-    overflow-x: hidden; }
-  @media only screen and (max-width:1000px) {
-    #page.demo section {
-      width: auto;
-      float: none;
-      padding-left: 0;
-      margin-right: 0;
-      margin-bottom: 1.429em; } }
-#page.demo article {
-  *display: inline;
-  zoom: 1;
-  float: left;
-  margin-right: 0;
-  width: 460px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  position: relative;
-  margin-top: -2px;
-  margin-left: -2px;
-  top: 1px;
-  left: 1px;
-  background-color: #000;
-  color: #FFF; }
-  * html #page.demo article {
-    overflow-x: hidden; }
-  @media only screen and (max-width:1000px) {
-    #page.demo article {
-      width: auto;
-      float: none; } }
+  #page.index img,
+  #page.doc img {
+    display: block; }
+  #page.index h1,
+  #page.doc h1 {
+    float: right; }
+    @media only screen and (max-width:840px) {
+      #page.index h1,
+      #page.doc h1 {
+        float: none; } }
+  #page.index .footnotes ol,
+  #page.doc .footnotes ol {
+    font-size: 0.714em;
+    line-height: 2em;
+    margin-bottom: 2em; }
+    #page.index .footnotes ol p,
+    #page.doc .footnotes ol p {
+      margin-bottom: 1em; }

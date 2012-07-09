@@ -142,7 +142,7 @@ var hashgrid = function(set) {
 
 	// Calculate the number of grid lines needed
 	line = $('#' + options.id + '-horiz');
-	lineHeight = line.outerHeight();
+	lineHeight = line.outerHeight() -1;
 
 	// Hide and reset top
 	overlay.css({
@@ -168,24 +168,24 @@ var hashgrid = function(set) {
 	overlay.append($('<div class="vert-container"></div>'));
 	overlayVert = overlay.children('.vert-container');
 	gridWidth = overlay.width();
-	overlayVert.css({width: gridWidth, position: 'absolute', top: 0});
+	overlayVert.css({position: 'absolute', top: 0});
 	overlayVert.append('<div class="vert first-line"></div>');
 
-	// 30 is an arbitrarily large number...
+	// 50 is an arbitrarily large number...
 	// can't calculate the margin width properly
 	gridLines = '';
-	for (i = 0; i < 30; i++) {
+	for (i = 0; i < 50; i++) {
 		gridLines += '<div class="vert"></div>';
 	}
 	overlayVert.append(gridLines);
 	overlayVert.children()
-		.height(pageHeight)
-		.css({ display: 'inline-block' });
+		.css({ display: 'inline-block' })
+		.height(pageHeight);
 
 	// Check for saved state
 	overlayCookie = readCookie(options.cookiePrefix + options.id);
 	if (typeof overlayCookie == 'string') {
-		state = overlayCookie.split(',');
+		state = overlayCookie.split('-');
 		state[2] = Number(state[2]);
 		if ((typeof state[2] == 'number') && !isNaN(state[2])) {
 			classNumber = state[2].toFixed(0);
@@ -242,19 +242,22 @@ var hashgrid = function(set) {
 	}
 
 	function saveState() {
-		createCookie(options.cookiePrefix + options.id, (sticky ? '1' : '0') + ',' + overlayZState + ',' + classNumber, 1);
+		createCookie(options.cookiePrefix + options.id, (sticky ? '1' : '0') + '-' + overlayZState + '-' + classNumber, 1);
 	}
 
 	function showOverlay() {
 		overlay.show();
-		overlayVert.css({width: overlay.width()});
+		//overlayVert.css({width: overlay.width()});
 		// hide any vertical blocks that aren't at the top of the viewport
+		/*
 		overlayVert.children('.vert').each(function () {
-			$(this).css('display','inline-block');
-			if ($(this).offset().top > 0) {
-				$(this).hide();
+			var vCol = $(this);
+			vCol.css('display','inline-block');
+			if (vCol.offset().top > vCol.parent().offset().top) {
+				vCol.hide();
 			}
 		});
+		*/
 	}
 
 	/**
