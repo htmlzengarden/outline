@@ -1,8 +1,8 @@
 [![Clever-garden](img/clever-garden.png)](http://www.clever-age.com/)
 =====================================================================
 
-Outline v. 2
-------------
+template
+--------
 
 _[Voir l'index des maquettes](../)_
 
