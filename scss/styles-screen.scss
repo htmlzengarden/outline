@@ -35,7 +35,7 @@ fieldset
 		span
 		{
 			display: block;
-			@include trailer();
+			@include margin-bottom();
 		}
 	}
 }
@@ -126,8 +126,7 @@ select
 	{
 		$fs1: 18px;
 	
-		@include font-size($fs1);
-		@include margin-bottom(1, $fs1);
+		@include bloc($fs1);
 		
 		span
 		{
