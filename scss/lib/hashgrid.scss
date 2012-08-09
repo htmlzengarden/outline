@@ -48,23 +48,23 @@ left: 0;
 */
 #grid div.vert{
 
-    width: $blueprint-grid-margin;
-//    border: solid darkturquoise;
-//    border-width: 0 1px;
-    margin-right: $blueprint-grid-width;
-//    margin-left: -2px;
-//    position: relative;
-//	left: 1px;
+    width: $blueprint-grid-margin - 1px;
+    margin-right: $blueprint-grid-margin - 1px;
 	*display: inline!important; // ie6
-	background-color: fade-out(green, 0.75);
+	border-left:  1px dotted darkgray;
+	border-right: 1px dotted darkgray;
+	position: relative;
+	left: -1px;
 }
 
 #grid div.vert.first-line{
 
-    margin-left: $blueprint-grid-width;  //- 2px;
-
+    margin-left: $blueprint-grid-margin;
 }
-
+#page
+{
+	background-color: #FAFAFA;
+}
 
 /**
 * Horizontal grid lines, defined by your base line height
@@ -77,13 +77,9 @@ left: 0;
     height: rhythm();
     padding: 0;
 }
-#grid div.horiz:nth-child(even)
+#grid div.horiz
 {
-
-
-    //@include trailing-border(1px, dotted, darkgray);
-    
-	background-color: fade-out(green, 0.85);
+    @include trailing-border(1px, dotted, darkgray);
 }
 
 /**
@@ -96,15 +92,28 @@ left: 0;
 {
 	.vert
 	{
-		//border-color: transparent;
-		background-color: transparent;
+		border-color: transparent;
 	}
 }
 #grid.grid-2
 {
 	.horiz
 	{
-		//border-color: transparent;
-		background-color: transparent!important;
+		border-color: transparent;
+	}
+	.vert
+	{
+		border-color: transparent;
+	}
+	.vert:nth-child(3n)
+	{
+		background-color: fade-out(green, 0.75);
+	}
+}
+#grid.grid-3
+{
+	.vert:nth-child(3n)
+	{
+		background-color: fade-out(green, 0.75);
 	}
 }

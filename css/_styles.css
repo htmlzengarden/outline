@@ -531,13 +531,19 @@ left: 0;
 * and use margins to set column gutters.
 */
 #grid div.vert {
-  width: 20px;
-  margin-right: 60px;
+  width: 19px;
+  margin-right: 19px;
   *display: inline!important;
-  background-color: rgba(0, 128, 0, 0.25); }
+  border-left: 1px dotted darkgray;
+  border-right: 1px dotted darkgray;
+  position: relative;
+  left: -1px; }
 
 #grid div.vert.first-line {
-  margin-left: 60px; }
+  margin-left: 20px; }
+
+#page {
+  background-color: #FAFAFA; }
 
 /**
 * Horizontal grid lines, defined by your base line height
@@ -549,8 +555,13 @@ left: 0;
   height: 1.429em;
   padding: 0; }
 
-#grid div.horiz:nth-child(even) {
-  background-color: rgba(0, 128, 0, 0.15); }
+#grid div.horiz {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: darkgray;
+  margin-top: -1px;
+  position: relative;
+  top: 1px; }
 
 /**
 * Classes for multiple grids
@@ -559,10 +570,17 @@ left: 0;
 * option in the hashgrid.js file.
 */
 #grid.grid-1 .vert {
-  background-color: transparent; }
+  border-color: transparent; }
 
 #grid.grid-2 .horiz {
-  background-color: transparent!important; }
+  border-color: transparent; }
+#grid.grid-2 .vert {
+  border-color: transparent; }
+#grid.grid-2 .vert:nth-child(3n) {
+  background-color: rgba(0, 128, 0, 0.25); }
+
+#grid.grid-3 .vert:nth-child(3n) {
+  background-color: rgba(0, 128, 0, 0.25); }
 
 #page {
   margin: auto;

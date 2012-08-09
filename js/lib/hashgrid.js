@@ -165,7 +165,7 @@ var hashgrid = function(set) {
 	overlay.append(gridLines);
 
 	// vertical grid
-	overlay.append($('<div class="vert-container"></div>'));
+	overlay.prepend($('<div class="vert-container"></div>'));
 	overlayVert = overlay.children('.vert-container');
 	gridWidth = overlay.width();
 	overlayVert.css({position: 'absolute', top: 0});
