@@ -86,9 +86,56 @@ a:hover
 // ==========================================================================
 
 // Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome.
+// Addresses font sizes and margins set differently in IE 6/7.
+// Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome.
+// http://modularscale.com/scale/?px1=14&px2=12&ra1=1.5&ra2=0 
 h1
 {
-	font-size: 2em;
+	$fs1: 27px;
+	margin: 0;
+	@include adjust-font-size-to($fs1);
+	@include margin-bottom(1, $fs1);
+	@include padding-top(1, $fs1);
+}
+h2
+{
+	$fs1: 21px;
+	margin: 0;
+	@include adjust-font-size-to($fs1);
+	@include margin-bottom(1, $fs1);
+	@include padding-top(1, $fs1);
+}
+h3
+{
+	$fs1: 18px;
+	margin: 0;
+	@include adjust-font-size-to($fs1);
+	@include margin-bottom(1, $fs1);
+	@include padding-top(1, $fs1);
+}
+h4
+{
+	$fs1: 16px;
+	margin: 0;
+	@include adjust-font-size-to($fs1);
+	@include margin-bottom(1, $fs1);
+	@include padding-top(1, $fs1);
+}
+h5
+{
+	$fs1: 14px;
+	margin: 0;
+	@include adjust-font-size-to($fs1);
+	@include margin-bottom(1, $fs1);
+	@include padding-top(1, $fs1);
+}
+h6
+{
+	$fs1: 13px;
+	margin: 0;
+	@include adjust-font-size-to($fs1);
+	@include margin-bottom(1, $fs1);
+	@include padding-top(1, $fs1);
 }
 
 // Addresses styling not present in IE 8/9, Safari 5, and Chrome.
@@ -163,6 +210,23 @@ sup
 sub
 {
 	bottom: -0.25em;
+}
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+dl,
+menu,
+ol,
+ul,
+p
+{
+	margin: 0;
+	@include margin-bottom;
+}
+dd
+{
+	margin: 0 0 0 $blueprint-grid-outer-width;
 }
 
 // ==========================================================================
