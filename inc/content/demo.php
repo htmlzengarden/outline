@@ -58,10 +58,9 @@
 
 <address class="large"><span>Address: somewhere, world</span></address>
 
-<p>
-The <a href="#">a element</a> example<br />
-The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br />
-The <b>b element</b> example<br />
+<p>The <a href="#">a element</a> example</p>
+<p>The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples</p>
+<p>The <b>b element</b> example<br />
 The <cite>cite element</cite> example<br />
 The <code>code element</code> example<br />
 The <del>del element</del> example<br />
@@ -89,7 +88,6 @@ The <u>u element</u> example
 <h3>audio</h3>
 
 <audio controls="controls" style="height: 2.858em;"></audio>
-<audio></audio>
 
 <h3>img</h3>
 
@@ -98,14 +96,13 @@ The <u>u element</u> example
 
 <h3>svg</h3>
 
-<svg width="100px" height="100px">
+<svg width="100px" height="100px" viewBox="0 0 100 100">
     <circle cx="100" cy="100" r="100" fill="#000" />
 </svg>
 
 <h3>video</h3>
 
 <video controls="controls" style="height: 11.432em;"></video>
-<video style="height: 11.432em;"></video>
 
 <h1>Interactive content</h1>
 
@@ -253,21 +250,21 @@ The <u>u element</u> example
 <form>
     <fieldset class="nth-child-1">
         <legend><span>Inputs as descendents of labels (form legend). This doubles up as a long legend that can test word wrapping.</span></legend>
-        <p><label>Text input <input type="text" value="default value that goes on and on without stopping or punctuation" /></label></p>
-        <p><label>Email input <input type="email" /></label></p>
-        <p><label>Search input <input type="search" /></label></p>
-        <p><label>Tel input <input type="tel" /></label></p>
-        <p><label>URL input <input type="url" placeholder="http://" /></label></p>
-        <p><label>Password input <input type="password" value="password" /></label></p>
-        <p><label>File input <input type="file" /></label></p>
+        <p><label for="input-1">Text input <input type="text" id="input-1" value="default value that goes on and on without stopping or punctuation" /></label></p>
+        <p><label for="input-2">Email input <input type="email" id="input-2" /></label></p>
+        <p><label for="input-3">Search input <input type="search" id="input-3" /></label></p>
+        <p><label for="input-4">Tel input <input type="tel" id="input-4" /></label></p>
+        <p><label for="input-5">URL input <input type="url" id="input-5" placeholder="http://" /></label></p>
+        <p><label for="input-6">Password input <input type="password" id="input-6" value="password" /></label></p>
+        <p><label for="input-7">File input <input type="file" id="input-7" /></label></p>
 
-        <p><label>Radio input <input type="radio" name="rad" class="radio" /></label></p>
-        <p><label>Checkbox input <input type="checkbox" class="checkbox" /></label></p>
-        <p><label><input type="radio" name="rad" class="radio" /> Radio input</label></p>
-        <p><label><input type="checkbox" class="checkbox" /> Checkbox input</label></p>
+        <p><label for="input-8">Radio input <input type="radio" id="input-8" name="rad" class="radio" /></label></p>
+        <p><label for="input-9">Checkbox input <input type="checkbox" id="input-9" class="checkbox" /></label></p>
+        <p><label for="input-10"><input type="radio" id="input-10" name="rad" class="radio" /> Radio input</label></p>
+        <p><label for="input-11"><input type="checkbox" id="input-11" class="checkbox" /> Checkbox input</label></p>
 
-        <p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
-        <p class="last-child" style="min-height: 8.571em;"><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
+        <p><label for="select-1">Select field <select id="select-1"><option>Option 01</option><option>Option 02</option></select></label></p>
+        <p class="last-child" style="min-height: 8.571em;"><label for="textarea-1">Textarea <textarea cols="30" rows="5" id="textarea-1">Textarea text</textarea></label></p>
     </fieldset>
 
     <fieldset class="nth-child-2">

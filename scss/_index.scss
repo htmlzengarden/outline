@@ -1,0 +1,53 @@
+/********************************************/
+/* STYLES INDEX								*/
+/********************************************/
+
+.index
+{
+	@extend .alt-content;
+	
+	.main .box-title
+	{
+		@extend .really-hide-text;
+	}
+}
+.index .tweet,
+.article
+{
+	@include padding-bottom();
+	@include margin-bottom();
+	@include border-bottom(1px,solid,$medium-grey);
+}
+.article
+{
+	.img,
+	.date,
+	.title,
+	.desc p,
+	.category
+	{
+		@extend .no-bottom;
+	}
+	a
+	{
+		@extend .block-link;
+		@extend .block-link-hover;		
+	}
+	.title
+	{
+		$fs1: 21px;
+		@include font-size($fs1,1.5,$fs);
+		@extend .no-padding-top;
+	}
+	.desc
+	{
+		@include padding-top(.5);
+		@include padding-bottom(.5);
+	}
+	.date
+	{
+		$fs1: 15px;
+		@include padding-top(.5,$fs1);
+		@include padding-bottom(.5,$fs1);		
+	}
+}

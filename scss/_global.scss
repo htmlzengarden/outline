@@ -1,0 +1,15 @@
+/********************************************/
+/* ÉLÉMENTS D'INTERFACE						*/
+/********************************************/
+
+a 
+{
+	text-decoration: underline;
+	
+	&:hover,
+	&:active,
+	&:focus
+	{
+		text-decoration: none;
+	}
+}

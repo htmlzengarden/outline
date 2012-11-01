@@ -34,9 +34,28 @@
 		left: $width;
 	}
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
+@mixin position($side, $lines: 1, $font-size: $base-font-size)
+{
+	$side: rhythm($lines, $font-size);
+}
+@mixin position-top($lines: 1, $font-size: $base-font-size)
+{
+	@include position(top, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-left($lines: 1, $font-size: $base-font-size)
+{
+	@include position(left, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-bottom($lines: 1, $font-size: $base-font-size)
+{
+	@include position(bottom, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-right($lines: 1, $font-size: $base-font-size)
+{
+	@include position(right, $lines: 1, $font-size: $base-font-size);
+}
+//
 @mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
 {
 	border:
@@ -51,9 +70,7 @@
 	top:  $width;
 	left: $width;
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin trailing-border   ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
 {
 	@include apply-side-rhythm-border(bottom, $width, $border-style, $border-color);
@@ -62,9 +79,7 @@
 {
 	@include apply-side-rhythm-border(top,    $width, $border-style, $border-color);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin horizontal-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
 {
 	@include leading-border(                  $width, $border-style, $border-color);
@@ -85,9 +100,7 @@
 {
 	@include   vertical-borders(              $width, $border-style, $border-color);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin border            ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
 {
 	@include rhythm-borders(                  $width, $border-style, $border-color);
@@ -108,9 +121,7 @@
 {
 	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin margin-top($lines: 1, $font-size: $base-font-size)
 {
 	@include       leader($lines, $font-size,  margin);
@@ -127,9 +138,7 @@
 {
 	margin-right:  rhythm($lines, $font-size);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin padding-top($lines: 1, $font-size: $base-font-size)
 {
 	@include        leader($lines, $font-size, padding);
@@ -146,9 +155,7 @@
 {
 	padding-right: rhythm($lines, $font-size);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin     padding($lines: 1, $font-size: $base-font-size)
 {
 	@include       leader($lines, $font-size, padding);
@@ -163,21 +170,21 @@
 	margin-left:   rhythm($lines, $font-size);
 	margin-right:  rhythm($lines, $font-size);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
+@mixin max-height($lines: 1, $font-size: $base-font-size)
+{
+	max-height: rhythm($lines, $font-size);
+}
 @mixin min-height($lines: 1, $font-size: $base-font-size)
 {
 	min-height: rhythm($lines, $font-size);
-	   *height: rhythm($lines, $font-size);
+//	   *height: rhythm($lines, $font-size);
 }
 @mixin     height($lines: 1, $font-size: $base-font-size)
 {
 	    height: rhythm($lines, $font-size);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin clearfix
 {
 	@include pie-clearfix;
@@ -186,9 +193,7 @@
 {
 	@include clearfix;
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin    top($lines: 1, $font-size: $base-font-size)
 {
 	   top: rhythm($lines, $font-size);
@@ -197,9 +202,7 @@
 {
 	bottom: rhythm($lines, $font-size);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin font-size($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
 	@include adjust-font-size-to($to-size, $lines, $from-size);
@@ -209,38 +212,43 @@
 	@include font-size($to-size, $lines, $from-size);
 	@include margin-bottom($lines, $to-size);
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin show($type: block)
 {
 	display: $type;
-//	visibility: visible;
 }
 @mixin hide
 {
 	display: none;
-//	visibility: hidden;
 }
-@mixin mask($rtl: false)
+
+// cf.http://yaccessibilityblog.com/library/css-clip-hidden-content.html
+@mixin mask()
 {
 	position: absolute;
-	width:  1px;
+	clip: rect(1px 1px 1px 1px); // IE6, IE7
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	margin: 0;
+	border:0;
 	height: 1px;
+	width: 1px;
 	overflow: hidden;
-	
-	@if $rtl == false
-	{
-		left: -9999em;
-	}
-	@else
-	{
-		right: -9999em;		
-	}
 }
-
-/* -------------------------------------------------------------------------- */
-
+@mixin unmask()
+{
+	position: relative;
+	width:  auto;
+	height: auto;
+	clip: auto;
+}
+//
+.hide-text,
+.really-hide-text
+{
+	@include mask();
+}
+//
 @mixin border-gutter($border-color: black, $border-width: 1px, $border-style: solid)
 {
 	padding-right: $blueprint-grid-margin / 2 - $border-width;
@@ -253,9 +261,7 @@
 	 margin-right: ($blueprint-grid-width / 2) + ($blueprint-grid-margin / 2) + ($blueprint-grid-margin / 2);
 	 border-right: #{$border-width} #{$border-style} #{$border-color};
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin hr
 {
 	@include border-top(1px, solid, black);
@@ -270,9 +276,7 @@
 {
 	@include hr;
 }
-
-/* -------------------------------------------------------------------------- */
-
+//
 @mixin list
 {
 	margin:  0;
@@ -288,5 +292,126 @@
 		float: left;
 	}
 }
+//
+@mixin column-base($first: false)
+{
+	@include float-left;
+	
+	@if $first
+	{
+		margin-left: 0;
+	}
+	@else
+	{
+		margin-left: $blueprint-grid-margin;
+	}
+	* html & 
+	{
+		overflow-x: hidden;
+	} 
+}
 
-/* -------------------------------------------------------------------------- */
+.list
+{
+	@include list;
+}
+
+//
+// Liens « block », qui englobent d'autres éléments de type block 
+//
+.block-link
+{
+	@include clearfix;
+	display: block;
+	text-decoration: none;
+}
+
+//
+// Hover des liens de type « block » : on souligne l'élément .title qu'ils contiennent
+//
+.block-link-hover
+{
+	&:hover,
+	&:active,
+	&:focus
+	{
+		.title
+		{
+			text-decoration: underline
+		}
+	}
+}
+
+//
+// Liens pas soulignés, qui deviennent soulignés au :hover
+//
+.unroll
+{
+	text-decoration: none;
+	
+	&:hover,
+	&:active,
+	&:focus
+	{
+		text-decoration: underline;
+	}
+}
+
+//
+// Liens pas soulignés, qui deviennent soulignés au :hover
+//
+.no-roll
+{
+	text-decoration: none;
+	
+	&:hover,
+	&:active,
+	&:focus
+	{
+		text-decoration: none;
+	}
+}
+
+//
+// Boutons réinitialisés
+//
+.reset-button
+{
+	border: 0;
+	width: auto;
+	padding: 0;
+	display: block;
+}
+
+//
+// Clearfix
+//
+.clear-fix
+{
+	@include clearfix;
+}
+
+//
+// Pas de margin-bottom															
+//
+.no-bottom
+{
+	margin-bottom: 0;
+}
+
+//
+// Pas de padding-top (titres)
+//
+.no-padding-top
+{
+	padding-top: 0;
+}
+
+//
+// Majuscules																
+//
+.uppercase
+{
+	text-transform: uppercase;
+	letter-spacing: 0.001em;
+}
