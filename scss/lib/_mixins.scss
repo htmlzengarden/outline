@@ -222,6 +222,7 @@
 	display: none;
 }
 
+// Cacher un élément, mais le laisser accessible aux synthèses d'écran
 // cf.http://yaccessibilityblog.com/library/css-clip-hidden-content.html
 @mixin mask()
 {
@@ -242,12 +243,9 @@
 	height: auto;
 	clip: auto;
 }
+
 //
-.hide-text,
-.really-hide-text
-{
-	@include mask();
-}
+// Blocs séparés par des bordures
 //
 @mixin border-gutter($border-color: black, $border-width: 1px, $border-style: solid)
 {
@@ -261,6 +259,9 @@
 	 margin-right: ($blueprint-grid-width / 2) + ($blueprint-grid-margin / 2) + ($blueprint-grid-margin / 2);
 	 border-right: #{$border-width} #{$border-style} #{$border-color};
 }
+
+//
+// HR
 //
 @mixin hr
 {
@@ -384,7 +385,7 @@
 }
 
 //
-// Clearfix
+// Clearfix, à utiliser avec @extend pour ne pas surcharger la CSS
 //
 .clear-fix
 {
@@ -392,26 +393,65 @@
 }
 
 //
-// Pas de margin-bottom															
+// Pas de margin-bottom, à utiliser avec @extend pour ne pas surcharger la CSS
 //
-.no-bottom
+.no-margin-bottom
+{
+	margin-bottom: 0;
+}
+//
+// Pas de padding-bottom, à utiliser avec @extend pour ne pas surcharger la CSS
+//
+.no-padding-bottom
 {
 	margin-bottom: 0;
 }
 
 //
-// Pas de padding-top (titres)
+// Pas de margin-bottom ni de padding-bottom, à utiliser avec @extend pour ne pas surcharger la CSS
+//
+.no-bottom
+{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+//
+// Pas de margin-top, à utiliser avec @extend pour ne pas surcharger la CSS
+//
+.no-margin-top
+{
+	margin-top: 0;
+}
+//
+// Pas de padding-top, à utiliser avec @extend pour ne pas surcharger la CSS
 //
 .no-padding-top
 {
 	padding-top: 0;
 }
+//
+// Pas de margin-top ni de padding-top, à utiliser avec @extend pour ne pas surcharger la CSS
+//
+.no-top
+{
+	margin-top: 0;
+	padding-top: 0;
+}
 
 //
-// Majuscules																
+// Majuscules, à utiliser avec @extend pour ne pas surcharger la CSS
 //
 .uppercase
 {
 	text-transform: uppercase;
 	letter-spacing: 0.001em;
+}
+
+//
+// Cacher pour de vrai (y compris aux synthèses vocales)
+//
+.off
+{
+	display: none;
 }
