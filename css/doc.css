@@ -1,0 +1,510 @@
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.hr {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+  margin-top: -1px;
+  margin-bottom: 1.42857em; }
+  .hr hr {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  *zoom: 1; }
+  .list:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .list li,
+  .list dt,
+  .list dd {
+    margin: 0;
+    float: left; }
+
+.block-link {
+  *zoom: 1;
+  display: block;
+  text-decoration: none; }
+  .block-link:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.block-link-hover:hover .title, .block-link-hover:active .title, .block-link-hover:focus .title {
+  text-decoration: underline; }
+
+.unroll {
+  text-decoration: none; }
+  .unroll:hover, .unroll:active, .unroll:focus {
+    text-decoration: underline; }
+
+.no-roll {
+  text-decoration: none; }
+  .no-roll:hover, .no-roll:active, .no-roll:focus {
+    text-decoration: none; }
+
+.reset-button {
+  border: 0;
+  width: auto;
+  padding: 0;
+  display: block; }
+
+.clear-fix {
+  *zoom: 1; }
+  .clear-fix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.no-margin-bottom {
+  margin-bottom: 0; }
+
+.no-padding-bottom {
+  margin-bottom: 0; }
+
+.no-bottom {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.no-margin-top {
+  margin-top: 0; }
+
+.no-padding-top {
+  padding-top: 0; }
+
+.no-top {
+  margin-top: 0;
+  padding-top: 0; }
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.001em; }
+
+.off {
+  display: none; }
+
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+img,
+audio,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+  html * html {
+    font-size: 87.5%; }
+  html html {
+    font-size: 14px;
+    line-height: 1.42857em; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0;
+  font-size: 87.5%;
+  line-height: 1.42857em; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+h1 {
+  margin: 0;
+  font-size: 1.92857em;
+  line-height: 1.48148em;
+  margin-bottom: 0.74074em;
+  padding-top: 0.74074em; }
+
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.90476em;
+  margin-bottom: 0.95238em;
+  padding-top: 0.95238em; }
+
+h3 {
+  margin: 0;
+  font-size: 1.28571em;
+  line-height: 2.22222em;
+  margin-bottom: 1.11111em;
+  padding-top: 1.11111em; }
+
+h4 {
+  margin: 0;
+  font-size: 1.14286em;
+  line-height: 1.25em;
+  margin-bottom: 1.25em;
+  padding-top: 1.25em; }
+
+h5 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.42857em;
+  margin-bottom: 1.42857em;
+  padding-top: 1.42857em; }
+
+h6 {
+  margin: 0;
+  font-size: 0.92857em;
+  line-height: 1.53846em;
+  margin-bottom: 1.53846em;
+  padding-top: 1.53846em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 0 80px;
+  margin-bottom: 1.42857em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+p,
+pre,
+address {
+  margin: 0;
+  margin-bottom: 1.42857em; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+  margin-bottom: 1.42857em; }
+
+dd {
+  margin: 0 0 0 80px; }
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 20px; }
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0;
+  padding: 10px;
+  padding-top: 0.71429em;
+  padding-bottom: 0.71429em;
+  margin-bottom: 1.42857em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th, td {
+  padding-top: 0.71429em;
+  padding-right: 10px;
+  padding-bottom: 0.71429em;
+  padding-left: 10px; }
+
+/**
+* Grid
+*/
+#grid {
+  /* Dimensions - same width as your grid with gutters */
+  width: 940px;
+  overflow: hidden;
+    /* Grid (left-aligned)
+position: absolute;
+top: 0;
+left: 0;
+*/
+  /* Grid (centered) */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -470px; }
+  @media only screen and (max-width: 1000px) {
+    #grid {
+      width: 780px;
+      margin-left: -390px; } }
+  @media only screen and (max-width: 840px) {
+    #grid {
+      margin-left: 0;
+      width: auto;
+      left: 20px;
+      right: 20px; }
+      #grid .vert-container {
+        display: none!important; } }
+
+/**
+* Vertical grid lines
+*
+* Set the column width taking the borders into consideration,
+* and use margins to set column gutters.
+*/
+#grid div.vert {
+  width: 59px;
+  margin-left: 19px;
+  *display: inline!important;
+  border-left: 1px dotted darkgray;
+  border-right: 1px dotted darkgray;
+  position: relative; }
+
+#grid div.vert.first-line {
+  margin-left: 0;
+  width: 58px; }
+
+/**
+* Horizontal grid lines, defined by your base line height
+*
+* Remember, the CSS properties that define the box model:
+* visible height = height + borders + margins + padding
+*/
+#grid div.horiz {
+  height: 1.42857em;
+  padding: 0; }
+
+#grid div.horiz {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: darkgrey;
+  margin-top: -1px;
+  position: relative;
+  top: 1px; }
+
+/**
+* Classes for multiple grids
+*
+* When using more than one grid, remember to set the numberOfGrids
+* option in the hashgrid.js file.
+*/
+#grid.grid-1 .vert {
+  border-color: transparent; }
+
+#grid.grid-2 .horiz {
+  border-color: transparent; }
+
+@media only screen and (max-width: 1000px) {
+  #page.index th:nth-child(3),
+  #page.index td:nth-child(3),
+  #page.index th:nth-child(4),
+  #page.index td:nth-child(4),
+  #page.index th:nth-child(5),
+  #page.index td:nth-child(5),
+  #page.index th:nth-child(6),
+  #page.index td:nth-child(6),
+  #page.index th:nth-child(7),
+  #page.index td:nth-child(7),
+  #page.index th:nth-child(8),
+  #page.index td:nth-child(8),
+  #page.index th:nth-child(9),
+  #page.index td:nth-child(9),
+  #page.index th:nth-child(10),
+  #page.index td:nth-child(10),
+  #page.index th:nth-child(11),
+  #page.index td:nth-child(11),
+  #page.index th:nth-child(12),
+  #page.index td:nth-child(12) {
+    display: none;
+    background-color: red; } }
+
+#page.index,
+#page.doc {
+  margin: auto;
+  width: 940px; }
+  @media only screen and (max-width: 1000px) {
+    #page.index,
+    #page.doc {
+      width: 780px; } }
+  @media only screen and (max-width: 840px) {
+    #page.index,
+    #page.doc {
+      width: auto;
+      margin: 0 20px; } }
+  #page.index img,
+  #page.doc img {
+    display: block; }
+  #page.index h1,
+  #page.doc h1 {
+    float: right; }
+    @media only screen and (max-width: 840px) {
+      #page.index h1,
+      #page.doc h1 {
+        float: none; } }
+  #page.index .footnotes ol,
+  #page.doc .footnotes ol {
+    font-size: 0.71429em;
+    line-height: 2em;
+    margin-bottom: 2em; }
+    #page.index .footnotes ol p,
+    #page.doc .footnotes ol p {
+      margin-bottom: 1em; }

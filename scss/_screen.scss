@@ -1,3 +1,6 @@
+/********************************************/
+/* STYLES COMMUNS À TOUTES LES PAGES		*/
+/********************************************/
 #page
 {
 	margin: auto;
@@ -13,86 +16,6 @@
 		margin: 0 $blueprint-grid-margin;
 	}
 }
-
-img,
-audio,
-video,
-canvas,
-svg
-{
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-fieldset
-{
-	border: none;
-	padding: 0;
-	
-	legend
-	{
-		span
-		{
-			display: block;
-			@include margin-bottom();
-		}
-	}
-}
-form
-{
-	p,
-	.p
-	{
-		@include min-height(2);
-	}
-}
-input,
-textarea
-{
-    width: 208px;
-    padding: 5px;
-    border: 1px solid #333;
-}
-input[type=radio],
-input[type=checkbox]
-{
-	width: auto;
-	padding: 0;
-	border:  0;
-}
-input.radio,
-input.checkbox
-{
-	width: auto;
-	padding: 0;
-	border:  0;
-}
-button,
-select,
-input[type=reset],
-input[type=button],
-input[type=submit]
-{
-	width: 220px;
-	padding: 5px;
-	border: 1px solid #333;
-}
-button,
-select,
-input.reset,
-input.button,
-input.submit
-{
-	width: 220px;
-	padding: 5px;
-	border: 1px solid #333;
-}
-select
-{
-	padding: 4px;
-}
-
 #page.demo
 {
 	nav
@@ -104,7 +27,7 @@ select
 	}
 	.colleft
 	{
-		@include column($blueprint-grid-columns-screen / 2);
+		@include column($blueprint-grid-columns-screen / 2, true);
 		@include border-gutter;
 		@include margin-bottom;
 		@include padding-top;

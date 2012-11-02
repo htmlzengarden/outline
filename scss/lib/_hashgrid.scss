@@ -48,22 +48,18 @@ left: 0;
 */
 #grid div.vert{
 
-    width: $blueprint-grid-margin - 1px;
-    margin-right: $blueprint-grid-margin - 1px;
+    width: $blueprint-grid-width - 1px;
+    margin-left: $blueprint-grid-margin - 1px;
 	*display: inline!important; // ie6
 	border-left:  1px dotted darkgray;
 	border-right: 1px dotted darkgray;
 	position: relative;
-	left: -1px;
 }
 
 #grid div.vert.first-line{
 
-    margin-left: $blueprint-grid-margin;
-}
-#page
-{
-	background-color: #FAFAFA;
+    margin-left: 0;
+    width: $blueprint-grid-width - 2px;
 }
 
 /**
@@ -101,19 +97,15 @@ left: 0;
 	{
 		border-color: transparent;
 	}
-	.vert
-	{
-		border-color: transparent;
-	}
-	.vert:nth-child(3n)
-	{
-		background-color: fade-out(green, 0.75);
-	}
+//	.vert
+//	{
+//		background-color: fade-out(green, 0.75);
+//	}
 }
-#grid.grid-3
-{
-	.vert:nth-child(3n)
-	{
-		background-color: fade-out(green, 0.75);
-	}
-}
+//#grid.grid-3
+//{
+//	.vert
+//	{
+//		background-color: fade-out(green, 0.75);
+//	}
+//}
