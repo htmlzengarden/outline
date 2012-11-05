@@ -7,6 +7,7 @@
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 .clearfix {
   *zoom: 1; }
   .clearfix:after {
@@ -24,7 +25,7 @@
   border-top-width: 1px;
   border-top-color: black;
   margin-top: -1px;
-  margin-bottom: 1.429em; }
+  margin-bottom: 1.42857em; }
   .hr hr {
     position: absolute;
     width: 1px;
@@ -33,6 +34,21 @@
     left: -9999em; }
 
 /* -------------------------------------------------------------------------- */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  *zoom: 1; }
+  .list:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .list li,
+  .list dt,
+  .list dd {
+    margin: 0;
+    float: left; }
+
 /* -------------------------------------------------------------------------- */
 /* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
@@ -87,17 +103,16 @@ audio:not([controls]) {
  *	www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html {
-  font-size: 100%;
+  font-size: 100.01%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */ }
-  html body {
-    font-size: 87.5%;
-    line-height: 1.429em; }
-  html html > body {
-    font-size: 14px; }
+
+body {
+  font-size: 87.5%;
+  line-height: 1.42857em; }
 
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
@@ -142,45 +157,45 @@ a:active {
 /* http://modularscale.com/scale/?px1=14&px2=12&ra1=1.5&ra2=0 */
 h1 {
   margin: 0;
-  font-size: 1.929em;
-  line-height: 1.481em;
-  margin-bottom: 0.741em;
-  padding-top: 1.481em; }
+  font-size: 1.92857em;
+  line-height: 1.48148em;
+  margin-bottom: 0.74074em;
+  padding-top: 1.48148em; }
 
 h2 {
   margin: 0;
   font-size: 1.5em;
-  line-height: 1.905em;
-  margin-bottom: 0.952em;
-  padding-top: 1.905em; }
+  line-height: 1.90476em;
+  margin-bottom: 0.95238em;
+  padding-top: 1.90476em; }
 
 h3 {
   margin: 0;
-  font-size: 1.286em;
-  line-height: 2.222em;
-  margin-bottom: 1.111em;
-  padding-top: 2.222em; }
+  font-size: 1.28571em;
+  line-height: 2.22222em;
+  margin-bottom: 1.11111em;
+  padding-top: 2.22222em; }
 
 h4 {
   margin: 0;
   font-size: 1em;
-  line-height: 1.429em;
-  margin-bottom: 1.429em;
-  padding-top: 2.857em; }
+  line-height: 1.42857em;
+  margin-bottom: 1.42857em;
+  padding-top: 2.85714em; }
 
 h5 {
   margin: 0;
-  font-size: 0.857em;
-  line-height: 1.667em;
-  margin-bottom: 1.667em;
-  padding-top: 3.333em; }
+  font-size: 0.85714em;
+  line-height: 1.66667em;
+  margin-bottom: 1.66667em;
+  padding-top: 3.33333em; }
 
 h6 {
   margin: 0;
-  font-size: 0.643em;
-  line-height: 2.222em;
-  margin-bottom: 2.222em;
-  padding-top: 4.444em; }
+  font-size: 0.71429em;
+  line-height: 2em;
+  margin-bottom: 2em;
+  padding-top: 4em; }
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
@@ -197,7 +212,7 @@ strong {
 
 blockquote {
   margin: 0 80px;
-  margin-bottom: 1.429em; }
+  margin-bottom: 1.42857em; }
 
 /*
  * Addresses styling not present in S5, Chrome
@@ -219,7 +234,7 @@ p,
 pre,
 address {
   margin: 0;
-  margin-bottom: 1.429em; }
+  margin-bottom: 1.42857em; }
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
@@ -285,7 +300,7 @@ menu,
 ol,
 ul {
   margin: 0;
-  margin-bottom: 1.429em; }
+  margin-bottom: 1.42857em; }
 
 dd {
   margin: 0 0 0 80px; }
@@ -353,9 +368,9 @@ fieldset {
   border: 1px solid #c0c0c0;
   margin: 0;
   padding: 10px;
-  padding-top: 0.714em;
-  padding-bottom: 0.714em;
-  margin-bottom: 1.429em; }
+  padding-top: 0.71429em;
+  padding-bottom: 0.71429em;
+  margin-bottom: 1.42857em; }
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
@@ -485,14 +500,14 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 1.429em; }
+  margin-bottom: 1.42857em; }
 
 td,
 th,
 caption {
   padding: 10px;
-  padding-top: 0.714em;
-  padding-bottom: 0.714em; }
+  padding-top: 0.71429em;
+  padding-bottom: 0.71429em; }
 
 /**
 * Grid
@@ -511,11 +526,11 @@ left: 0;
   top: 0;
   left: 50%;
   margin-left: -470px; }
-  @media only screen and (max-width:1000px) {
+  @media only screen and (max-width: 1000px) {
     #grid {
       width: 780px;
       margin-left: -390px; } }
-  @media only screen and (max-width:840px) {
+  @media only screen and (max-width: 840px) {
     #grid {
       margin-left: 0;
       width: auto;
@@ -531,19 +546,16 @@ left: 0;
 * and use margins to set column gutters.
 */
 #grid div.vert {
-  width: 19px;
-  margin-right: 19px;
+  width: 59px;
+  margin-left: 19px;
   *display: inline!important;
   border-left: 1px dotted darkgray;
   border-right: 1px dotted darkgray;
-  position: relative;
-  left: -1px; }
+  position: relative; }
 
 #grid div.vert.first-line {
-  margin-left: 20px; }
-
-#page {
-  background-color: #FAFAFA; }
+  margin-left: 0;
+  width: 58px; }
 
 /**
 * Horizontal grid lines, defined by your base line height
@@ -552,13 +564,13 @@ left: 0;
 * visible height = height + borders + margins + padding
 */
 #grid div.horiz {
-  height: 1.429em;
+  height: 1.42857em;
   padding: 0; }
 
 #grid div.horiz {
   border-bottom-style: dotted;
   border-bottom-width: 1px;
-  border-bottom-color: darkgray;
+  border-bottom-color: darkgrey;
   margin-top: -1px;
   position: relative;
   top: 1px; }
@@ -574,21 +586,14 @@ left: 0;
 
 #grid.grid-2 .horiz {
   border-color: transparent; }
-#grid.grid-2 .vert {
-  border-color: transparent; }
-#grid.grid-2 .vert:nth-child(3n) {
-  background-color: rgba(0, 128, 0, 0.25); }
-
-#grid.grid-3 .vert:nth-child(3n) {
-  background-color: rgba(0, 128, 0, 0.25); }
 
 #page {
   margin: auto;
   width: 940px; }
-  @media only screen and (max-width:1000px) {
+  @media only screen and (max-width: 1000px) {
     #page {
       width: 780px; } }
-  @media only screen and (max-width:840px) {
+  @media only screen and (max-width: 840px) {
     #page {
       width: auto;
       margin: 0 20px; } }
@@ -607,12 +612,12 @@ fieldset {
   padding: 0; }
   fieldset legend span {
     display: block;
-    margin-bottom: 1.429em; }
+    margin-bottom: 1.42857em; }
 
 form p,
 form .p {
-  min-height: 2.857em;
-  *height: 2.857em; }
+  min-height: 2.85714em;
+  *height: 2.85714em; }
 
 input,
 textarea {
@@ -676,8 +681,8 @@ select {
   padding-right: 9px;
   margin-right: 10px;
   border-right: 1px solid black;
-  margin-bottom: 1.429em;
-  padding-top: 1.429em; }
+  margin-bottom: 1.42857em;
+  padding-top: 1.42857em; }
   * html #page.demo .colleft {
     overflow-x: hidden; }
 #page.demo .colright {
@@ -686,22 +691,22 @@ select {
   float: left;
   margin-right: 0;
   width: 460px;
-  margin-bottom: 1.429em;
-  padding-top: 1.429em; }
+  margin-bottom: 1.42857em;
+  padding-top: 1.42857em; }
   * html #page.demo .colright {
     overflow-x: hidden; }
-@media only screen and (max-width:840px) {
+@media only screen and (max-width: 840px) {
   #page.demo form {
     display: none; } }
 #page.demo .large {
-  font-size: 1.286em;
-  line-height: 2.222em;
-  margin-bottom: 2.222em; }
+  font-size: 1.28571em;
+  line-height: 2.22222em;
+  margin-bottom: 2.22222em; }
   #page.demo .large span {
-    font-size: 0.778em;
-    line-height: 1.429em; }
+    font-size: 0.77778em;
+    line-height: 1.42857em; }
 #page.demo .small {
-  font-size: 0.714em;
+  font-size: 0.71429em;
   line-height: 2em;
   margin-bottom: 2em; }
 #page.demo header {
@@ -711,11 +716,11 @@ select {
   margin-top: -1px;
   position: relative;
   top: 1px;
-  padding-top: 1.429em;
-  padding-bottom: 1.429em;
-  padding-left: 1.429em;
-  padding-right: 1.429em;
-  margin-bottom: 1.429em;
+  padding-top: 1.42857em;
+  padding-bottom: 1.42857em;
+  padding-left: 1.42857em;
+  padding-right: 1.42857em;
+  margin-bottom: 1.42857em;
   *zoom: 1; }
 #page.demo section {
   padding-left: 80px;
@@ -734,13 +739,13 @@ select {
   left: 1px; }
   * html #page.demo section {
     overflow-x: hidden; }
-  @media only screen and (max-width:1000px) {
+  @media only screen and (max-width: 1000px) {
     #page.demo section {
       width: auto;
       float: none;
       padding-left: 0;
       margin-right: 0;
-      margin-bottom: 1.429em; } }
+      margin-bottom: 1.42857em; } }
 #page.demo article {
   *display: inline;
   zoom: 1;
@@ -759,7 +764,7 @@ select {
   color: #FFF; }
   * html #page.demo article {
     overflow-x: hidden; }
-  @media only screen and (max-width:1000px) {
+  @media only screen and (max-width: 1000px) {
     #page.demo article {
       width: auto;
       float: none; } }

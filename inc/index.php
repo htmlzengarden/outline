@@ -20,7 +20,7 @@
 
 require_once '../php/lib/Z.php';
 
-$Z = new Z(array('content','header','footer','ariane','sidebar','aside','nav','main','page'),dirname(__FILE__));
+$Z = new Z(array('page','head','title','article','aside','header','footer','main','content','sidebar'),dirname(__FILE__));
 include Z::getPageFile(
 				isset($_REQUEST['page'] )?$_REQUEST['page']:'home',
 				isset($_REQUEST['zajax'])?$_REQUEST['zajax']:null);

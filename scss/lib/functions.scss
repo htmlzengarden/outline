@@ -37,6 +37,29 @@
 
 /* -------------------------------------------------------------------------- */
 
+@mixin position($side, $lines: 1, $font-size: $base-font-size)
+{
+	$side: rhythm($lines, $font-size);
+}
+@mixin position-top($lines: 1, $font-size: $base-font-size)
+{
+	@include position(top, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-left($lines: 1, $font-size: $base-font-size)
+{
+	@include position(left, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-bottom($lines: 1, $font-size: $base-font-size)
+{
+	@include position(bottom, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-right($lines: 1, $font-size: $base-font-size)
+{
+	@include position(right, $lines: 1, $font-size: $base-font-size);
+}
+
+/* -------------------------------------------------------------------------- */
+
 @mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
 {
 	border:
@@ -166,6 +189,10 @@
 
 /* -------------------------------------------------------------------------- */
 
+@mixin max-height($lines: 1, $font-size: $base-font-size)
+{
+	max-height: rhythm($lines, $font-size);
+}
 @mixin min-height($lines: 1, $font-size: $base-font-size)
 {
 	min-height: rhythm($lines, $font-size);
@@ -287,6 +314,10 @@
 		margin: 0;
 		float: left;
 	}
+}
+.list
+{
+	@include list;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -65,11 +65,17 @@ audio:not([controls]) {
  */
 
 html {
-	font-size: 100%; /* 1 */
+	font-size: 100.01%; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 	-ms-text-size-adjust: 100%; /* 2 */
 	
-	@include establish-baseline();
+//	@include establish-baseline();
+}
+
+body
+{
+	font-size: ($base-font-size/1px) * 6.25%;
+	line-height: ($base-line-height / $base-font-size) * 1em;
 }
 
 /*
@@ -173,7 +179,7 @@ h5 {
 }
 
 h6 {
-	$fs1: 9px;
+	$fs1: 10px;
 
 	margin: 0;
 	@include adjust-font-size-to($fs1);
