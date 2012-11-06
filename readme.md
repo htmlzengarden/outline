@@ -1,6 +1,10 @@
 # outline
 
-[#grid](https://github.com/dotjay/hashgrid) + [Compass](https://github.com/chriseppstein/compass) + [Z](https://github.com/Cerdic/Z) + [Normalize](https://github.com/necolas/normalize.css)
+[#grid](https://github.com/dotjay/hashgrid) +
+[Compass](https://github.com/chriseppstein/compass) +
+[Z](https://github.com/Cerdic/Z) +
+[Normalize](https://github.com/necolas/normalize.css) +
+[holder.js](http://imsky.github.com/holder/)
 
 Outline compile quelques bons outils pour fournir un _template_ de travail modulaire aux intégrateurs chez [Clever Garden](http://www.clever-age.com/societe/nos-entites/clever-garden.html).
 

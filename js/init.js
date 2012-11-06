@@ -1,3 +1,7 @@
+// prepend : browserdetect.js
+
+// output  : _before.js
+
 var classes   = " js"  ,
 	addclass  = "class",
 	html      = document.getElementsByTagName("html")[0],

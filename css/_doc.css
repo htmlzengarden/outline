@@ -509,6 +509,84 @@ caption {
   padding-top: 0.71429em;
   padding-bottom: 0.71429em; }
 
+/**
+* Grid
+*/
+#grid {
+  /* Dimensions - same width as your grid with gutters */
+  width: 940px;
+  overflow: hidden;
+    /* Grid (left-aligned)
+position: absolute;
+top: 0;
+left: 0;
+*/
+  /* Grid (centered) */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -470px; }
+  @media only screen and (max-width: 1000px) {
+    #grid {
+      width: 780px;
+      margin-left: -390px; } }
+  @media only screen and (max-width: 840px) {
+    #grid {
+      margin-left: 0;
+      width: auto;
+      left: 20px;
+      right: 20px; }
+      #grid .vert-container {
+        display: none!important; } }
+
+/**
+* Vertical grid lines
+*
+* Set the column width taking the borders into consideration,
+* and use margins to set column gutters.
+*/
+#grid div.vert {
+  width: 59px;
+  margin-left: 19px;
+  *display: inline!important;
+  border-left: 1px dotted darkgray;
+  border-right: 1px dotted darkgray;
+  position: relative; }
+
+#grid div.vert.first-line {
+  margin-left: 0;
+  width: 58px; }
+
+/**
+* Horizontal grid lines, defined by your base line height
+*
+* Remember, the CSS properties that define the box model:
+* visible height = height + borders + margins + padding
+*/
+#grid div.horiz {
+  height: 1.42857em;
+  padding: 0; }
+
+#grid div.horiz {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: darkgrey;
+  margin-top: -1px;
+  position: relative;
+  top: 1px; }
+
+/**
+* Classes for multiple grids
+*
+* When using more than one grid, remember to set the numberOfGrids
+* option in the hashgrid.js file.
+*/
+#grid.grid-1 .vert {
+  border-color: transparent; }
+
+#grid.grid-2 .horiz {
+  border-color: transparent; }
+
 @media only screen and (max-width: 1000px) {
   #page.index th:nth-child(3),
   #page.index td:nth-child(3),
@@ -556,11 +634,11 @@ caption {
       #page.index h1,
       #page.doc h1 {
         float: none; } }
-  #page.index .footnotes ol,
-  #page.doc .footnotes ol {
+  #page.index #footnotes,
+  #page.doc #footnotes {
     font-size: 0.71429em;
     line-height: 2em;
     margin-bottom: 2em; }
-    #page.index .footnotes ol p,
-    #page.doc .footnotes ol p {
+    #page.index #footnotes p,
+    #page.doc #footnotes p {
       margin-bottom: 1em; }

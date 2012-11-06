@@ -57,18 +57,15 @@
 			float: none;
 		}
 	}
-	.footnotes
+	#footnotes
 	{
-		ol
+		$fs: 10px;
+		
+		@include bloc($fs);
+		
+		p
 		{
-			$fs: 10px;
-			
-			@include bloc($fs);
-			
-			p
-			{
-				@include margin-bottom(0.5, $fs);
-			}
+			@include margin-bottom(0.5, $fs);
 		}
 	}
 }

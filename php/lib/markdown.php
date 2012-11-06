@@ -2697,9 +2697,9 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 	
 		if (!empty($this->footnotes_ordered)) {
 			$text .= "\n\n";
-			$text .= "<div class=\"footnotes\">\n";
-			$text .= "<div class=\"hr\"><hr". $this->empty_element_suffix ."</div>\n";
-			$text .= "<ol>\n\n";
+//			$text .= "<div class=\"footnotes\">\n";
+//			$text .= "<div class=\"hr\"><hr". $this->empty_element_suffix ."</div>\n";
+			$text .= "<ol id=\"footnotes\">\n\n";
 			
 			$attr = "";
 			if ($this->fn_backlink_class != "") {
@@ -2741,7 +2741,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 			}
 			
 			$text .= "</ol>\n";
-			$text .= "</div>";
+//			$text .= "</div>";
 		}
 		return $text;
 	}

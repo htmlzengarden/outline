@@ -1,0 +1,1 @@
+Dans ce répertoire se trouvent les images spécifiques à la documentation projet.

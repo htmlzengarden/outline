@@ -12,7 +12,7 @@
 include_once "php/lib/markdown.php";
 include_once "php/lib/smartypants.php";
 
-$text = file_get_contents(str_replace(".php",".txt",__FILE__));
+$text = file_get_contents(str_replace(".php",".md",__FILE__));
 $html = SmartyPants(Markdown($text));
 
 echo($html);

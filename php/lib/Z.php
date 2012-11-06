@@ -72,7 +72,7 @@ class Z {
 			return Z::findInPath("z-ajax". Z::$ext);
 		}
 
-		return Z::findInPath("z-index". Z::$ext);
+		return Z::findInPath("-html". Z::$ext);
 	}
 
 	/**

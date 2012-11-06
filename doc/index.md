@@ -11,22 +11,14 @@ _[Voir l'index des maquettes](../)_
  - [Sommaire](#sommaire)
  - [Conventions](#conventions)
  - [Bonnes pratiques](#bonnes-pratiques)
- 
-<div class="hr" markdown="1">
---------------------------------------------------------------------------------
-</div>
 
 ### Conventions {#conventions}
 
 Dans ce document certaines portions de codes sont complétées par des symboles :
 
- - `[code]` indique un code optionnel ;
+ - `[code]` indique une option ;
  - `code|code` indique un choix ;
- - `(n)` indique une boucle ou "n" est la variable incrémentée.
- 
-<div class="hr" markdown="1">
---------------------------------------------------------------------------------
-</div>
+ - `(n)` indique une incrémentation.
 
 ### Bonnes pratiques {#bonnes-pratiques}
 
