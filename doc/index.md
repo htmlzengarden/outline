@@ -1,11 +1,12 @@
 [![Clever-garden](img/clever-garden.png)](http://www.clever-age.com/)
 =====================================================================
 
-template
---------
+Projet
+------
 
 _[Voir l'index des maquettes](../)_
 
+<!--
 ### Sommaire {#sommaire}
 
  - [Sommaire](#sommaire)
@@ -25,6 +26,7 @@ Dans ce document certaines portions de codes sont complétées par des symboles 
 [Voir l'audit OPQUAST](http://reporting.opquast.com/).
 
 N'hésitez pas si nécessaire à [demander un compte](opquast-dev-list@clever-age.com) sur la liste de diffusion dédiée.
+-->
 
 *[BP]: Bonne Pratique
 *[vs]: Versus

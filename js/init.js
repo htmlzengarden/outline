@@ -46,12 +46,6 @@ if(BrowserDetect.OS == "iPhone" || BrowserDetect.OS == "iPod" || BrowserDetect.O
 		classes += " iphone ios";
 	}
 }
-/*
-if(swfobject.getFlashPlayerVersion().major > 0)
-{
-    classes += " flash";
-}	
-*/
 if(htmlclass)
 {
 	htmlclass = htmlclass.replace('no-js','');

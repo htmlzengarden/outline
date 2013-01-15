@@ -39,11 +39,12 @@
 
 @mixin position($side, $lines: 1, $font-size: $base-font-size)
 {
-	$side: rhythm($lines, $font-size);
+	#{$side}: (1em * ($base-line-height / $font-size)) * $lines;
 }
+
 @mixin position-top($lines: 1, $font-size: $base-font-size)
 {
-	@include position(top, $lines: 1, $font-size: $base-font-size);
+	@include position(top, $lines, $font-size: $base-font-size);
 }
 @mixin position-left($lines: 1, $font-size: $base-font-size)
 {
@@ -216,13 +217,24 @@
 
 /* -------------------------------------------------------------------------- */
 
-@mixin    top($lines: 1, $font-size: $base-font-size)
+@mixin roll
 {
-	   top: rhythm($lines, $font-size);
+	text-decoration: none;
+	
+	&:hover,
+	&:focus
+	{
+		text-decoration: underline;
+	}
 }
-@mixin bottom($lines: 1, $font-size: $base-font-size)
+
+@mixin resize($direction: vertical)
 {
-	bottom: rhythm($lines, $font-size);
+	-webkit-resize: $direction;
+	   -moz-resize: $direction;
+	    -ms-resize: $direction;
+	     -o-resize: $direction;
+	        resize: $direction;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -264,6 +276,10 @@
 	{
 		right: -9999em;		
 	}
+}
+.mask
+{
+	@include mask;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -58,8 +58,9 @@ left: 0;
 
 #grid div.vert.first-line{
 
-    margin-left: 0;
-    width: $blueprint-grid-width - 2px;
+//    margin-left: 0;
+//    width: $blueprint-grid-width - 2px;
+	  width: $blueprint-grid-width - 1px;
 }
 
 /**

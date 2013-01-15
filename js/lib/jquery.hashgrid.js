@@ -127,9 +127,11 @@ var hashgrid = function(set) {
 	if (overlay.css('z-index') == 'auto') overlay.css('z-index', overlayZBackground);
 
 	// Override the default overlay height with the actual page height
+	
 	pageHeight = parseFloat($(document).height());
-	overlay.height(pageHeight);
 
+	overlay.height(pageHeight);
+		
 	// Add the first grid line so that we can measure it
 	overlay.append('<div id="' + options.id + '-horiz" class="horiz first-line">');
 
@@ -419,7 +421,8 @@ var hashgrid = function(set) {
  * You can call hashgrid from your own code, but it's loaded here as
  * an example for your convenience.
  */
-$(document).ready(function() {
+ 
+$().ready(function() {
 
 	var grid = new hashgrid({
 		numberOfGrids: 3

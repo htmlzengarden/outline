@@ -3,13 +3,11 @@
 $Z = new Z(array(
 
                  '-head',
+                 	'title',
                  '-body',
                  	'page',
                  		'header',
-                 			'title',
                  		'content',
-                 			'aside',
-                 			'article',
                  		'footer'
 
                 ),dirname(__FILE__));			
