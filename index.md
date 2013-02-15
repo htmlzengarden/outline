@@ -11,6 +11,8 @@ _[Voir la documentation](doc/)_
 Maquette                                                                     | Validation HTML     | IE 6 | IE 7 | IE 8 | IE 9 | Opera | Chrome | Safari | Fx  | Lynx [^1] | Impression | iPhone | iPad 
 -----------------------------------------------------------------------------|---------------------|------|------|------|------|-------|--------|--------|-----|-----------|------------|--------|------
 [Page](inc/?page=index)                                                      |                     |      |      |      |      |       |        |        |     |           |            |        |   
+[404](inc/?page=error)                                                       |                     |      |      |      |      |       |        |        |     |           |            |        |   
+[Démo](inc/?page=demo)                                                       |                     |      |      |      |      |       |        |        |     |           |            |        |   
 
 [^1]: L'affichage Lynx est proche de la restitution faite par un lecteur d'écran ou de ce qui est perçu par un moteur de recherche.
 

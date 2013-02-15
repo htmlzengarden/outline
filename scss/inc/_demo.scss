@@ -1,0 +1,134 @@
+#page.demo
+{
+	#header
+	{
+		@include border-bottom(5px, solid);
+	}
+	#footer
+	{
+		.page
+		{
+			@include border-top(3px, dotted, #AAA);
+			@include padding-top(1);
+		}
+	}
+	.colleft,
+	{
+		@include column(6);
+	}
+	.colright
+	{
+		@include column(6);
+		@include last;	
+	}
+	section
+	{
+		@include column(5.5);
+		@include border-column();
+	}
+	article
+	{
+		@include column(5.5);
+		@include last;
+	}
+	nav
+	{
+		ul
+		{
+			@include list;
+			
+			li
+			{
+				margin-right: 20px;
+			}
+		}
+	}
+	p
+	{
+		&.large
+		{
+			$fs: 18px;
+		
+			@include bloc($fs);
+			
+			span
+			{
+				$fs2: 14px;
+				
+				@include font-size($fs2, 1, $fs);	
+			}
+		}
+		&.small
+		{
+			$fs: 12px;
+			
+			@include bloc($fs);
+		}
+	}
+	address
+	{
+		&.large
+		{
+			$fs: 18px;
+			
+			@include bloc($fs, 1);
+		}
+	}
+	form
+	{
+		.label
+		{
+			display: inline-block;
+			vertical-align: top;
+			width: 140px;
+			margin-right: 20px;
+			position: relative;
+			@include position-top(0.25);
+		}
+		input,
+		select,
+		textarea
+		{
+			vertical-align: top;
+		}
+		.help
+		{
+			display: inline-block;
+			margin-left: 20px;
+			vertical-align: top;
+			position: relative;
+			@include position-top(0.25);
+		}
+		p,
+		.p
+		{
+			@include min-height(2);
+			
+			&.radio,
+			&.checkbox
+			{
+				.label
+				{
+					width: auto;
+					margin-right: 0;
+					position: static;
+				}
+				input
+				{
+					position: relative;
+					@include position-top(0.125);
+				}
+			}
+			&.textarea
+			{
+				@include min-height(7);
+				
+				textarea
+				{
+					@include resize(none);
+					@include height(6);
+				}
+			}
+		}
+	}
+}

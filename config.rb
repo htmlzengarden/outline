@@ -6,7 +6,7 @@ sass_dir = "scss"
 images_dir = "img"
 javascripts_dir = "js"
 
-#	environment = :development
+#   environment = :development
 	environment = :production
 
 if  environment == :production

@@ -1,7 +1,7 @@
 <!-- include content -->
 <div id="content">
 	<div class="page">
-		<p>404</p>
+		<p>content</p>
 	</div>
 </div>
 

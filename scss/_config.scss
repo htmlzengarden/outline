@@ -1,6 +1,6 @@
 $default-rhythm-border-color: #000;
 
-$base-font-size:   15px;
+$base-font-size:   14px;
 $base-line-height: 20px;
 
 $blueprint-grid-width:   60px;
@@ -24,4 +24,9 @@ $exemple-spacing: 32px;
 @import 'bg/exemple/*.png';
 
 @include all-exemple-sprites;
+
+ex :
+
+@include exemple-sprite(image);
+@include exemple-sprite(image, $offset-x:100%);
 */
