@@ -291,8 +291,8 @@
 		
 		        <p class="radio"   ><label class="label" for="irb">Radio input</label> <input type="radio" id="irb" name="rad" class="radio" /></p>
 		        <p class="checkbox"><label class="label" for="icb">Checkbox input</label> <input type="checkbox" id="icb" class="checkbox" /></p>
-		        <p class="radio"   ><input class="label" type="radio" id="irb2" name="rad" class="radio" /> <label for="irb2">Radio input</label></p>
-		        <p class="checkbox"><input class="label" type="checkbox" id="icb2" class="checkbox" /> <label for="icb2">Checkbox input</label></p>
+		        <p class="radio"   ><input type="radio" id="irb2" name="rad" class="radio" /> <label for="irb2" class="label">Radio input</label></p>
+		        <p class="checkbox"><input type="checkbox" id="icb2" class="checkbox" /> <label for="icb2" class="label">Checkbox input</label></p>
 		
 		        <p class="select"  ><label class="label" for="s">Select field</label><select id="s"><option>Option 01</option><option>Option 02</option></select></p>
 		        <p class="textarea"><label class="label" for="t">Textarea</label><textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
@@ -313,7 +313,7 @@
 		        <p><button type="submit" disabled="disabled">Disabled (button)</button></p>
 		    </fieldset>
 		
-		    <fieldset id="boxsize" class="last-child">
+		    <fieldset>
 		        <legend><span>box-sizing tests</span></legend>
 		        
 		        <div class="p"><input type="reset" value="Reset (input)" class="reset" /></div>
@@ -324,12 +324,10 @@
 		        <div class="p"><button type="button" class="button">Button (button)</button></div>
 		        <div class="p"><button type="submit" class="submit">Submit (button)</button></div>
 		        
-		        <div class="p select"  ><select><option>Option 01</option><option>Option 02</option></select></div>
-		        
 		        <div class="p radio"   ><input type="radio" class="radio" /></div>
 		        <div class="p checkbox"><input type="checkbox" class="checkbox" /></div>
 		        
-		        <div class="p"><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/140x27/000/000" alt="Image (input)" /></div>
+		        <div class="p"><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/220x27/000/000" alt="Image (input)" /></div>
 		        
 		        <div class="p">
 		        	<input type="text" value="text" /><!--
