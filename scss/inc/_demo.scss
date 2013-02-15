@@ -1,5 +1,12 @@
 #page.demo
 {
+	.debug &
+	{
+		.todo
+		{
+			outline: 2px solid red;
+		}	
+	}
 	#header
 	{
 		@include border-bottom(5px, solid);
@@ -35,7 +42,11 @@
 	{
 		ul
 		{
+			$fs: 16px;
+		
 			@include list;
+			@include bloc($fs, 1);
+			@include padding-top(1, $fs);
 			
 			li
 			{

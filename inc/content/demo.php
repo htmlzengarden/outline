@@ -355,21 +355,24 @@
 		    </fieldset>
 		</form>
 
-		<h1 id="i18n">i18n</h1>
-
-		<p>Outline uses a custom i18n library to add locales support in layouts. You can use the <code>&lt;?php echo _t('my localizable string') ?&gt;</code> in your templates to localize a string.</p>
-		<p>The localizations are located in the i18n.json file. You must NOT fill all the strings. The <code>_t()</code> function will return the given string with braces (<code>[]</code>) if the string isn't found in the json file.</p>
-		<p>To change the locale, simply append the <code>lang</code> GET parameter to your URL</p>
-
-		<h3>Examples</h3>
-
-		<p>Change the locale : <a href="?page=demo&amp;lang=fr#i18n">fr</a> | <a href="?page=demo&amp;lang=it#i18n">it</a> | <a href="?page=demo&amp;lang=en#i18n">en</a></p>
+		<h1 id="i18n"><abbr title="Internationalisation">i18n</abbr></h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="?page=demo&amp;lang=fr#i18n"><?php echo _t('fr') ?></a>
+				</li>
+				<li>
+					<a href="?page=demo&amp;lang=it#i18n"><?php echo _t('it') ?></a>
+				</li>
+				<li>
+					<a href="?page=demo&amp;lang=en#i18n"><?php echo _t('en') ?></a>
+				</li>
+			</ul>
+		</nav>
 		<ul>
 			<li><?php echo _t('Hello') ?></li>
 			<li><?php echo _t('Login') ?></li>
 			<li><?php echo _t('Sign in') ?></li>
-			<li><?php echo _t('Not available for all locales') ?></li>
-			<li><?php echo _t('Not available at all') ?></li>
 		</ul>
 	</div>
 </div>

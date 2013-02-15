@@ -44,7 +44,7 @@
 /**
  * Load the configuration
  */
-$i18n_json = file_get_contents('i18n.json');
+$i18n_json = file_get_contents('../json/i18n.json');
 $i18n      = json_decode($i18n_json, true);
 
 /**
@@ -62,7 +62,7 @@ $i18n_lang = isset($_GET['lang'])? $_GET['lang'] : $i18n['config']['default'];
 function _t ($string, $lang = null) {
   // Load translations
   $t = $GLOBALS['i18n']['translations'];
-  $l = '[['.$string.']]';
+  $l = '<span class="todo">'.$string.'</span>';
 
   // Choose the lang to use
   $lang = is_null($lang)? $GLOBALS['i18n_lang'] : $lang;

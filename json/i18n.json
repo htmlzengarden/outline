@@ -1,0 +1,43 @@
+{
+  "config": {
+    "default": "fr"
+  },
+
+  "translations": {
+
+    "Hello": {
+      "fr": "<span lang=\"en\">Hello</span> les amis",
+      "en": "Hi Buddy!",
+      "it": "Ciao"
+    },
+
+    "Login": {
+      "fr": "Connexion",
+      "en": "Login",
+      "it": "Accesso"
+    },
+
+    "Sign in": {
+      "fr": "Inscrivez-vous",
+      "en": "Sign in"
+    },
+    
+    "fr": {
+    	"fr": "Français",
+    	"en": "<span lang=\"fr\">Français</span>",
+    	"it": "<span lang=\"fr\">Français</span>"
+    },
+    
+    "en": {
+    	"fr": "<span lang=\"en\">English</span>",
+    	"en": "English",
+    	"it": "<span lang=\"en\">English</span>"
+    },
+    
+    "it": {
+    	"fr": "<span lang=\"it\">Italiano</span>",
+    	"en": "<span lang=\"it\">Italiano</span>",
+    	"it": "Italiano"
+    }
+  }
+}
