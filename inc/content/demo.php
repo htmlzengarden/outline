@@ -7,7 +7,7 @@
 		<h4>Heading 4</h4>
 		<h5>Heading 5</h5>
 		<h6>Heading 6</h6>
-		
+
 		<div class="clearfix">
 			<div class="colleft">
 				<p>col left</p>
@@ -16,7 +16,7 @@
 				<p>col right</p>
 			</div>
 		</div>
-		
+
 		<div class="clearfix">
 			<section>
 				<h1>Heading 1 (in section)</h1>
@@ -26,7 +26,7 @@
 				<h5>Heading 5 (in section)</h5>
 				<h6>Heading 6 (in section)</h6>
 			</section>
-			
+
 			<article>
 				<h1>Heading 1 (in article)</h1>
 				<h2>Heading 2 (in article)</h2>
@@ -36,7 +36,7 @@
 				<h6>Heading 6 (in article)</h6>
 			</article>
 		</div>
-		
+
 		<header>
 		    <hgroup>
 		        <h1>Heading 1 (in hgroup)</h1>
@@ -50,16 +50,16 @@
 		        </ul>
 		    </nav>
 		</header>
-		
+
 		<h1>Text-level semantics</h1>
-		
+
 		<p hidden="hidden">This should be hidden in all browsers, apart from IE6</p>
-		
+
 		<p class="large">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <span>Cum sociis natoque penatibus et m.</span></p>
 		<p class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
-		
+
 		<address class="large"><span>Address: somewhere, world</span></address>
-		
+
 		<p>
 		The <a href="#">a element</a> example<br />
 		The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br />
@@ -85,40 +85,40 @@
 		The <var>var element</var> example<br />
 		The <u>u element</u> example
 		</p>
-		
+
 		<h1>Embedded content</h1>
-		
+
 		<h3>audio</h3>
-		
+
 		<div>
 			<audio controls="controls"></audio>
 		</div>
 		<div>
 			<audio></audio>
 		</div>
-		
+
 		<h3>img</h3>
-		
+
 		<img src="http://maquettes.garden.projects.clever-age.net/img/100/000/000" alt="" />
 		<a href="#"><img src="http://maquettes.garden.projects.clever-age.net/img/100/000/000" alt="" /></a>
-		
+
 		<h3>svg</h3>
-		
+
 		<svg width="100px" height="100px">
 		    <circle cx="100" cy="100" r="100" fill="#000" />
 		</svg>
-		
+
 		<h3>video</h3>
-		
+
 		<div>
 			<video controls="controls"></video>
 		</div>
 		<div>
 			<video></video>
 		</div>
-		
+
 		<h1>Interactive content</h1>
-		
+
 		<h3>details / summary</h3>
 		<details>
 		    <summary>More info</summary>
@@ -128,15 +128,15 @@
 		        <li>Point 2</li>
 		    </ul>
 		</details>
-		
+
 		<h1>Grouping content</h1>
-		
+
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
-		
+
 		<h3>pre</h3>
-		
+
 		<pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
-		
+
 		<pre><code>&lt;html>
 			&lt;head>
 				&lt;title>&lt;/title>
@@ -145,17 +145,17 @@
 				&lt;div class="main">&lt;div>
 			&lt;/body>
 		&lt;/html></code></pre>
-		
+
 		<h3>blockquote</h3>
-		
+
 		<blockquote>
 		    <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
 		</blockquote>
-		
+
 		<blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
-		
+
 		<h3>ordered list</h3>
-		
+
 		<ol>
 		    <li>list item 1</li>
 		    <li>list item 1
@@ -174,9 +174,9 @@
 		    <li>list item 1</li>
 		    <li>list item 1</li>
 		</ol>
-		
+
 		<h3>unordered list</h3>
-		
+
 		<ul>
 		    <li>list item 1</li>
 		    <li>list item 1
@@ -195,9 +195,9 @@
 		    <li>list item 1</li>
 		    <li>list item 1</li>
 		</ul>
-		
+
 		<h3>description list</h3>
-		
+
 		<dl>
 		    <dt>Description name</dt>
 		    <dd>Description value</dd>
@@ -208,16 +208,16 @@
 		    <dt>Description name</dt>
 		    <dd>Description value</dd>
 		</dl>
-		
+
 		<h3>figure</h3>
-		
+
 		<figure>
 		    <img src="http://maquettes.garden.projects.clever-age.net/img/400x200/000/000" alt="" />
 		    <figcaption>Figcaption content</figcaption>
 		</figure>
-		
+
 		<h1>Tabular data</h1>
-		
+
 		<table>
 		    <caption>Jimi Hendrix - albums</caption>
 		    <thead>
@@ -257,9 +257,9 @@
 		        </tr>
 		    </tbody>
 		</table>
-		
+
 		<h1>Forms</h1>
-		
+
 		<form>
 		    <fieldset>
 		        <legend><span>Inputs as descendents of labels (form legend). This doubles up as a long legend that can test word wrapping.</span></legend>
@@ -277,7 +277,7 @@
 		        <p class="select"  ><label><span class="label">Select field</span><select><option>Option 01</option><option>Option 02</option></select></label></p>
 		        <p class="textarea"><label><span class="label">Textarea</span><textarea cols="30" rows="5" >Textarea text</textarea></label></p>
 		    </fieldset>
-		
+
 		    <fieldset>
 		        <legend><span>Inputs as siblings of labels</span></legend>
 		        <p><label class="label" for="ic">Color input</label><input type="color" id="ic" value="#000000" /></p>
@@ -288,7 +288,7 @@
 		        <p><label class="label" for="idw">Week input</label><input type="week" id="idw" value="1970-W01" /></p>
 		        <p><label class="label" for="idt">Datetime input</label><input type="datetime" id="idt" value="1970-01-01T00:00:00Z" /></p>
 		        <p><label class="label" for="idtl">Datetime-local input</label><input type="datetime-local" id="idtl" value="1970-01-01T00:00" /></p>
-		
+
 		        <p class="radio"   ><label class="label" for="irb">Radio input</label> <input type="radio" id="irb" name="rad" class="radio" /></p>
 		        <p class="checkbox"><label class="label" for="icb">Checkbox input</label> <input type="checkbox" id="icb" class="checkbox" /></p>
 		        <p class="radio"   ><input type="radio" id="irb2" name="rad" class="radio" /> <label for="irb2" class="label">Radio input</label></p>
@@ -297,7 +297,7 @@
 		        <p class="select"  ><label class="label" for="s">Select field</label><select id="s"><option>Option 01</option><option>Option 02</option></select></p>
 		        <p class="textarea"><label class="label" for="t">Textarea</label><textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
 		    </fieldset>
-		
+
 		    <fieldset>
 		        <legend><span>Clickable inputs and buttons</span></legend>
 		        <p><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/140x27/000/000" alt="Image (input)" /></p>
@@ -305,8 +305,8 @@
 		        <p><input type="button" value="Button (input)" /></p>
 		        <p><input type="submit" value="Submit (input)" /></p>
 		        <p><input type="submit" value="Disabled (input)" disabled="disabled" /></p>
-		
-		
+
+
 		        <p><button type="reset">Reset (button)</button></p>
 		        <p><button type="button">Button (button)</button></p>
 		        <p><button type="submit">Submit (button)</button></p>
@@ -315,15 +315,17 @@
 		
 		    <fieldset>
 		        <legend><span>box-sizing tests</span></legend>
-		        
+
 		        <div class="p"><input type="reset" value="Reset (input)" class="reset" /></div>
 		        <div class="p"><input type="button" value="Button (input)" class="button" /></div>
 		        <div class="p"><input type="submit" value="Submit (input)" class="submit" /></div>
-		
+
 		        <div class="p"><button type="reset" class="reset">Reset (button)</button></div>
 		        <div class="p"><button type="button" class="button">Button (button)</button></div>
 		        <div class="p"><button type="submit" class="submit">Submit (button)</button></div>
+
 		        
+
 		        <div class="p radio"   ><input type="radio" class="radio" /></div>
 		        <div class="p checkbox"><input type="checkbox" class="checkbox" /></div>
 		        
@@ -338,7 +340,7 @@
 		        <div class="p"><input type="search" value="search" /></div>
 		        <div class="p"><input type="url" value="http://example.com" /></div>
 		        <div class="p"><input type="password" value="password" /></div>
-		
+
 		        <div class="p"><input type="color" value="#000000" /></div>
 		        <div class="p"><input type="number" value="5" /></div>
 		        <div class="p"><input type="range" value="10" /></div>
@@ -347,11 +349,28 @@
 		        <div class="p"><input type="week" value="1970-W01" /></div>
 		        <div class="p"><input type="datetime" value="1970-01-01T00:00:00Z" /></div>
 		        <div class="p"><input type="datetime-local" value="1970-01-01T00:00" /></div>
-		
-		
+
+
 		        <div class="p textarea"><textarea cols="30" rows="4">Textarea text</textarea></div>
 		    </fieldset>
 		</form>
+
+		<h1 id="i18n">i18n</h1>
+
+		<p>Outline uses a custom i18n library to add locales support in layouts. You can use the <code>&lt;?php echo _t('my localizable string') ?&gt;</code> in your templates to localize a string.</p>
+		<p>The localizations are located in the i18n.json file. You must NOT fill all the strings. The <code>_t()</code> function will return the given string with braces (<code>[]</code>) if the string isn't found in the json file.</p>
+		<p>To change the locale, simply append the <code>lang</code> GET parameter to your URL</p>
+
+		<h3>Examples</h3>
+
+		<p>Change the locale : <a href="?page=demo&amp;lang=fr#i18n">fr</a> | <a href="?page=demo&amp;lang=it#i18n">it</a> | <a href="?page=demo&amp;lang=en#i18n">en</a></p>
+		<ul>
+			<li><?php echo _t('Hello') ?></li>
+			<li><?php echo _t('Login') ?></li>
+			<li><?php echo _t('Sign in') ?></li>
+			<li><?php echo _t('Not available for all locales') ?></li>
+			<li><?php echo _t('Not available at all') ?></li>
+		</ul>
 	</div>
 </div>
 
