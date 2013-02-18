@@ -17,4 +17,6 @@ Les fichiers CSS sont compilés à partir des fichiers du répertoire scss.
 	- normalize.scss,
 	- hashgrid.scss (pour générer la grille -- à supprimer en production),
 	- **styles-screen.scss (la gestion des styles du projet -- version écran)**,
-	- **styles-print.scss (la gestion des styles du projet -- version imprimée)**. 
+	- **styles-print.scss (la gestion des styles du projet -- version imprimée)**.
+	
+**NB :** Si certains changements ne semblent pas pris en compte malgré le `compass watch`, en dernier ressort supprimez `styles.css`.
