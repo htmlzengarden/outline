@@ -14,3 +14,5 @@ Il propose par exemple :
  - de suivre et de documenter le projet ;
  - de limiter les codes redondants au niveau HTML ;
  - etc.
+
+**NB** Si certains changements ne semblent pas pris en compte malgré le `compass watch`, en dernier ressort supprimez `css/styles.css`.
