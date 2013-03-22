@@ -1,5 +1,5 @@
 <!-- include page -->
-<div id="page" class="<?php echo Z::getPageName();?>">
+<div id="page">
 <?php include Z::getFile('header' ); ?>
 <?php include Z::getFile('content'); ?>
 <?php include Z::getFile('footer' ); ?>

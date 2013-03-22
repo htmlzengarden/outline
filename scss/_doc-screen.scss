@@ -1,71 +1,8 @@
-#page.index
+.index,
+.doc
 {
-	@media only screen and (max-width:1000px) // 940px
+	#page
 	{
-		th:nth-child(3),  // IE6
-		td:nth-child(3),
-		th:nth-child(4),  // IE7
-		td:nth-child(4),
-		th:nth-child(5),  // IE8
-		td:nth-child(5),
-		th:nth-child(6),  // IE9
-		td:nth-child(6),
-		th:nth-child(7),  // Opera
-		td:nth-child(7),
-		th:nth-child(8),  // Chrome
-		td:nth-child(8),
-		th:nth-child(9),  // Safari
-		td:nth-child(9),
-		th:nth-child(10), // Fx
-		td:nth-child(10),
-		th:nth-child(11), // Lynx
-		td:nth-child(11),
-		th:nth-child(12), // Impression
-		td:nth-child(12)
-		{
-			@include hide;
-			background-color: red;
-		}
-	}
-}
-#page.index,
-#page.doc
-{
-	margin: auto;
-	width: $blueprint-container-size-screen;
-	
-	@media only screen and (max-width:1000px) // 940px
-	{
-		width: $blueprint-container-size-tablet;
-	}
-	@media only screen and (max-width:840px) // 780px
-	{
-		width: auto;
-		margin: 0 $blueprint-grid-margin;
-	}
-	
-	img
-	{
-		display: block;
-	}
-	h1
-	{
-		float: right;
-				
-		@media only screen and (max-width:840px) // 780px
-		{
-			float: none;
-		}
-	}
-	#footnotes
-	{
-		$fs: 10px;
-		
-		@include bloc($fs);
-		
-		p
-		{
-			@include margin-bottom(0.5, $fs);
-		}
+		@include container;	
 	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="index" lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"    />
 		<title>Index des maquettes</title>
@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"  />
 	</head>
 	<body>
-		<div id="page" class="index">
+		<div id="page">
 <?php
 include_once "../php/lib/markdown.php";
 include_once "../php/lib/smartypants.php";

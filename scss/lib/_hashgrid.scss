@@ -1,112 +1,53 @@
-/**
-* Grid
-*/
-#grid{
-
-    /* Dimensions - same width as your grid with gutters */
-    width: $blueprint-container-size-screen;
+#grid
+{
     overflow: hidden;
-
-    /* Grid (left-aligned)
-position: absolute;
-top: 0;
-left: 0;
-*/
-
-    /* Grid (centered) */
     position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: $blueprint-container-size-screen / -2;
+    left:  0;
+    right: 0;
+    top:   0;
     
-    @media only screen and (max-width:1000px) // 940px
+    @include container;
+    
+    .vert-container
     {
-    	width: $blueprint-container-size-tablet;
-    	margin-left: $blueprint-container-size-tablet / -2;
+    	left:  $grid-padding;
+    	right: $grid-padding;
     }
-    @media only screen and (max-width:840px) // 780px
+    .vert
     {
-    	margin-left: 0;
-    	width: auto;
+        @include span-columns(1);
+    	background-color: $grid-background-column-color;
+    	margin-left: gutter($total-columns, 1);
+    	margin-right: 0;
     	
-    	 left: $blueprint-grid-margin;
-    	right: $blueprint-grid-margin;
-    	
-    	.vert-container
+    	&.first-line
     	{
-			display: none!important;
+    		margin-left: 0;
     	}
     }
-
-}
-
-/**
-* Vertical grid lines
-*
-* Set the column width taking the borders into consideration,
-* and use margins to set column gutters.
-*/
-#grid div.vert{
-
-    width: $blueprint-grid-width - 1px;
-    margin-left: $blueprint-grid-margin - 1px;
-	*display: inline!important; // ie6
-	border-left:  1px dotted darkgray;
-	border-right: 1px dotted darkgray;
-	position: relative;
-}
-
-#grid div.vert.first-line{
-
-//    margin-left: 0;
-//    width: $blueprint-grid-width - 2px;
-	  width: $blueprint-grid-width - 1px;
-}
-
-/**
-* Horizontal grid lines, defined by your base line height
-*
-* Remember, the CSS properties that define the box model:
-* visible height = height + borders + margins + padding
-*/
-#grid div.horiz
-{
-    height: rhythm();
-    padding: 0;
-}
-#grid div.horiz
-{
-    @include trailing-border(1px, dotted, darkgray);
-}
-
-/**
-* Classes for multiple grids
-*
-* When using more than one grid, remember to set the numberOfGrids
-* option in the hashgrid.js file.
-*/
-#grid.grid-1
-{
-	.vert
-	{
-		border-color: transparent;
-	}
-}
-#grid.grid-2
-{
 	.horiz
 	{
-		border-color: transparent;
-	}
-	.vert
-	{
-//		background-color: fade-out(green, 0.75);
+	    height: rhythm();
+	    
+	    @include background-image(linear-gradient(transparent 95%, $grid-background-column-color 95%));
 	}
 }
-#grid.grid-3
+
+
+#grid
 {
-	.vert
+	&.grid-1
 	{
-//		background-color: fade-out(green, 0.75);
+		.vert
+		{
+			background-color: transparent;
+		}
+	}
+	&.grid-2
+	{
+		.horiz
+		{
+			background-image: none;
+		}
 	}
 }

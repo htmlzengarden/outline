@@ -1,4 +1,4 @@
-#page.demo
+.demo
 {
 	.debug &
 	{
@@ -21,31 +21,32 @@
 	}
 	.colleft,
 	{
-		@include column(6);
+//		@include column(6);
 	}
 	.colright
 	{
-		@include column(6);
-		@include last;	
+//		@include column(6);
+//		@include last;	
 	}
 	section
 	{
-		@include column(5.5);
-		@include border-column();
+//		@include column(5.5);
+//		@include border-column();
 	}
 	article
 	{
-		@include column(5.5);
-		@include last;
+//		@include column(5.5);
+//		@include last;
 	}
 	nav
 	{
 		ul
 		{
-			$fs: 16px;
+			$fs: 25px;
 		
 			@include list;
 			@include bloc($fs, 1);
+
 			@include padding-top(1, $fs);
 			
 			li

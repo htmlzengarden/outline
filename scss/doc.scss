@@ -1,10 +1,4 @@
-  @import "compass"  ;
-  @import "blueprint";
+  @import "lib";
 
-  @import "_config"       ;
-  @import "lib/_functions";
-  @import "lib/_normalize";
-  @import "lib/_hashgrid" ;
-
-  @import "_doc-screen";
-  @import "_doc-print" ;
+  @import "doc-screen";
+  @import "doc-print" ;

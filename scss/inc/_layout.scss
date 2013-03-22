@@ -1,6 +1,4 @@
-.page
+#page
 {
-	margin: auto;
-	width: $blueprint-container-size-screen - $blueprint-grid-margin ;
-	padding: 0 0 0 $blueprint-grid-margin;
+	@include container;
 }

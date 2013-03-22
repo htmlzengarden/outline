@@ -205,7 +205,7 @@ strong {
 }
 
 blockquote {
-	margin: 0 $blueprint-grid-outer-width;
+	margin: 0 $column-width + $gutter-width;
 	@include trailer;
 }
 
@@ -322,7 +322,7 @@ ul {
 }
 
 dd {
-	margin: 0 0 0 $blueprint-grid-outer-width;
+	margin: 0 0 0 $column-width + $gutter-width;
 }
 
 /*
@@ -332,7 +332,7 @@ dd {
 menu,
 ol,
 ul {
-	padding: 0 0 0 $blueprint-grid-outer-width;
+	padding: 0 0 0 $column-width + $gutter-width;
 }
 
 /*

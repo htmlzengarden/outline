@@ -5,7 +5,7 @@
 	float: unquote($side);
 }
 
-@mixin apply-side-rhythm-border($side, $width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin apply-side-rhythm-border($side, $width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	border-#{$side}:
 	{
@@ -61,7 +61,7 @@
 
 /* -------------------------------------------------------------------------- */
 
-@mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	border:
 	{
@@ -78,57 +78,57 @@
 
 /* -------------------------------------------------------------------------- */
 
-@mixin trailing-border   ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin trailing-border   ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include apply-side-rhythm-border(bottom, $width, $border-style, $border-color);
 }
-@mixin leading-border    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin leading-border    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include apply-side-rhythm-border(top,    $width, $border-style, $border-color);
 }
 
 /* -------------------------------------------------------------------------- */
 
-@mixin horizontal-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin horizontal-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include leading-border(                  $width, $border-style, $border-color);
 	@include trailing-border(                 $width, $border-style, $border-color);
 	margin-top:  $width * -2;
 }
-@mixin   vertical-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin   vertical-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
 	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
 	margin-left: $width * -2;
 }
-@mixin h-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin h-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include horizontal-borders(              $width, $border-style, $border-color);
 }
-@mixin v-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin v-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include   vertical-borders(              $width, $border-style, $border-color);
 }
 
 /* -------------------------------------------------------------------------- */
 
-@mixin border            ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin border            ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include rhythm-borders(                  $width, $border-style, $border-color);
 }
-@mixin border-top 	     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin border-top 	     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include leading-border(                  $width, $border-style, $border-color);
 }
-@mixin border-bottom     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin border-bottom     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include trailing-border(                 $width, $border-style, $border-color);
 }
-@mixin border-left       ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin border-left       ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
 }
-@mixin border-right      ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: $default-rhythm-border-color)
+@mixin border-right      ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
 	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
 }
