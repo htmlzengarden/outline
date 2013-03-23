@@ -1,4 +1,4 @@
 #page
 {
-	@include container;
+	@include container($breakpoint1, $breakpoint2, $breakpoint3);
 }

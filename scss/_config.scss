@@ -2,14 +2,13 @@ $base-font-size:   14px;
 $base-line-height: 20px;
 
 $total-columns  : 12;
-$column-width   : 60px;
-$gutter-width   : 20px;
+$column-width   : 4.5em;
+$gutter-width   : 1.5em;
 $grid-padding   : 0;
 
-
-
-
-
+$breakpoint1    : 4;
+$breakpoint2    : 8;
+$breakpoint3    : $total-columns;
 
 /*
 $exemple-layout: vertical;

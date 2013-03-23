@@ -6,8 +6,6 @@
     right: 0;
     top:   0;
     
-    @include container;
-    
     .vert-container
     {
     	left:  $grid-padding;
@@ -15,10 +13,8 @@
     }
     .vert
     {
-        @include span-columns(1);
     	background-color: $grid-background-column-color;
-    	margin-left: gutter($total-columns, 1);
-    	margin-right: 0;
+    	margin-right: 0!important;
     	
     	&.first-line
     	{
@@ -27,12 +23,10 @@
     }
 	.horiz
 	{
-	    height: rhythm();
-	    
+	    @include height;
 	    @include background-image(linear-gradient(transparent 95%, $grid-background-column-color 95%));
 	}
 }
-
 
 #grid
 {
@@ -48,6 +42,30 @@
 		.horiz
 		{
 			background-image: none;
+		}
+	}
+}
+
+#grid
+{
+	@include container($breakpoint1, $breakpoint2, $breakpoint3);
+	
+	.vert
+	{
+		@include span-columns(1, $breakpoint1);
+		margin-left: gutter($breakpoint1, 1);
+		
+		
+		@include at-breakpoint($breakpoint2)
+		{
+		    @include span-columns(1);
+			margin-left: gutter($breakpoint2, 1);
+		}
+		
+		@include at-breakpoint($breakpoint3)
+		{
+		    @include span-columns(1);
+			margin-left: gutter($breakpoint3, 1);
 		}
 	}
 }
