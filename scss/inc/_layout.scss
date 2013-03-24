@@ -2,3 +2,40 @@
 {
 	@include container($breakpoint1, $breakpoint2, $breakpoint3);
 }
+.demo
+{
+	#section-article
+	{
+		@include clearfix;
+	}
+	section
+	{
+		background-color: red;
+		
+		@include span-columns(2, $breakpoint1);
+		
+		@include at-breakpoint($breakpoint2)
+		{
+			@include span-columns(4, $breakpoint2);	
+		}
+		@include at-breakpoint($breakpoint3)
+		{
+			@include span-columns(6, $breakpoint3);	
+		}
+	}
+	article
+	{
+		background-color: green;
+		
+		@include span-columns(2 omega, $breakpoint1);
+		
+		@include at-breakpoint($breakpoint2)
+		{
+			@include span-columns(4 omega, $breakpoint2);	
+		}
+		@include at-breakpoint($breakpoint3)
+		{
+			@include span-columns(6 omega, $breakpoint3);	
+		}
+	}
+}

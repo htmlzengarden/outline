@@ -1,9 +1,4 @@
-@mixin float($side: left)
-{
-	*display: inline;
-	zoom: 1;
-	float: unquote($side);
-}
+$fs: $base-font-size;
 
 @mixin apply-side-rhythm-border($side, $width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
@@ -203,6 +198,10 @@
 {
 	    height: rhythm($lines, $font-size);
 }
+@mixin line-height($lines: 1, $font-size: $base-font-size)
+{
+	line-height: rhythm($lines, $font-size);
+}
 
 /* -------------------------------------------------------------------------- */
 
@@ -254,12 +253,10 @@
 @mixin show($type: block)
 {
 	display: $type;
-//	visibility: visible;
 }
 @mixin hide
 {
 	display: none;
-//	visibility: hidden;
 }
 @mixin mask($rtl: false)
 {
@@ -295,23 +292,6 @@
 	padding-right: ($blueprint-grid-width / 2) + ($blueprint-grid-margin / 2) + ($blueprint-grid-margin / 2 - $border-width);
 	 margin-right: ($blueprint-grid-width / 2) + ($blueprint-grid-margin / 2) + ($blueprint-grid-margin / 2);
 	 border-right: #{$border-width} #{$border-style} #{$border-color};
-}
-
-/* -------------------------------------------------------------------------- */
-
-@mixin hr
-{
-	@include border-top(1px, solid, black);
-	@include margin-bottom(1);
-	
-	hr
-	{
-		@include mask;
-	}
-}
-.hr
-{
-	@include hr;
 }
 
 /* -------------------------------------------------------------------------- */

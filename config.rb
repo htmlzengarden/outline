@@ -6,8 +6,8 @@ sass_dir = "scss"
 images_dir = "img"
 javascripts_dir = "js"
 
-#   environment = :development
-	environment = :production
+	environment = :development
+#   environment = :production
 
 if  environment == :production
 	output_style = :compressed

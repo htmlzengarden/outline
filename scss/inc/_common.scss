@@ -1,12 +1,46 @@
-html
-{
-
-}
 body
 {
-
+	overflow-y: scroll;
 }
-a
+img,
+audio,
+video,
+canvas,
+svg
 {
-
+	display: block;
+	max-width: 100%;
+}
+table
+{
+	max-width: 100%;
+}
+small
+{
+	line-height: 0;
+}
+.hr
+{
+	@include border-top(1px, solid, black);
+	@include margin-bottom(1);
+	
+	hr
+	{
+		@include mask;
+	}
+}
+ul,
+ol
+{
+	ol,
+	ul
+	{
+		margin-bottom: 0;
+	}
+}
+code,
+kbd,
+samp,
+{
+	line-height: 0;
 }

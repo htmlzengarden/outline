@@ -9,16 +9,7 @@
 		<h5>Heading 5</h5>
 		<h6>Heading 6</h6>
 		
-		<div class="clearfix">
-			<div class="colleft">
-				<p>col left</p>
-			</div>
-			<div class="colright">
-				<p>col right</p>
-			</div>
-		</div>
-
-		<div class="clearfix">
+		<div id="section-article">
 			<section>
 				<h1>Heading 1 (in section)</h1>
 				<h2>Heading 2 (in section)</h2>
@@ -27,7 +18,7 @@
 				<h5>Heading 5 (in section)</h5>
 				<h6>Heading 6 (in section)</h6>
 			</section>
-
+			
 			<article>
 				<h1>Heading 1 (in article)</h1>
 				<h2>Heading 2 (in article)</h2>
@@ -61,6 +52,10 @@
 
 		<address class="large"><span>Address: somewhere, world</span></address>
 
+		<div class="hr">
+			<hr />
+		</div>
+
 		<p>
 		The <a href="#">a element</a> example<br />
 		The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br />
@@ -71,7 +66,7 @@
 		The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples<br />
 		The <em>em element</em> example<br />
 		The <i>i element</i> example<br />
-		<!-- The img element <img src="http://maquettes.garden.projects.clever-age.net/img/10/000/000" alt="" style="display: inline;" /> example<br /> -->
+		The img element <img src="http://maquettes.garden.projects.clever-age.net/img/10/000/000" alt="" style="display: inline;" /> example<br />
 		The <ins>ins element</ins> example<br />
 		The <kbd>kbd element</kbd> example<br />
 		The <mark>mark element</mark> example<br />
@@ -100,14 +95,20 @@
 
 		<h3>img</h3>
 
-		<img src="http://maquettes.garden.projects.clever-age.net/img/100/000/000" alt="" />
-		<a href="#"><img src="http://maquettes.garden.projects.clever-age.net/img/100/000/000" alt="" /></a>
+		<div>
+			<img src="http://maquettes.garden.projects.clever-age.net/img/100/000/000" alt="" />
+		</div>
+		<div>
+			<a href="#"><img src="http://maquettes.garden.projects.clever-age.net/img/100/000/000" alt="" /></a>
+		</div>
 
 		<h3>svg</h3>
 
-		<svg width="100px" height="100px">
-		    <circle cx="100" cy="100" r="100" fill="#000" />
-		</svg>
+		<div>
+			<svg width="100px" height="100px">
+				<circle cx="100" cy="100" r="100" fill="#000" />
+			</svg>
+		</div>
 
 		<h3>video</h3>
 
@@ -139,13 +140,14 @@
 		<pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
 
 		<pre><code>&lt;html>
-			&lt;head>
-				&lt;title>&lt;/title>
-			&lt;/head>
-			&lt;body>
-				&lt;div class="main">&lt;div>
-			&lt;/body>
-		&lt;/html></code></pre>
+	&lt;head>
+		&lt;title>&lt;/title>
+	&lt;/head>
+	&lt;body>
+		&lt;div class="main">
+		&lt;div>
+	&lt;/body>
+&lt;/html></code></pre>
 
 		<h3>blockquote</h3>
 
@@ -163,14 +165,14 @@
 		        <ol>
 		            <li>list item 2</li>
 		            <li>list item 2
-		                <ol>
+		                <ol start="99">
 		                    <li>list item 3</li>
 		                    <li>list item 3</li>
 		                </ol>
 		            </li>
 		            <li>list item 2</li>
 		            <li>list item 2</li>
-		        </ol>
+		    	</ol>
 		    </li>
 		    <li>list item 1</li>
 		    <li>list item 1</li>
@@ -212,10 +214,12 @@
 
 		<h3>figure</h3>
 
-		<figure>
-		    <img src="http://maquettes.garden.projects.clever-age.net/img/400x200/000/000" alt="" />
-		    <figcaption>Figcaption content</figcaption>
-		</figure>
+		<div>
+			<figure>
+				<img src="http://maquettes.garden.projects.clever-age.net/img/400x200/000/000" alt="" />
+				<figcaption>Figcaption content</figcaption>
+			</figure>
+		</div>
 
 		<h1>Tabular data</h1>
 
@@ -264,95 +268,91 @@
 		<form>
 		    <fieldset>
 		        <legend><span>Inputs as descendents of labels (form legend). This doubles up as a long legend that can test word wrapping.</span></legend>
-		        <p><label><span class="label">Text input</span><input type="text" value="default value that goes on and on without stopping or punctuation" /></label></p>
-		        <p><label><span class="label">Email input</span><input type="email" /></label></p>
-		        <p><label><span class="label">Search input</span><input type="search" /></label></p>
-		        <p><label><span class="label">Tel input</span><input type="tel" /></label></p>
-		        <p><label><span class="label">URL input</span><input type="url" placeholder="http://" /></label></p>
-		        <p><label><span class="label">Password input</span><input type="password" value="password" /></label></p>
-		        <p class="file"    ><label><span class="label">File input</span><input type="file" /></label></p>
-		        <p class="radio"   ><label><span class="label">Radio input</span> <input type="radio" name="rad" class="radio" /></label></p>
-		        <p class="checkbox"><label><span class="label">Checkbox input</span> <input type="checkbox" class="checkbox" /></label></p>
-		        <p class="radio"   ><label><input type="radio" name="rad" class="radio" /> <span class="label">Radio input</span></label></p>
-		        <p class="checkbox"><label><input type="checkbox" class="checkbox" /> <span class="label">Checkbox input</span></label></p>
-		        <p class="select"  ><label><span class="label">Select field</span><select><option>Option 01</option><option>Option 02</option></select></label></p>
-		        <p class="textarea"><label><span class="label">Textarea</span><textarea cols="30" rows="5" >Textarea text</textarea></label></p>
+		        <p class="line"><label><span class="label">Text input</span><input type="text" value="default value that goes on and on without stopping or punctuation" /></label></p>
+		        <p class="line"><label><span class="label">Email input</span><input type="email" /></label></p>
+		        <p class="line"><label><span class="label">Search input</span><input type="search" /></label></p>
+		        <p class="line"><label><span class="label">Tel input</span><input type="tel" /></label></p>
+		        <p class="line"><label><span class="label">URL input</span><input type="url" placeholder="http://" /></label></p>
+		        <p class="line"><label><span class="label">Password input</span><input type="password" value="password" /></label></p>
+		        <p class="line file"    ><label><span class="label">File input</span><input type="file" /></label></p>
+		        <p class="line radio"   ><label><span class="label">Radio input</span> <input type="radio" name="rad" class="radio" /></label></p>
+		        <p class="line checkbox"><label><span class="label">Checkbox input</span> <input type="checkbox" class="checkbox" /></label></p>
+		        <p class="line radio"   ><label><input type="radio" name="rad" class="radio" /> <span class="label">Radio input</span></label></p>
+		        <p class="line checkbox"><label><input type="checkbox" class="checkbox" /> <span class="label">Checkbox input</span></label></p>
+		        <p class="line select"  ><label><span class="label">Select field</span><select><option>Option 01</option><option>Option 02</option></select></label></p>
+		        <p class="line textarea"><label><span class="label">Textarea</span><textarea cols="30" rows="5" >Textarea text</textarea></label></p>
 		    </fieldset>
 
 		    <fieldset>
 		        <legend><span>Inputs as siblings of labels</span></legend>
-		        <p><label class="label" for="ic">Color input</label><input type="color" id="ic" value="#000000" /></p>
-		        <p><label class="label" for="in">Number input</label><input type="number" id="in" min="0" max="10" value="5" /></p>
-		        <p><label class="label" for="ir">Range input</label><input type="range" id="ir" value="10" /></p>
-		        <p><label class="label" for="idd">Date input</label><input type="date" id="idd" value="1970-01-01" /></p>
-		        <p><label class="label" for="idm">Month input</label><input type="month" id="idm" value="1970-01" /></p>
-		        <p><label class="label" for="idw">Week input</label><input type="week" id="idw" value="1970-W01" /></p>
-		        <p><label class="label" for="idt">Datetime input</label><input type="datetime" id="idt" value="1970-01-01T00:00:00Z" /></p>
-		        <p><label class="label" for="idtl">Datetime-local input</label><input type="datetime-local" id="idtl" value="1970-01-01T00:00" /></p>
+		        <p class="line"><label class="label" for="ic">Color input</label><input type="color" id="ic" value="#000000" /></p>
+		        <p class="line"><label class="label" for="in">Number input</label><input type="number" id="in" min="0" max="10" value="5" /></p>
+		        <p class="line"><label class="label" for="ir">Range input</label><input type="range" id="ir" value="10" /></p>
+		        <p class="line"><label class="label" for="idd">Date input</label><input type="date" id="idd" value="1970-01-01" /></p>
+		        <p class="line"><label class="label" for="idm">Month input</label><input type="month" id="idm" value="1970-01" /></p>
+		        <p class="line"><label class="label" for="idw">Week input</label><input type="week" id="idw" value="1970-W01" /></p>
+		        <p class="line"><label class="label" for="idt">Datetime input</label><input type="datetime" id="idt" value="1970-01-01T00:00:00Z" /></p>
+		        <p class="line"><label class="label" for="idtl">Datetime-local input</label><input type="datetime-local" id="idtl" value="1970-01-01T00:00" /></p>
 
-		        <p class="radio"   ><label class="label" for="irb">Radio input</label> <input type="radio" id="irb" name="rad" class="radio" /></p>
-		        <p class="checkbox"><label class="label" for="icb">Checkbox input</label> <input type="checkbox" id="icb" class="checkbox" /></p>
-		        <p class="radio"   ><input type="radio" id="irb2" name="rad" class="radio" /> <label for="irb2" class="label">Radio input</label></p>
-		        <p class="checkbox"><input type="checkbox" id="icb2" class="checkbox" /> <label for="icb2" class="label">Checkbox input</label></p>
+		        <p class="line radio"   ><label class="label" for="irb">Radio input</label> <input type="radio" id="irb" name="rad" class="radio" /></p>
+		        <p class="line checkbox"><label class="label" for="icb">Checkbox input</label> <input type="checkbox" id="icb" class="checkbox" /></p>
+		        <p class="line radio"   ><input type="radio" id="irb2" name="rad" class="radio" /> <label for="irb2" class="label">Radio input</label></p>
+		        <p class="line checkbox"><input type="checkbox" id="icb2" class="checkbox" /> <label for="icb2" class="label">Checkbox input</label></p>
 		
-		        <p class="select"  ><label class="label" for="s">Select field</label><select id="s"><option>Option 01</option><option>Option 02</option></select></p>
-		        <p class="textarea"><label class="label" for="t">Textarea</label><textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
+		        <p class="line select"  ><label class="label" for="s">Select field</label><select id="s"><option>Option 01</option><option>Option 02</option></select></p>
+		        <p class="line textarea"><label class="label" for="t">Textarea</label><textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
 		    </fieldset>
 
 		    <fieldset>
 		        <legend><span>Clickable inputs and buttons</span></legend>
-		        <p><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/140x27/000/000" alt="Image (input)" /></p>
-		        <p><input type="reset" value="Reset (input)" /></p>
-		        <p><input type="button" value="Button (input)" /></p>
-		        <p><input type="submit" value="Submit (input)" /></p>
-		        <p><input type="submit" value="Disabled (input)" disabled="disabled" /></p>
+		        <!--<p class="line"><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/20x20/f0f0f0/f0f0f0" alt="Image (input)" /></p>-->
+		        <p class="line"><input type="reset" value="Reset (input)" /></p>
+		        <p class="line"><input type="button" value="Button (input)" /></p>
+		        <p class="line"><input type="submit" value="Submit (input)" /></p>
+		        <p class="line"><input type="submit" value="Disabled (input)" disabled="disabled" /></p>
 
 
-		        <p><button type="reset">Reset (button)</button></p>
-		        <p><button type="button">Button (button)</button></p>
-		        <p><button type="submit">Submit (button)</button></p>
-		        <p><button type="submit" disabled="disabled">Disabled (button)</button></p>
+		        <p class="line"><button type="reset">Reset (button)</button></p>
+		        <p class="line"><button type="button">Button (button)</button></p>
+		        <p class="line"><button type="submit">Submit (button)</button></p>
+		        <p class="line"><button type="submit" disabled="disabled">Disabled (button)</button></p>
 		    </fieldset>
 		
 		    <fieldset>
 		        <legend><span>box-sizing tests</span></legend>
 
-		        <div class="p"><input type="reset" value="Reset (input)" class="reset" /></div>
-		        <div class="p"><input type="button" value="Button (input)" class="button" /></div>
-		        <div class="p"><input type="submit" value="Submit (input)" class="submit" /></div>
+		        <div class="line"><input type="reset" value="Reset (input)" class="reset" /></div>
+		        <div class="line"><input type="button" value="Button (input)" class="button" /></div>
+		        <div class="line"><input type="submit" value="Submit (input)" class="submit" /></div>
 
-		        <div class="p"><button type="reset" class="reset">Reset (button)</button></div>
-		        <div class="p"><button type="button" class="button">Button (button)</button></div>
-		        <div class="p"><button type="submit" class="submit">Submit (button)</button></div>
+		        <div class="line"><button type="reset" class="reset">Reset (button)</button></div>
+		        <div class="line"><button type="button" class="button">Button (button)</button></div>
+		        <div class="line"><button type="submit" class="submit">Submit (button)</button></div>
 
 		        
 
-		        <div class="p radio"   ><input type="radio" class="radio" /></div>
-		        <div class="p checkbox"><input type="checkbox" class="checkbox" /></div>
+		        <div class="line radio"   ><input type="radio" class="radio" /></div>
+		        <div class="line checkbox"><input type="checkbox" class="checkbox" /></div>
 		        
-		        <div class="p"><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/220x27/000/000" alt="Image (input)" /></div>
+		        <!--<div class="line"><input type="image" src="http://maquettes.garden.projects.clever-age.net/img/20x20/fff/fff" alt="Image (input)" /></div>-->
 		        
-		        <div class="p">
-		        	<input type="text" value="text" /><!--
-		         --><select style="margin-left: 20px;" name="select" id="select" class="input-select"><option>Option 01</option><option>Option 02</option></select><!--
-		         --><span class="help">help</span>
-		        </div>
-		        <div class="p"><input type="email" value="email" /></div>
-		        <div class="p"><input type="search" value="search" /></div>
-		        <div class="p"><input type="url" value="http://example.com" /></div>
-		        <div class="p"><input type="password" value="password" /></div>
+		        <div class="line"><input type="text" value="text" /></div>
+		        <div class="line"><input type="email" value="email" /></div>
+		        <div class="line"><input type="search" value="search" /></div>
+		        <div class="line"><input type="url" value="http://example.com" /></div>
+		        <div class="line"><input type="password" value="password" /></div>
 
-		        <div class="p"><input type="color" value="#000000" /></div>
-		        <div class="p"><input type="number" value="5" /></div>
-		        <div class="p"><input type="range" value="10" /></div>
-		        <div class="p"><input type="date" value="1970-01-01" /></div>
-		        <div class="p"><input type="month" value="1970-01" /></div>
-		        <div class="p"><input type="week" value="1970-W01" /></div>
-		        <div class="p"><input type="datetime" value="1970-01-01T00:00:00Z" /></div>
-		        <div class="p"><input type="datetime-local" value="1970-01-01T00:00" /></div>
+		        <div class="line"><input type="color" value="#000000" /></div>
+		        <div class="line"><input type="number" value="5" /></div>
+		        <div class="line"><input type="range" value="10" /></div>
+		        <div class="line"><input type="date" value="1970-01-01" /></div>
+		        <div class="line"><input type="month" value="1970-01" /></div>
+		        <div class="line"><input type="week" value="1970-W01" /></div>
+		        <div class="line"><input type="datetime" value="1970-01-01T00:00:00Z" /></div>
+		        <div class="line"><input type="datetime-local" value="1970-01-01T00:00" /></div>
 
 
-		        <div class="p textarea"><textarea cols="30" rows="4">Textarea text</textarea></div>
+		        <div class="line textarea"><textarea cols="30" rows="4">Textarea text</textarea></div>
 		    </fieldset>
 		</form>
 

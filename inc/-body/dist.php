@@ -6,6 +6,7 @@
 <!--[if !IE]>--><body>           <!--<![endif]-->
 	<script src="../js/lib/browserdetect.js"  ></script>
 	<script src="../js/init.js"               ></script>
+	<script src="../js/lib/modernizr.js"      ></script>
 <?php include Z::getFile('page'); ?>		
 	<script src="../js/lib/jquery.js"         ></script>
 	<script src="../js/lib/jquery.baseline.js"></script>
