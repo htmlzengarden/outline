@@ -604,52 +604,12 @@ caption {
   background-image: none;
 }
 
-@media (min-width: 19.6875em) {
-  #grid {
-    max-width: 22.5em;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #grid:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-@media (min-width: 40.6875em) {
-  #grid {
-    max-width: 46.5em;
-  }
-}
-@media (min-width: 61.6875em) {
-  #grid {
-    max-width: 70.5em;
-  }
-}
 #grid .vert {
   width: 20%;
   float: left;
   margin-right: 6.66667%;
   display: inline;
   margin-left: 6.66667%;
-}
-@media (min-width: 40.6875em) {
-  #grid .vert {
-    width: 9.67742%;
-    float: left;
-    margin-right: 3.22581%;
-    margin-left: 3.22581%;
-  }
-}
-@media (min-width: 61.6875em) {
-  #grid .vert {
-    width: 6.38298%;
-    float: left;
-    margin-right: 2.12766%;
-    margin-left: 2.12766%;
-  }
 }
 
 body {
@@ -701,31 +661,6 @@ samp {
   line-height: 0;
 }
 
-@media (min-width: 19.6875em) {
-  #page {
-    max-width: 22.5em;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #page:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-@media (min-width: 40.6875em) {
-  #page {
-    max-width: 46.5em;
-  }
-}
-@media (min-width: 61.6875em) {
-  #page {
-    max-width: 70.5em;
-  }
-}
-
 .demo #section-article {
   *zoom: 1;
 }
@@ -741,20 +676,6 @@ samp {
   margin-right: 6.66667%;
   display: inline;
 }
-@media (min-width: 40.6875em) {
-  .demo section {
-    width: 48.3871%;
-    float: left;
-    margin-right: 3.22581%;
-  }
-}
-@media (min-width: 61.6875em) {
-  .demo section {
-    width: 48.93617%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
 .demo article {
   background-color: green;
   width: 48.93617%;
@@ -762,20 +683,6 @@ samp {
   margin-right: 0;
   *margin-left: -1.5em;
   display: inline;
-}
-@media (max-width: 61.6875em) {
-  .demo article {
-    width: 48.3871%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (max-width: 40.6875em) {
-  .demo article {
-    width: 46.66667%;
-    float: right;
-    margin-right: 0;
-  }
 }
 .demo header {
   *zoom: 1;
@@ -789,50 +696,21 @@ samp {
 .demo hgroup {
   background-color: orange;
 }
-@media (max-width: 40.6875em) {
-  .demo hgroup {
-    width: 46.66667%;
-    float: left;
-    margin-right: 6.66667%;
-  }
-}
-@media (min-width: 40.6875em) and (max-width: 61.6875em) {
-  .demo hgroup {
-    width: 48.3871%;
-    float: left;
-    margin-right: 3.22581%;
-  }
-}
-@media (min-width: 61.6875em) {
-  .demo hgroup {
-    width: 48.93617%;
-    float: left;
-    margin-right: 2.12766%;
-  }
+.ie .demo hgroup {
+  width: 48.93617%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
 }
 .demo nav {
   background-color: yellow;
 }
-@media (max-width: 40.6875em) {
-  .demo nav {
-    width: 46.66667%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 40.6875em) and (max-width: 61.6875em) {
-  .demo nav {
-    width: 48.3871%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 61.6875em) {
-  .demo nav {
-    width: 48.93617%;
-    float: right;
-    margin-right: 0;
-  }
+.ie .demo nav {
+  width: 48.93617%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline;
 }
 
 fieldset {

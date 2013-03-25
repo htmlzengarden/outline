@@ -14,7 +14,7 @@
 	{
 		background-color: red;
 		
-		@include span-columns(2, $breakpoint1);
+			@include span-columns(2, $breakpoint1);
 		
 		@include at-breakpoint($breakpoint2)
 		{
@@ -26,20 +26,64 @@
 		}
 	}
 	
-	// mobile first
+	// desktop first
 	article
 	{
 		background-color: green;
 		
-		@include span-columns(6 omega);
+			@include span-columns(6 omega, $breakpoint3);
 		
-		@include at-breakpoint(0 70.5em)
+		@include at-breakpoint($breakpoint2 70.5em)
 		{
-			@include span-columns(4 omega, 8);	
+			@include span-columns(4 omega, $breakpoint2);	
 		}
-		@include at-breakpoint(0 46.5em)
+		@include at-breakpoint($breakpoint1 46.5em)
 		{
-			@include span-columns(2 omega, 4);	
+			@include span-columns(2 omega, $breakpoint1);	
+		}
+	}
+	
+	header
+	{
+		@include clearfix;
+		@include margin-top;
+	}
+	
+	// fallback
+	hgroup
+	{
+		background-color: orange;
+		
+		@include at-breakpoint(0 $breakpoint1 46.5em)
+		{
+			@include span-columns(2, $breakpoint1);
+		}
+		@include at-breakpoint(46.5em $breakpoint2 70.5em)
+		{
+			@include span-columns(4, $breakpoint2);
+		}
+		@include at-breakpoint(70.5em $breakpoint3 ie)
+		{
+			@include span-columns(6, $breakpoint3);
+		}
+	}
+	
+	// fallback
+	nav
+	{
+		background-color: yellow;
+		
+		@include at-breakpoint(0 $breakpoint1 46.5em)
+		{
+			@include span-columns(2 omega, $breakpoint1);
+		}
+		@include at-breakpoint(46.5em $breakpoint2 70.5em)
+		{
+			@include span-columns(4 omega, $breakpoint2);
+		}
+		@include at-breakpoint(70.5em $breakpoint3 ie)
+		{
+			@include span-columns(6 omega, $breakpoint3);
 		}
 	}
 }
