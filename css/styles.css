@@ -757,22 +757,22 @@ samp {
 }
 .demo article {
   background-color: green;
-  width: 46.66667%;
+  width: 48.93617%;
   float: right;
   margin-right: 0;
   *margin-left: -1.5em;
   display: inline;
 }
-@media (min-width: 40.6875em) {
+@media (max-width: 61.6875em) {
   .demo article {
     width: 48.3871%;
     float: right;
     margin-right: 0;
   }
 }
-@media (min-width: 61.6875em) {
+@media (max-width: 40.6875em) {
   .demo article {
-    width: 48.93617%;
+    width: 46.66667%;
     float: right;
     margin-right: 0;
   }
@@ -820,16 +820,6 @@ textarea,
   margin-bottom: 0;
 }
 
-/*
-@mixin input
-{
-	width: $input-width;
-	
-	@include font-size($fs);
-	@include height;
-	@include border(1px, solid, #a6a6a6);
-	padding: 1px 2px 2px;
-}
 input.text,
 input.email,
 input.search,
@@ -844,10 +834,20 @@ input.date,
 input.month,
 input.week,
 input.datetime,
-input.datetime-local
-{
-	@include input;
+input.datetime-local {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
+
 input[type=text],
 input[type=email],
 input[type=search],
@@ -862,171 +862,142 @@ input[type=date],
 input[type=month],
 input[type=week],
 input[type=datetime],
-input[type=datetime-local],
-{
-	@include input;
+input[type=datetime-local] {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
-select
-{
-	@include input;
-	height: auto;
-	width: $input-width + $input-width-gap;
-	padding: 3px;
+
+select {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  width: 231px;
+  padding: 1px;
 }
-textarea
-{
-	@include input;
-	@include height     (6);
-	@include min-height (6);
-	@include max-height(10);
-	
-	@include resize;
+
+textarea {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  height: 8.57143em;
+  min-height: 8.57143em;
+  *height: 8.57143em;
+  max-height: 17.14286em;
+  font-size: 1em;
+  line-height: 1.42857em;
+  -webkit-resize: vertical;
+  -moz-resize: vertical;
+  -ms-resize: vertical;
+  -o-resize: vertical;
+  resize: vertical;
 }
-.textarea
-{
-	@include min-height(7);
+
+.textarea {
+  min-height: 10em;
+  *height: 10em;
 }
+
 input[type=reset],
 input[type=button],
-input[type=submit]
-{
-	@include input;
-	@include height(1.25);
-	@include line-height(1.25);
-	padding: 0;
-	width: $input-width + $input-width-gap;
+input[type=submit] {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  width: 231px;
 }
+input[type=reset]:focus,
+input[type=button]:focus,
+input[type=submit]:focus {
+  outline: thin dotted;
+}
+
 input.reset,
 input.button,
-input.submit
-{
-	@include input;
-	@include height(1.25);
-	@include line-height(1.25);
-	padding: 0;
-	width: $input-width + $input-width-gap;
+input.submit {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  width: 231px;
 }
-button
-{
-	@include input;
-	@include height(1.25);
-	@include line-height(1.25);
-	padding: 0;
-	width: $input-width + $input-width-gap;
+input.reset:focus,
+input.button:focus,
+input.submit:focus {
+  outline: thin dotted;
 }
-.boxsizing
+
+button {
+  width: 225px;
+  border: 1px solid #a6a6a6;
+  padding: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  width: 231px;
+}
+button:focus {
+  outline: thin dotted;
+}
+
+/*
+.ch,
+.sa
 {
-	input.text,
-	input.email,
-	input.search,
-	input.tel,
-	input.url,
-	input.password,
-	input.file,
-	input.color,
-	input.number,
-	input.range,
-	input.date,
-	input.month,
-	input.week,
-	input.datetime,
-	input.datetime-local
-	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		padding: 3px;
-		height: auto;
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
-	}
-	input[type=text],
-	input[type=email],
-	input[type=search],
-	input[type=tel],
-	input[type=url],
-	input[type=password],
-	input[type=file],
-	input[type=color],
-	input[type=number],
-	input[type=range],
-	input[type=date],
-	input[type=month],
-	input[type=week],
-	input[type=datetime],
-	input[type=datetime-local],
-	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		padding: 3px;
-		height: auto;
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
-	}
 	select
 	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		padding: 2px;
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
-	}
-	textarea
-	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		padding: 3px;
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
-	}
-	input[type=reset],
-	input[type=button],
-	input[type=submit]
-	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		padding: 3px;
-		height: auto;
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
-	}
-	input.reset,
-	input.button,
-	input.submit
-	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		padding: 3px;
-		height: auto;
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
-	}
-	button
-	{
-		@include box-sizing(border-box);
-		width: columns(3);
-		position: static;
-		top:  auto;
-		left: auto;
-		margin-left:  auto;
-		margin-right: auto;
+		@include appearance(none);
+		@include border-radius(0);
+		
+		background-image: url(../img/bg/select.png);
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		
+		padding-right: 20px;
 	}
 }
 */

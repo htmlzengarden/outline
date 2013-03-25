@@ -668,3 +668,96 @@ caption {
   display: table;
   clear: both;
 }
+.index img,
+.doc img {
+  max-width: 100%;
+}
+.index h1,
+.index h2,
+.index h3,
+.index h4,
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4 {
+  padding-top: 0;
+}
+.index table,
+.doc table {
+  font-size: 0.85714em;
+  line-height: 1.66667em;
+  margin-bottom: 1.66667em;
+  width: 100%;
+}
+.index table td,
+.index table th,
+.doc table td,
+.doc table th {
+  text-align: left;
+  border: 1px solid #333333;
+  padding-top: 0.83333em;
+  padding-bottom: 0.83333em;
+}
+.index table th,
+.doc table th {
+  white-space: nowrap;
+}
+@media (max-width: 52.5em) {
+  .index #conformite + table td:nth-child(2), .index #conformite + table td:nth-child(3), .index #conformite + table td:nth-child(4), .index #conformite + table td:nth-child(5), .index #conformite + table td:nth-child(6), .index #conformite + table td:nth-child(7), .index #conformite + table td:nth-child(8), .index #conformite + table td:nth-child(9), .index #conformite + table td:nth-child(10), .index #conformite + table td:nth-child(11), .index #conformite + table td:nth-child(12),
+  .index #conformite + table th:nth-child(2),
+  .index #conformite + table th:nth-child(3),
+  .index #conformite + table th:nth-child(4),
+  .index #conformite + table th:nth-child(5),
+  .index #conformite + table th:nth-child(6),
+  .index #conformite + table th:nth-child(7),
+  .index #conformite + table th:nth-child(8),
+  .index #conformite + table th:nth-child(9),
+  .index #conformite + table th:nth-child(10),
+  .index #conformite + table th:nth-child(11),
+  .index #conformite + table th:nth-child(12),
+  .doc #conformite + table td:nth-child(2),
+  .doc #conformite + table td:nth-child(3),
+  .doc #conformite + table td:nth-child(4),
+  .doc #conformite + table td:nth-child(5),
+  .doc #conformite + table td:nth-child(6),
+  .doc #conformite + table td:nth-child(7),
+  .doc #conformite + table td:nth-child(8),
+  .doc #conformite + table td:nth-child(9),
+  .doc #conformite + table td:nth-child(10),
+  .doc #conformite + table td:nth-child(11),
+  .doc #conformite + table td:nth-child(12),
+  .doc #conformite + table th:nth-child(2),
+  .doc #conformite + table th:nth-child(3),
+  .doc #conformite + table th:nth-child(4),
+  .doc #conformite + table th:nth-child(5),
+  .doc #conformite + table th:nth-child(6),
+  .doc #conformite + table th:nth-child(7),
+  .doc #conformite + table th:nth-child(8),
+  .doc #conformite + table th:nth-child(9),
+  .doc #conformite + table th:nth-child(10),
+  .doc #conformite + table th:nth-child(11),
+  .doc #conformite + table th:nth-child(12) {
+    display: none;
+  }
+}
+@media (max-width: 52.5em) {
+  .index #bps ~ table td:nth-child(1), .index #bps ~ table td:nth-child(3),
+  .index #bps ~ table th:nth-child(1),
+  .index #bps ~ table th:nth-child(3),
+  .doc #bps ~ table td:nth-child(1),
+  .doc #bps ~ table td:nth-child(3),
+  .doc #bps ~ table th:nth-child(1),
+  .doc #bps ~ table th:nth-child(3) {
+    display: none;
+  }
+}
+.index #footnotes,
+.doc #footnotes {
+  font-size: 0.78571em;
+  line-height: 1.81818em;
+  margin-bottom: 1.81818em;
+}
+.index #footnotes p,
+.doc #footnotes p {
+  margin-bottom: 0;
+}

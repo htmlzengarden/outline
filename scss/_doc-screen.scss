@@ -5,4 +5,95 @@
 	{
 		@include container;	
 	}
+	img
+	{
+		max-width: 100%;
+	}
+	h1,
+	h2,
+	h3,
+	h4
+	{
+		padding-top: 0;
+	}
+	table
+	{
+		$fs: 12px;
+	
+		@include bloc($fs);
+		
+		width: 100%;
+		
+		td,
+		th
+		{
+			text-align: left;
+			
+			border: 1px solid #333;
+			
+			@include padding-top   (0.5, $fs);
+			@include padding-bottom(0.5, $fs);
+		}
+		th
+		{
+			white-space: nowrap;
+		}		
+	}
+	#conformite
+	{
+		& + table
+		{
+			
+			@include at-breakpoint(0 60em)
+			{
+				td,
+				th
+				{
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4),
+					&:nth-child(5),
+					&:nth-child(6),
+					&:nth-child(7),
+					&:nth-child(8),
+					&:nth-child(9),
+					&:nth-child(10),
+					&:nth-child(11),
+					&:nth-child(12)
+					{
+						@include hide;
+					}
+				}
+			}
+		}
+	}
+	#bps
+	{
+		& ~ table
+		{
+			@include at-breakpoint(0 60em)
+			{
+				td,
+				th
+				{
+					&:nth-child(1),
+					&:nth-child(3)
+					{
+						@include hide;
+					}
+				}
+			}
+		}
+	}
+	#footnotes
+	{
+		$fs: 11px;
+	
+		@include bloc($fs);
+		
+		p
+		{
+			margin-bottom: 0;
+		}
+	}
 }

@@ -8,6 +8,8 @@
 	{
 		@include clearfix;
 	}
+	
+	// mobile first
 	section
 	{
 		background-color: red;
@@ -23,19 +25,21 @@
 			@include span-columns(6, $breakpoint3);	
 		}
 	}
+	
+	// mobile first
 	article
 	{
 		background-color: green;
 		
-		@include span-columns(2 omega, $breakpoint1);
+		@include span-columns(6 omega);
 		
-		@include at-breakpoint($breakpoint2)
+		@include at-breakpoint(0 70.5em)
 		{
-			@include span-columns(4 omega, $breakpoint2);	
+			@include span-columns(4 omega, 8);	
 		}
-		@include at-breakpoint($breakpoint3)
+		@include at-breakpoint(0 46.5em)
 		{
-			@include span-columns(6 omega, $breakpoint3);	
+			@include span-columns(2 omega, 4);	
 		}
 	}
 }
