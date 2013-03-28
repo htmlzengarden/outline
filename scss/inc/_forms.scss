@@ -11,7 +11,7 @@ fieldset
 		span
 		{
 			display: block;
-			@include margin-bottom();
+			@include padding-bottom;
 		}
 	}
 }
@@ -98,6 +98,16 @@ select
 	@include input;
 	width: $input-width + $input-width-gap;
 	padding: 1px;
+}
+input.file
+{
+	width: $input-width + $input-width-gap;
+	background-color: #FFF;
+}
+input[type=file]
+{
+	width: $input-width + $input-width-gap;
+	background-color: #FFF;
 }
 textarea
 {

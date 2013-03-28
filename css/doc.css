@@ -1,25 +1,3 @@
-                   /*
-$exemple-layout: vertical;
-$exemple-spacing: 32px;
-@import 'bg/exemple/*.png';
-
-@include all-exemple-sprites;
-
-ex :
-
-@include exemple-sprite(image);
-@include exemple-sprite(image, $offset-x:100%);
-*/
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 .clearfix {
   *zoom: 1;
 }
@@ -29,19 +7,15 @@ ex :
   clear: both;
 }
 
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 .mask {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  left: -9999em;
+  display: block;
+  left: -9999px;
 }
 
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 .list {
   margin: 0;
   padding: 0;
@@ -60,7 +34,6 @@ ex :
   float: left;
 }
 
-/* -------------------------------------------------------------------------- */
 /* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -578,8 +551,8 @@ caption {
   top: 0;
 }
 #grid .vert-container {
-  left: 0;
-  right: 0;
+  left: 1.5em;
+  right: 1.5em;
 }
 #grid .vert {
   background-color: rgba(100, 100, 225, 0.25);
@@ -604,61 +577,13 @@ caption {
   background-image: none;
 }
 
-@media (min-width: 19.6875em) {
-  #grid {
-    max-width: 22.5em;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #grid:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-@media (min-width: 40.6875em) {
-  #grid {
-    max-width: 46.5em;
-  }
-}
-@media (min-width: 61.6875em) {
-  #grid {
-    max-width: 70.5em;
-  }
-}
-#grid .vert {
-  width: 20%;
-  float: left;
-  margin-right: 6.66667%;
-  display: inline;
-  margin-left: 6.66667%;
-}
-@media (min-width: 40.6875em) {
-  #grid .vert {
-    width: 9.67742%;
-    float: left;
-    margin-right: 3.22581%;
-    margin-left: 3.22581%;
-  }
-}
-@media (min-width: 61.6875em) {
-  #grid .vert {
-    width: 6.38298%;
-    float: left;
-    margin-right: 2.12766%;
-    margin-left: 2.12766%;
-  }
-}
-
 .index #page,
 .doc #page {
   *zoom: 1;
   max-width: 70.5em;
   _width: 70.5em;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   margin-left: auto;
   margin-right: auto;
 }

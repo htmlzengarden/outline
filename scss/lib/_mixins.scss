@@ -30,7 +30,7 @@ $fs: $base-font-size;
 	}
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin position($side, $lines: 1, $font-size: $base-font-size)
 {
@@ -54,7 +54,7 @@ $fs: $base-font-size;
 	@include position(right, $lines: 1, $font-size: $base-font-size);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
@@ -71,7 +71,7 @@ $fs: $base-font-size;
 	left: $width;
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin trailing-border   ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
@@ -82,7 +82,7 @@ $fs: $base-font-size;
 	@include apply-side-rhythm-border(top,    $width, $border-style, $border-color);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin horizontal-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
@@ -105,7 +105,7 @@ $fs: $base-font-size;
 	@include   vertical-borders(              $width, $border-style, $border-color);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin border            ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
@@ -128,7 +128,7 @@ $fs: $base-font-size;
 	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin margin-top($lines: 1, $font-size: $base-font-size)
 {
@@ -147,7 +147,7 @@ $fs: $base-font-size;
 	margin-right:  rhythm($lines, $font-size);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin padding-top($lines: 1, $font-size: $base-font-size)
 {
@@ -166,7 +166,7 @@ $fs: $base-font-size;
 	padding-right: rhythm($lines, $font-size);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin     padding($lines: 1, $font-size: $base-font-size)
 {
@@ -183,7 +183,7 @@ $fs: $base-font-size;
 	margin-right:  rhythm($lines, $font-size);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin max-height($lines: 1, $font-size: $base-font-size)
 {
@@ -203,7 +203,7 @@ $fs: $base-font-size;
 	line-height: rhythm($lines, $font-size);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin clearfix
 {
@@ -214,7 +214,7 @@ $fs: $base-font-size;
 	@include clearfix;
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin roll
 {
@@ -236,7 +236,7 @@ $fs: $base-font-size;
 	        resize: $direction;
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin font-size($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
@@ -248,7 +248,7 @@ $fs: $base-font-size;
 	@include margin-bottom($lines, $to-size);
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin show($type: block)
 {
@@ -264,14 +264,15 @@ $fs: $base-font-size;
 	width:  1px;
 	height: 1px;
 	overflow: hidden;
+	display: block;
 	
 	@if $rtl == false
 	{
-		left: -9999em;
+		left: -9999px;
 	}
 	@else
 	{
-		right: -9999em;		
+		right: -9999px;		
 	}
 }
 .mask
@@ -279,22 +280,7 @@ $fs: $base-font-size;
 	@include mask;
 }
 
-/* -------------------------------------------------------------------------- */
-
-@mixin border-gutter($border-color: black, $border-width: 1px, $border-style: solid)
-{
-	padding-right: $blueprint-grid-margin / 2 - $border-width;
-	 margin-right: $blueprint-grid-margin / 2;
-	 border-right: #{$border-width} #{$border-style} #{$border-color};
-}
-@mixin border-column($border-color: black, $border-width: 1px, $border-style: solid)
-{
-	padding-right: ($blueprint-grid-width / 2) + ($blueprint-grid-margin / 2) + ($blueprint-grid-margin / 2 - $border-width);
-	 margin-right: ($blueprint-grid-width / 2) + ($blueprint-grid-margin / 2) + ($blueprint-grid-margin / 2);
-	 border-right: #{$border-width} #{$border-style} #{$border-color};
-}
-
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------
 
 @mixin list
 {
@@ -316,4 +302,4 @@ $fs: $base-font-size;
 	@include list;
 }
 
-/* -------------------------------------------------------------------------- */
+//------------------------------------------------------------------------------

@@ -45,27 +45,3 @@
 		}
 	}
 }
-
-#grid
-{
-	@include container($breakpoint1, $breakpoint2, $breakpoint3);
-	
-	.vert
-	{
-		@include span-columns(1, $breakpoint1);
-		margin-left: gutter($breakpoint1, 1);
-		
-		
-		@include at-breakpoint($breakpoint2)
-		{
-		    @include span-columns(1);
-			margin-left: gutter($breakpoint2, 1);
-		}
-		
-		@include at-breakpoint($breakpoint3)
-		{
-		    @include span-columns(1);
-			margin-left: gutter($breakpoint3, 1);
-		}
-	}
-}

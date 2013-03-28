@@ -1,4 +1,4 @@
-body
+html
 {
 	overflow-y: scroll;
 }
@@ -40,7 +40,10 @@ ol
 }
 code,
 kbd,
-samp,
+samp
 {
-	line-height: 0;
+	.not-ie &
+	{
+		line-height: 0;
+	}
 }

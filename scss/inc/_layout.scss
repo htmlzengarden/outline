@@ -1,89 +1,139 @@
-#page
+#page,
+#grid
 {
-	@include container($breakpoint1, $breakpoint2, $breakpoint3);
+	@include container($desktop ie);
+	@include container($smartphone, $tablet, $desktop);
 }
-.demo
+#page.demo
 {
 	#section-article
 	{
 		@include clearfix;
 	}
-	
-	// mobile first
 	section
 	{
 		background-color: red;
-		
-			@include span-columns(2, $breakpoint1);
-		
-		@include at-breakpoint($breakpoint2)
-		{
-			@include span-columns(4, $breakpoint2);	
-		}
-		@include at-breakpoint($breakpoint3)
-		{
-			@include span-columns(6, $breakpoint3);	
-		}
 	}
-	
-	// desktop first
 	article
 	{
-		background-color: green;
-		
-			@include span-columns(6 omega, $breakpoint3);
-		
-		@include at-breakpoint($breakpoint2 70.5em)
-		{
-			@include span-columns(4 omega, $breakpoint2);	
-		}
-		@include at-breakpoint($breakpoint1 46.5em)
-		{
-			@include span-columns(2 omega, $breakpoint1);	
-		}
+		background-color: green;	
+	}
+}
+
+// desktop first
+#page,
+#grid
+{
+	.vert
+	{
+		@include span-columns(1, $desktop);
+		margin-left: gutter($desktop, 1);		
 	}
 	
-	header
+	@include at-breakpoint($tablet 70.5em)
 	{
-		@include clearfix;
-		@include margin-top;
-	}
-	
-	// fallback
-	hgroup
-	{
-		background-color: orange;
-		
-		@include at-breakpoint(0 $breakpoint1 46.5em)
+		.vert
 		{
-			@include span-columns(2, $breakpoint1);
-		}
-		@include at-breakpoint(46.5em $breakpoint2 70.5em)
-		{
-			@include span-columns(4, $breakpoint2);
-		}
-		@include at-breakpoint(70.5em $breakpoint3 ie)
-		{
-			@include span-columns(6, $breakpoint3);
+			@include span-columns(1, $tablet);
+			margin-left: gutter($tablet, 1);		
 		}
 	}
-	
-	// fallback
-	nav
+	@include at-breakpoint($smartphone 46.5em)
 	{
-		background-color: yellow;
-		
-		@include at-breakpoint(0 $breakpoint1 46.5em)
+		.vert
 		{
-			@include span-columns(2 omega, $breakpoint1);
-		}
-		@include at-breakpoint(46.5em $breakpoint2 70.5em)
-		{
-			@include span-columns(4 omega, $breakpoint2);
-		}
-		@include at-breakpoint(70.5em $breakpoint3 ie)
-		{
-			@include span-columns(6 omega, $breakpoint3);
+			@include span-columns(1, $smartphone);
+			margin-left: gutter($smartphone, 1);		
 		}
 	}
 }
+
+#page.demo
+{
+	section
+	{
+		@include span-columns(6, $desktop);
+		
+		@include at-breakpoint($tablet 70.5em)
+		{
+			@include span-columns(4, $tablet);
+		}
+		@include at-breakpoint($smartphone 46.5em)
+		{
+			@include span-columns(2, $smartphone);
+		}
+	}
+	article
+	{
+		@include span-columns(6 omega, $desktop);		
+		
+		@include at-breakpoint($tablet 70.5em)
+		{
+			@include span-columns(4 omega, $tablet);
+		}
+		@include at-breakpoint($smartphone 46.5em)
+		{
+			@include span-columns(2 omega, $smartphone);
+		}
+	}
+}
+
+/*
+// mobile first
+#page,
+#grid
+{
+	.vert
+	{
+		@include span-columns(1, $smartphone);
+		margin-left: gutter($smartphone, 1);		
+	}
+	
+	@include at-breakpoint($tablet ie)
+	{
+		.vert
+		{
+			@include span-columns(1, $tablet);
+			margin-left: gutter($tablet, 1);		
+		}
+	}
+	@include at-breakpoint($desktop ie)
+	{
+		.vert
+		{
+			@include span-columns(1, $desktop);
+			margin-left: gutter($desktop, 1);		
+		}
+	}
+}
+
+#page.demo
+{
+	section
+	{
+		@include span-columns(2, $smartphone);
+		
+		@include at-breakpoint($tablet)
+		{
+			@include span-columns(4, $tablet);
+		}
+		@include at-breakpoint($desktop ie)
+		{
+			@include span-columns(6, $desktop);
+		}
+	}
+	article
+	{
+		@include span-columns(2 omega, $smartphone);		
+		
+		@include at-breakpoint($tablet)
+		{
+			@include span-columns(4 omega, $tablet);
+		}
+		@include at-breakpoint($desktop ie)
+		{
+			@include span-columns(6 omega, $desktop);
+		}
+	}	
+}
+*/

@@ -4,21 +4,19 @@ $base-line-height: 20px;
 $total-columns  : 12;
 $column-width   : 4.5em;
 $gutter-width   : 1.5em;
-$grid-padding   : 0;
+$grid-padding   : $gutter-width;
 
-$breakpoint1    : 4;
-$breakpoint2    : 8;
-$breakpoint3    : $total-columns;
+$smartphone : 4;
+$tablet     : 8;
+$desktop    : $total-columns;
 
-/*
-$exemple-layout: vertical;
-$exemple-spacing: 32px;
-@import 'bg/exemple/*.png';
-
-@include all-exemple-sprites;
-
-ex :
-
-@include exemple-sprite(image);
-@include exemple-sprite(image, $offset-x:100%);
-*/
+//$exemple-layout: vertical;
+//$exemple-spacing: 32px;
+//@import 'bg/exemple/*.png';
+//
+//@include all-exemple-sprites;
+//
+//ex :
+//
+//@include exemple-sprite(image);
+//@include exemple-sprite(image, $offset-x:100%);
