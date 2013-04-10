@@ -1,21 +1,22 @@
 Dans ce dossier se trouvent les fichiers nécessaires à l'utilisation de polices personnalisées.
 
----
-
 On trouve également le Web Font Specimen adapté en français pour s'assurer de leurs rendus.
 
 ---
 
-Web Font Specimen
+# Web Font Specimen
+
 Version 2.0
 2010-04-06
 
 Créé par Tim Brown
-http://webfontspecimen.com (en)
-http://nicewebtype.com (en)
+
+ - http://webfontspecimen.com (en)
+ - http://nicewebtype.com (en)
 
 Traduction et adaptation française réalisées par HTML zen garden.
-http://www.htmlzengarden.com (fr)
+
+ - http://www.htmlzengarden.com (fr)
 
 ============================================================================
 
@@ -32,12 +33,12 @@ Smith, utilisé pour la présentation.
  - http://960.gs (en)
 
 N’hésitez pas éditer et  republier à nouveau wfs.css et le balisage qui
-lui est associé. Ils sont sous une licence Creative Commons Paternité 3.0 :
-http://creativecommons.org/licenses/by/3.0/us/deed.fr (fr)
+lui est associé. Ils sont sous une
+[licence Creative Commons Paternité 3.0](http://creativecommons.org/licenses/by/3.0/us/deed.fr).
 
 ============================================================================
 
-# Comment ça marche ?
+## Comment ça marche ?
 
 
 1. Ajoutez une police de caractère dans le répertoire css/type/
@@ -69,7 +70,7 @@ http://creativecommons.org/licenses/by/3.0/us/deed.fr (fr)
 
 ============================================================================
 
-# Lectures complèmentaires
+## Lectures complèmentaires
 
 
 Web Font Specimen est conçu pour être utilisé rapidement et
@@ -77,12 +78,12 @@ facilement. Bien entendu, de base, il ne fonctionne pas dans Internet
 Explorer. Mais avec un petit effort supplémentaire et quelques conseils de
 pros, nous pouvons amliorer la compatibilité navigateur.
 
-« How to use CSS @font-face » vous guidera  travers ces concepts :
-http://nicewebtype.com/x/u (en)
+« [How to use CSS @font-face](http://nicewebtype.com/x/u) » vous guidera à
+travers ces concepts.
 
 ============================================================================
 
-# Utilisation des services de distribution de polices
+## Utilisation des services de distribution de polices
 
 
 Si vous utilisez Web Font Specimen pour tester des polices de caractères à
@@ -97,7 +98,7 @@ appliquée à l’élément body de votre HTML.
 
 ============================================================================
 
-# Questions ?
+## Questions ?
 
 Joignez-vous à la bataille « Nice Web Type ». Faites-moi savoir sur quoi
 vous travaillez à l’aide d’une réponse à @nicewebtype sur Twitter. Je vous
