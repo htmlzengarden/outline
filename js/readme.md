@@ -1,4 +1,4 @@
-Dans ce répertoire on trouve les fichiers JS du projet.
+Dans ce répertoire se trouvent les fichiers JS du projet.
 
 ---
 
@@ -11,4 +11,4 @@ Sur la page de démonstration, on rétablit le rythme vertical sur les composant
 ---
 
 On trouve aussi un fichier `init.js` qui vient compléter la détection navigateur faite initialement via des commentaires conditionnels.
-S'appuyer sur la détection navigateur est bien sûr à éviter le plus possible et à ne réserver qu'à de rares cas non-bloquants.
+S'appuyer sur la détection navigateur est bien sûr à éviter le plus possible et à ne réserver qu'à de rares cas non-bloquants. Préférez utiliser `modernizr.js` par exemple.

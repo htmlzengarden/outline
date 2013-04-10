@@ -1,6 +1,6 @@
 Dans ce dossier se trouvent les fichiers nécessaires à l'utilisation de polices personnalisées.
 
-On trouve également le Web Font Specimen adapté en français pour s'assurer de leurs rendus.
+On trouve également le Web Font Specimen adapté en français pour s'assurer de leurs rendus. En voici la documentation :
 
 ---
 

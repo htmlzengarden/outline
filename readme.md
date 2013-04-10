@@ -20,7 +20,7 @@ Elle est est composée d'un ensemble d'outils existants, soigneusement choisis e
 
 ---
 
-À ce jour elle comprend :
+À ce jour la bibliothèque comprend :
 
  - une arborescence pour permettre d'organiser ses fichiers de manière logique ;
  - un système de gabarits pour ne pas avoir à répéter inutilement des morceaux de HTML ;

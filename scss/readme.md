@@ -1,0 +1,1 @@
+Dans ce dossier se trouvent les sources CSS au format Sassy CSS (scss).
