@@ -2,7 +2,7 @@
 
 Outline compile quelques bons outils pour fournir un _template_ de travail modulaire aux intégrateurs chez [Clever Garden](http://www.clever-age.com/societe/nos-entites/clever-garden.html).
 
- * * *
+---
 
 Nous essayons de **capitaliser** un maximum sur nos techniques de travail côté intégration ;
 ce qui passe par une mutualisation d'un certain nombre de choses et la mise en place d'outils génériques.
@@ -17,6 +17,8 @@ Il nous fallait donc des outils puissants mais aussi très **flexibles**, sans p
 C'est avec cet objectif en vue qu'une base de travail à été mise en place sur l'ensemble des projets qui passent entre nos mains.
 Elle est est composée d'un ensemble d'outils existants, soigneusement choisis et évolue au fil du temps
 (en fonction des évolutions de nos métiers et des retours d'expérience de tout le monde).
+
+---
 
 À ce jour elle comprend :
 
@@ -37,6 +39,8 @@ Elle est est composée d'un ensemble d'outils existants, soigneusement choisis e
  - une page de suivi du travail effectué et de son niveau de qualité pour informer le chef de projet ou le client ;
  - une page de documentation pour expliciter les choix faits et les structures réalisées ;
  - et sans doute d’autres choses plus ou moins importantes que j'oublie.
+ 
+---
 
 Ce qui se traduit techniquement par tout un tas de choses :
 
@@ -53,5 +57,7 @@ Ce qui se traduit techniquement par tout un tas de choses :
  - [Web Font Specimen](http://wfs.typographisme.net/) ;
  - [OPQUAST](https://checklists.opquast.com/fr/opquastv2?q=int%C3%A9gration+xhtml/css) ;
  - ...
+ 
+---
 
 Tout ceci est hébergé ici-même et manque encore un peu de documentation. Mais nous y travaillons !
