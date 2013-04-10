@@ -2,7 +2,7 @@ On trouve dans ce répertoire les composants Flash nécessaires au projet.
 
 ---
 
-demo.swf est un petit objet Flash qui prend en paramètre une image afin de l'afficher
+`demo.swf` est un petit objet Flash qui prend en paramètre une image afin de l'afficher
 et de simuler un véritable composant Flash qui viendra ensuite prendre la main.
 
 ---
