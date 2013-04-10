@@ -94,7 +94,7 @@ class Z {
 		if (!$pageName)
 			return Z::returnError("<p>Erreur : aucune page n&rsquo;est actuellement demand&eacute;e, le nom de la page doit &ecirc;tre d&eacute;finit. </p>");
 		if (!$block AND !($block = Z::$ajaxBlock))
-			return Z::returnError("Error : no block defined");
+			return Z::returnError("Erreur : aucun bloc n&rsquo;est défini.");
 
 		if ($block == 'body') {
 			// if dedicated body-pagename for this pagename,

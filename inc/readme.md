@@ -1,3 +1,7 @@
+Dans ce repertoire se trouvent le code HTML des pages découpé en templates.
+
+---
+
 Z est un système de templates en PHP qui effectue principalement des imports de code.
 Il permet ne ne pas avoir à répéter inutilement des morceaux de HTML pour en faciliter la maintenance.
 
