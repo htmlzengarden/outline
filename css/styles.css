@@ -585,7 +585,8 @@ img,
 audio,
 video,
 canvas,
-svg {
+svg,
+object {
   display: block;
   max-width: 100%;
 }

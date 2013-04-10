@@ -92,6 +92,16 @@
 		<div>
 			<audio></audio>
 		</div>
+		
+		<h3>flash</h3>
+				
+		<div>
+			<object width="100" height="100" data="../swf/demo.swf" type="application/x-shockwave-flash">
+				<param name="movie" value="../swf/demo.swf" />
+				<param name="flashvars" value="image=../swf/demo.jpg" />
+				alternative
+			</object>
+		</div>
 
 		<h3>img</h3>
 
