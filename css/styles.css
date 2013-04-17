@@ -7,6 +7,13 @@
   clear: both;
 }
 
+.roll {
+  text-decoration: none;
+}
+.roll:hover {
+  text-decoration: underline;
+}
+
 .mask {
   position: absolute;
   width: 1px;
@@ -19,7 +26,7 @@
 .list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  border: 0;
   *zoom: 1;
 }
 .list:after {
@@ -30,8 +37,31 @@
 .list li,
 .list dt,
 .list dd {
-  margin: 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
   float: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+.list li:first-child, .list li.first,
+.list dt:first-child,
+.list dt.first,
+.list dd:first-child,
+.list dd.first {
+  padding-left: 0;
+}
+.list li:last-child,
+.list dt:last-child,
+.list dd:last-child {
+  padding-right: 0;
+}
+.list li.last,
+.list dt.last,
+.list dd.last {
+  padding-right: 0;
 }
 
 /* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */

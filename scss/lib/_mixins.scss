@@ -218,13 +218,11 @@ $fs: $base-font-size;
 
 @mixin roll
 {
-	text-decoration: none;
-	
-	&:hover,
-	&:focus
-	{
-		text-decoration: underline;
-	}
+	@include hover-link;
+}
+.roll // ce mixin peut être appelé depuis le HTML via une classe
+{
+	@include roll;
 }
 
 @mixin resize($direction: vertical)
@@ -250,7 +248,9 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
-@mixin show($type: block)
+// afficher / masquer / cacher
+
+@mixin show($type: block) // en paramètre optionnel, le `display` peut-être précisé (`table-cell`, `inline-block`…)
 {
 	display: $type;
 }
@@ -258,7 +258,7 @@ $fs: $base-font-size;
 {
 	display: none;
 }
-@mixin mask($rtl: false)
+@mixin mask($rtl: false) // reste accessible aux lecteurs d'écrans et aux robots
 {
 	position: absolute;
 	width:  1px;
@@ -275,38 +275,27 @@ $fs: $base-font-size;
 		right: -9999px;		
 	}
 }
-.mask
+.mask // ce mixin peut être appelé depuis le HTML via une classe
 {
 	@include mask;
 }
 
 //------------------------------------------------------------------------------
 
+// pour réaliser des listes horizontales
+
 @mixin list($rtl: false)
 {
-	margin:  0;
-	padding: 0;
-	list-style-type: none;
-	@include clearfix;
+	@include horizontal-list-container;
 	
 	li,
 	dt,
 	dd
 	{
-		margin: 0;
-		
-		@if $rtl == false
-		{
-			float: left;
-		}
-		@else
-		{
-			float: right;
-		}
-		
+		@include horizontal-list-item(0, left);
 	}
 }
-.list
+.list // ce mixin peut être appelé depuis le HTML via une classe
 {
 	@include list;
 }
