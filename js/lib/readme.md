@@ -7,6 +7,8 @@ Dans ce répertoire se trouvent les bibliothèques de fichiers JS. On trouve :
  - `jquery.migrate.js`  :  un _plugin_ jQuery pour faciliter la mise à jour depuis les anciennes version de la bibliothèque.
  - `browserdetect.js`   : la bibliothèque [Browser detect](http://www.quirksmode.org/js/detect.html).
 
+---
+
 Notez que les plugins jQuery sont préfixés par `jquery.`.
 
 Notez également que `browserdetect.js` et `jquery.hashgrid.js` ont été adaptés à nos besoins et donc légèrement modifiés.

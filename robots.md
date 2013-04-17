@@ -2,6 +2,8 @@
 
 C'est également dans ce fichier qu'on déclare le `sitemap.xml` du site.
 
+---
+
 `humans.txt` est le pendant de robots.txt dans lequel on peut renseigner des informations telles que les technologies ou les logiciels employées, ou encore les participants au projet. C'est un espace libre.
 
  - http://www.robotstxt.org/

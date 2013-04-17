@@ -6,6 +6,8 @@ Les bibliothèques utilisées :
  - `_normalize.scss` : un _reset_ CSS qui uniformise les styles plutôt que de les redefinir.
  - `_hashgrid.scss`  : la CSS liée au plugin JS du même nom qui permet de contrôler sa grille de mise en page au cours de l'intégration.
  
+---
+ 
  - http://compass-style.org/
  - http://susy.oddbird.net/
  - http://necolas.github.io/normalize.css/
