@@ -9,6 +9,15 @@ Dans ce répertoire se trouvent les bibliothèques de fichiers JS. On trouve :
 
 ---
 
+Utilisation rapide de #grid : 
+
+ - G + H pour afficher la grille ;
+ - F pour changer son `z-index` (elle est parfois entièrement cachée par le contenu) ;
+ - J pour changer l'affichage (grille verticale, horizonale et combinaison des deux) ;
+ - G pour masquer la grille.
+
+---
+
 Notez que les plugins jQuery sont préfixés par `jquery.`.
 
 Notez également que `browserdetect.js` et `jquery.hashgrid.js` ont été adaptés à nos besoins et donc légèrement modifiés.
