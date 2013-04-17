@@ -10,5 +10,10 @@ Sur la page de démonstration, on rétablit le rythme vertical sur les composant
 
 ---
 
-On trouve aussi un fichier `init.js` qui vient compléter la détection navigateur faite initialement via des commentaires conditionnels.
-S'appuyer sur la détection navigateur est bien sûr à éviter le plus possible et à ne réserver qu'à de rares cas non-bloquants. Préférez utiliser `modernizr.js` par exemple.
+On trouve aussi un fichier `init.js` qui vient compléter la détection navigateur faite initialement via des commentaires conditionnels. Ce fichier nécessite l'ajout de `browserdetect.js` en premier lieu.
+S'appuyer sur la détection navigateur est bien sûr **à éviter** le plus possible et à ne réserver qu'à de rares cas **non-bloquants**. Préférez utiliser `modernizr.js` par exemple.
+
+---
+
+La concaténation et la compression des JS n'est pas réalisée automatiquement en phase d'intégration. Bien souvent cela est maintenant pris en charge par les CMS et cela complique la maintenance.
+Cependant, nous pouvons le réaliser si nécessaire.

@@ -1,53 +1,62 @@
 // prepend : browserdetect.js
 
-// output  : _before.js
+// définition de variables souvent réutilisées
 
-var classes   = " js"  ,
-	addclass  = "class",
-	html      = document.getElementsByTagName("html")[0],
+var classes   = ' js'  , // c'est ici que toutes les classes vont venir s'empiler, l'espace en prefixe permet de les séparer des éventuelles classes existantes
+	addclass  = 'class',
+	html      = document.getElementsByTagName('html')[0],
 	htmlclass = html.className;
+	
+// ajout dans les classes qui vont être ajoutées de l'os...
 
-if(BrowserDetect.OS == "Mac")           classes += " mac";
-if(BrowserDetect.OS == "Linux")         classes += " lin";
-if(BrowserDetect.OS == "Windows")       classes += " win";
+if(BrowserDetect.OS == 'Mac')           classes += ' mac';
+if(BrowserDetect.OS == 'Linux')         classes += ' lin';
+if(BrowserDetect.OS == 'Windows')       classes += ' win';
 
-if(BrowserDetect.browser == "Chrome")   classes += " ch" ;
-if(BrowserDetect.browser == "Firefox")  classes += " fx" ;
-if(BrowserDetect.browser == "Opera" )   classes += " op" ;
-if(BrowserDetect.browser == "Safari")   classes += " sa" ;
+// ... et du navigateur (la classe pour Explorer est elle ajoutée via les commentaires conditionnes)
 
-if(BrowserDetect.browser == "Explorer")
+if(BrowserDetect.browser == 'Chrome')   classes += ' ch' ;
+if(BrowserDetect.browser == 'Firefox')  classes += ' fx' ;
+if(BrowserDetect.browser == 'Opera' )   classes += ' op' ;
+if(BrowserDetect.browser == 'Safari')   classes += ' sa' ;
+
+// si on se trouve sous Internet Explorer, on ajoute le support de abbr et on change la technique pour ajouter les classes.
+
+if(BrowserDetect.browser == 'Explorer')
 {
-    document.createElement("abbr");
-    if (!(document.querySelector)) addclass = "className";
+    document.createElement('abbr');
+    if (!(document.querySelector)) addclass = 'className';
 }
-if(BrowserDetect.OS == "iPhone" || BrowserDetect.OS == "iPod" || BrowserDetect.OS == "iPad")
+
+// si on se trouve sur iOS on ajoute également l'orientation et on ignore les différences entre iPod et iPhone
+
+else if(BrowserDetect.OS == 'iPhone' || BrowserDetect.OS == 'iPod' || BrowserDetect.OS == 'iPad')
 {
 	switch(window.orientation){
 		case 0:
-			classes += " portrait" ;
+			classes += ' portrait' ;
 			break;
 		case 180:  
-			classes += " portrait" ;  
+			classes += ' portrait' ;  
 			break;
 		case -90:  
-			classes += " landscape";  
+			classes += ' landscape';  
 			break;  
 		case 90:  
-			classes += " landscape";  
+			classes += ' landscape';  
 			break;  
 	}
-	if(BrowserDetect.OS == "iPad")
+	if(BrowserDetect.OS == 'iPad')
 	{
-		classes += " ipad ios";
+		classes += ' ipad ios';
 	}
-	if(BrowserDetect.OS == "iPod" || BrowserDetect.OS == "iPhone")
+	if(BrowserDetect.OS == 'iPod' || BrowserDetect.OS == 'iPhone')
 	{
-		classes += " iphone ios";
+		classes += ' iphone ios';
 	}
 }
-if(htmlclass)
-{
-	htmlclass = htmlclass.replace('no-js','');
-}
+
+// on supprime la classe no-js éventuelle et on ajoute les classes calculées au document
+
+htmlclass = htmlclass.replace('no-js','');
 html.setAttribute(addclass, htmlclass + classes);

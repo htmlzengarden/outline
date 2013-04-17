@@ -1,9 +1,9 @@
 # Set this to the root of your project when deployed:
 
-http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "img"
+http_path       = "/"
+css_dir         = "css"
+sass_dir        = "scss"
+images_dir      = "img"
 javascripts_dir = "js"
 
 	environment = :development
@@ -12,7 +12,7 @@ javascripts_dir = "js"
 if  environment == :production
 	output_style = :compressed
 else
-	output_style = :expanded
+	output_style =   :expanded
 #	sass_options = { :debug_info => true }
 end
 
@@ -21,12 +21,6 @@ end
 relative_assets = true
 line_comments   = false
 color_output    = false
-
-# If you prefer the indented syntax, you might want to regenerate this
-# project again passing --syntax sass, or you can uncomment this:
-# preferred_syntax = :sass
-# and then run:
-# sass-convert -R --from scss --to sass scss scss && rm -rf sass && mv scss sass
 
 # Réaliser une copie des sprites avec un nom dépourvu du hash d'unicité.
 

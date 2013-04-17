@@ -282,7 +282,7 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
-@mixin list
+@mixin list($rtl: false)
 {
 	margin:  0;
 	padding: 0;
@@ -294,7 +294,16 @@ $fs: $base-font-size;
 	dd
 	{
 		margin: 0;
-		float: left;
+		
+		@if $rtl == false
+		{
+			float: left;
+		}
+		@else
+		{
+			float: right;
+		}
+		
 	}
 }
 .list

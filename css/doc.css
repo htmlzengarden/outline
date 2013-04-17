@@ -569,7 +569,6 @@ caption {
   background-image: -o-linear-gradient(transparent 95%, rgba(100, 100, 225, 0.25) 95%);
   background-image: linear-gradient(transparent 95%, rgba(100, 100, 225, 0.25) 95%);
 }
-
 #grid.grid-1 .vert {
   background-color: transparent;
 }

@@ -1,0 +1,14 @@
+/*
+$exemple-layout: vertical;
+$exemple-spacing: 32px;
+@import 'bg/exemple/*.png';
+
+@include all-exemple-sprites;
+*/
+
+/*
+appels :
+
+@include exemple-sprite(image);
+@include exemple-sprite(image, $offset-x:100%);
+*/

@@ -1,7 +1,9 @@
 $breakpoint-media-output:  true;
 $breakpoint-ie-output:    false;
 
-@import "lib";
+@import "config"       ;
+
+@import "lib"          ;
 
 @import "styles-screen";
 @import "styles-print" ;

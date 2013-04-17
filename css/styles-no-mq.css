@@ -569,7 +569,6 @@ caption {
   background-image: -o-linear-gradient(transparent 95%, rgba(100, 100, 225, 0.25) 95%);
   background-image: linear-gradient(transparent 95%, rgba(100, 100, 225, 0.25) 95%);
 }
-
 #grid.grid-1 .vert {
   background-color: transparent;
 }
@@ -910,6 +909,15 @@ button:focus {
   clear: both;
 }
 
+#page .vert,
+#grid .vert {
+  width: 6.38298%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+  margin-left: 2.12766%;
+}
+
 #page.demo #section-article {
   *zoom: 1;
 }
@@ -923,15 +931,6 @@ button:focus {
 }
 #page.demo article {
   background-color: green;
-}
-
-#page .vert,
-#grid .vert {
-  width: 6.38298%;
-  float: left;
-  margin-right: 2.12766%;
-  display: inline;
-  margin-left: 2.12766%;
 }
 
 #page.demo section {

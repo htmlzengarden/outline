@@ -1,0 +1,76 @@
+#page.demo
+{
+	#section-article
+	{
+		@include clearfix;
+	}
+	section
+	{
+		background-color: red;
+	}
+	article
+	{
+		background-color: green;	
+	}
+}
+#page.demo
+{
+	section
+	{
+		@include span-columns(6, $desktop);
+		
+		@include at-breakpoint($tablet 70.5em)
+		{
+			@include span-columns(4, $tablet);
+		}
+		@include at-breakpoint($smartphone 46.5em)
+		{
+			@include span-columns(2, $smartphone);
+		}
+	}
+	article
+	{
+		@include span-columns(6 omega, $desktop);		
+		
+		@include at-breakpoint($tablet 70.5em)
+		{
+			@include span-columns(4 omega, $tablet);
+		}
+		@include at-breakpoint($smartphone 46.5em)
+		{
+			@include span-columns(2 omega, $smartphone);
+		}
+	}
+}
+/*
+// mobile first
+#page.demo
+{
+	section
+	{
+		@include span-columns(2, $smartphone);
+		
+		@include at-breakpoint($tablet)
+		{
+			@include span-columns(4, $tablet);
+		}
+		@include at-breakpoint($desktop ie)
+		{
+			@include span-columns(6, $desktop);
+		}
+	}
+	article
+	{
+		@include span-columns(2 omega, $smartphone);		
+		
+		@include at-breakpoint($tablet)
+		{
+			@include span-columns(4 omega, $tablet);
+		}
+		@include at-breakpoint($desktop ie)
+		{
+			@include span-columns(6 omega, $desktop);
+		}
+	}	
+}
+*/
