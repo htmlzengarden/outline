@@ -1,5 +1,10 @@
 #page.demo
 {
+	#inline
+	{
+		@include hide;
+	}
+
 	#section-article
 	{
 		@include clearfix;
@@ -11,6 +16,30 @@
 	article
 	{
 		background-color: green;	
+	}
+	.flexslider
+	{
+		@include margin-bottom;
+		@include border;
+		
+		.flex-control-nav,
+		.flex-direction-nav
+		{
+			li
+			{
+				&:after
+				{
+					content: ' – ';
+				}
+				&:last-child
+				{
+					&:after
+					{
+						content: '';
+					}
+				}
+			}
+		}
 	}
 }
 #page.demo

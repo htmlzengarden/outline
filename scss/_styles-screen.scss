@@ -1,9 +1,12 @@
-@import "inc/_font-face";
-@import "inc/_sprites";
-@import "inc/_common";
-@import "inc/_forms";
-@import "inc/_layout";
-	@import "inc/_header";
-	@import "inc/_content";
-	@import "inc/_footer";
-@import "inc/_demo";
+@import "inc/font-face";
+@import "inc/sprites";
+@import "inc/common";
+@import "inc/forms";
+@import "inc/layout";
+	@import "inc/header";
+	@import "inc/content";
+	@import "inc/footer";
+
+@import "inc/demo";
+@import "lib/colorbox";
+@import "lib/flexslider";

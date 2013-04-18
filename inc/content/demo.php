@@ -2,6 +2,81 @@
 <div id="content">
 	<div class="page">
 
+		<ul>
+			<li><a href="#inline" class="pop">Popin</a></li>
+		</ul>
+		
+		<div id="inline">
+			<p>
+				Lorem <a href="#">ipsum dolor sit amet</a>, consectetur adipisicing elit. Dignissimos repellat praesentium esse molestiae ipsam dolorum ad consequuntur in expedita quibusdam nesciunt eaque et quisquam voluptatum architecto minus nulla quae veniam.
+			</p>
+			<p>
+				Lorem <a href="#">ipsum dolor sit amet</a>, consectetur adipisicing elit. Dignissimos repellat praesentium esse molestiae ipsam dolorum ad consequuntur in expedita quibusdam nesciunt eaque et quisquam voluptatum architecto minus nulla quae veniam.
+			</p>
+			<p>
+				Lorem <a href="#">ipsum dolor sit amet</a>, consectetur adipisicing elit. Dignissimos repellat praesentium esse molestiae ipsam dolorum ad consequuntur in expedita quibusdam nesciunt eaque et quisquam voluptatum architecto minus nulla quae veniam.
+			</p>
+			<p>
+				Lorem <a href="#">ipsum dolor sit amet</a>, consectetur adipisicing elit. Dignissimos repellat praesentium esse molestiae ipsam dolorum ad consequuntur in expedita quibusdam nesciunt eaque et quisquam voluptatum architecto minus nulla quae veniam.
+			</p>
+		</div>
+		
+		<div class="flexslider">
+			<ul class="slides">
+				<li>A</li>
+				<li>B</li>
+				<li>C</li>
+				<li>D</li>
+				<li>E</li>
+				<li>F</li>
+				<li>G</li>
+				<li>H</li>
+				<li>I</li>
+				<li>J</li>
+				<li>K</li>
+				<li>L</li>
+				<li>M</li>
+				<li>N</li>
+				<li>O</li>
+				<li>P</li>
+				<li>Q</li>
+				<li>R</li>
+				<li>S</li>
+				<li>T</li>
+				<li>U</li>
+				<li>V</li>
+				<li>W</li>
+				<li>X</li>
+				<li>Y</li>
+				<li>Z</li>
+			</ul>
+		</div>
+		
+		<form action="#" method="post" data-errors="<p role='alert'>Merci de corriger les % champs mis en évidence.</p>" data-error="<p role='alert'>Merci de corriger le champ mis en évidence.</p>">
+			<div class="errors"></div>
+			<p><sup>*</sup> Champs obligatoires.</p>
+			<p class="line"><!--
+			 --><label for="id_00"><!--
+				 --><span class="label">Intitulé 1 <sup>*</sup></span><!--
+				 --><span class="input"><input type="text" id="id_00" name="id_00" required="required" aria-required="true" /></span><!--
+				 --><span class="help">Aide éventuelle</span><!--
+			 --></label><!--
+		 --></p>
+			 <p class="line"><!--
+		 	 --><label for="id_01"><!--
+		 		 --><span class="label">Intitulé 2 (<span lang="en">email</span>)</span><!--
+		 		 --><span class="input"><input type="email" id="id_01" name="id_01" data-msg-email="Message personnalisé pour la validité de l’email." /></span><!--
+		 		 
+		 		 
+		 		 --><span class="help"></span><!--
+		 	 --></label><!--
+		 --></p>
+			<p class="line"><!--
+			 --><span class="label"></span><!--
+			 --><button type="submit">Valider</button><!--
+		 --></p>
+		</form>
+
 		<h1>Heading 1</h1>
 		<h2>Heading 2</h2>
 		<h3>Heading 3</h3>

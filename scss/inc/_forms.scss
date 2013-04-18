@@ -15,16 +15,38 @@ fieldset
 		}
 	}
 }
-.label
+span.label
 {
 	@include span-columns(2);
+
+}
+span.help
+{
+	margin-left: gutter($desktop, 1);
+	@include span-columns(2);
+}
+span.error
+{
+	color: #F00;
+	@include span-columns(3 omega);
+}
+.errors
+{
+	color: #F00;
+}
+span.label,
+span.help,
+span.error
+{
 	float: none;
-	display: inline-block;
+	display: inline-block;	
 }
 input,
 select,
 textarea,
-.label
+span.label,
+span.help,
+span.error
 {
 	vertical-align: top;
 }

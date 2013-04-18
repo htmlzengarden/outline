@@ -258,6 +258,10 @@ $fs: $base-font-size;
 {
 	display: none;
 }
+.hide // ce mixin peut être appelé depuis le HTML via une classe
+{
+	@include hide;
+}
 @mixin mask($rtl: false) // reste accessible aux lecteurs d'écrans et aux robots
 {
 	position: absolute;
