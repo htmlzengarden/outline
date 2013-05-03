@@ -12,7 +12,8 @@ $(function(){
 	  
 	$('.demo .pop').colorbox({
 	
-		inline: true
+		inline: true,
+		width: '80%'
 	});
 
 	function rwd()
