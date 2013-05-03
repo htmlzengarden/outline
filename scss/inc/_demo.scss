@@ -2,7 +2,10 @@
 {
 	#inline
 	{
-		@include hide;
+		.js &
+		{
+			@include hide;
+		}
 	}
 
 	#section-article
@@ -37,6 +40,17 @@
 					{
 						content: '';
 					}
+				}
+			}
+		}
+		.slides
+		{
+			li
+			{
+				.no-js &
+				{
+					float: none;
+					display: block;
 				}
 			}
 		}

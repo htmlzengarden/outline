@@ -980,7 +980,7 @@ button:focus {
   margin-left: 2.12766%;
 }
 
-#page.demo #inline {
+.js #page.demo #inline {
   display: none;
 }
 #page.demo #section-article {
@@ -1015,6 +1015,10 @@ button:focus {
 #page.demo .flexslider .flex-control-nav li:last-child:after,
 #page.demo .flexslider .flex-direction-nav li:last-child:after {
   content: '';
+}
+.no-js #page.demo .flexslider .slides li {
+  float: none;
+  display: block;
 }
 
 #page.demo section {
