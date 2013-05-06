@@ -2,13 +2,6 @@ var pathimg = '../img/',
     pathbg  = pathimg + 'bg/';
 
 $(function(){
-	$('.demo div>video, '+
-	  '.demo div>audio, '+
-	  '.demo div>img, '+
-	  '.demo p>img, '+
-	  '.demo div>a, '+
-	  '.demo div>svg, '+
-	  '.demo div>figure').baseline();
 	  
 	$('.demo .pop').colorbox({
 	
@@ -20,8 +13,16 @@ $(function(){
 	{
 		rwdimg('.demo noscript.rwdimg');
 	}
-	
 	$(window).resize($.throttle(250, rwd)).trigger('resize');
+	
+	$('.demo div>video, '+
+	  '.demo div>audio, '+
+	  '.demo div>img, '+
+	  '.demo p>.rwdimg, '+
+	  '.demo div>a, '+
+	  '.demo div>svg, '+
+	  '.demo div>object, '+
+	  '.demo div>figure').baseline();
 	
 	$('.demo .flexslider').flexslider({
 	
@@ -30,7 +31,10 @@ $(function(){
 		nextText: 'Suivante',
 		pausePlay: true,
 		pauseText: 'Pause',
-		playText: 'Lecture'
+		playText: 'Lecture',
+		start: function(slider){
+			slider.pause();
+		}
 	});
 	
 	$('.demo form').each(function(){

@@ -101,7 +101,7 @@ var rwdimg = function(selector){
 			}
 			else
 			{
-				src = src.replace(/.(jpg|png)$/ig, '-rwdimg.$1');
+				src = src.replace(/.(jpg|png)$/ig, '-@x2.$1');
 			}
 		}
 		

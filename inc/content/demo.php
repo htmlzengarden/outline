@@ -26,7 +26,7 @@
 			          data-rwd="media-1 media-2"
 					  data-media-1-match="(max-width:  800px)" data-media-1-src="http://maquettes.garden.projects.clever-age.net/img/100/000/FFF" data-media-1-width="100" data-media-1-height="100" data-media-1-class="media-1"
 					  data-media-2-match="(min-width: 1200px)" data-media-2-src="http://maquettes.garden.projects.clever-age.net/img/400/000/FFF" data-media-2-width="400" data-media-2-height="400" data-media-2-class="media-2"
-			          data-src="http://maquettes.garden.projects.clever-age.net/img/200/000/FFF" data-alt="alt" data-width="200" data-height="200"><!--
+			          data-src="http://maquettes.garden.projects.clever-age.net/img/200/000/FFF" data-alt="alt" data-width="200" data-height="200"  ><!--
 			 --><img       src="http://maquettes.garden.projects.clever-age.net/img/200/000/FFF"      alt="alt"      width="200"      height="200" /><!--
 		 --></noscript>
 		</p>
