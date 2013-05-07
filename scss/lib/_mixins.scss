@@ -306,28 +306,35 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
-@mixin hdpi($ratio: 1.3)
-{
-	@media only screen and (-webkit-min-device-pixel-ratio: $ratio),
-		   only screen and (min--moz-device-pixel-ratio: $ratio),
-		   only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
-		   only screen and (min-resolution: #{round($ratio*96)}dpi),
-		   only screen and (min-resolution: #{$ratio}dppx)
-	{
-		@content;
-	}
-}
+@mixin retina-image($filename, $extension: png, $retina-filename: null, $asset-pipeline: false) {
+  @if $asset-pipeline {
+    background-image: image_url($filename + "." + $extension);
+  }
+  @else {
+    background-image: url($filename + "." + $extension);
+  }
 
-@mixin imghdpi($file, $ext: '.png', $path: '../img/bg/', $ratio: 1.3)
-{
-	$img   : $path + $file +         $ext;
-	$imgx2 : $path + $file + '@x2' + $ext;
+  @include hidpi {
 
-	background-image: url($img);
-	
-	@include hdpi($ratio)
-	{
-		background-image: url($imgx2);
-		background-size: image-width($img) image-height($img);
-	}
+    @if $asset-pipeline {
+      @if $retina-filename {
+        background-image: image_url($retina-filename + "." + $extension);
+      }
+      @else {
+        background-image: image_url($filename + "@2x" + "." + $extension);
+      }
+    }
+
+    @else {
+      @if $retina-filename {
+        background-image: url($retina-filename + "." + $extension);
+      }
+      @else {
+        background-image: url($filename + "@2x" + "." + $extension);
+      }
+    }
+
+    background-size: image-width($filename + "." + $extension) image-height($filename + "." + $extension);
+
+  }
 }

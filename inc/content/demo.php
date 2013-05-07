@@ -3,6 +3,11 @@
 	<div class="page">
 	
 		<div id="bg"><!-- --></div>
+		
+		<div id="arrows">
+			<span class="first-child"><!-- --></span><!--
+		 --><span class="last-child" ><!-- --></span>
+		</div>
 	
 		<div class="cols">
 			<div class="col nth-child-n"                        >1</div>

@@ -58,6 +58,27 @@
 }
 #page.demo
 {
+	#arrows
+	{
+		@include height;
+		@include margin-bottom;
+	
+		span
+		{
+			display: inline-block;
+			
+			&.first-child
+			{
+				@include triangle(20px, orange, right);
+			}			
+			&.last-child
+			{
+				@include triangle(14px, orange, down-right); // il faudrait calculer le cette taille automatiquement ainsi que les marges qui compensent
+				margin-bottom: 6px;
+				margin-right:  6px;
+			}	
+		}
+	}
 	#sprites
 	{
 		.sprite
@@ -85,8 +106,7 @@
 		@include height(20);
 		@include margin-bottom;
 		
-		@include imghdpi('demo_mire'); 
-	 // @include imghdpi('demo_mire', '.png', '../img/bg/', 2);
+		@include retina-image('../img/bg/demo_mire');
 		
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
