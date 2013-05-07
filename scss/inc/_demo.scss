@@ -56,12 +56,33 @@
 		}
 	}
 }
-
+#page.demo
+{
+	#sprites
+	{
+		.sprite
+		{
+			@include height(10);
+			@include margin-bottom;
+			
+			@include demo_mires-sprite(demo_mire-2, $offset-x: 50%);
+			
+			&.first-child
+			{
+				@include demo_mires-sprite(demo_mire-1, $offset-x: 0%);
+			}
+			&.last-child
+			{
+				@include demo_mires-sprite(demo_mire-3, $offset-x: 100%);
+			}
+		}
+	}
+}
 #page.demo
 {
 	#bg
 	{		
-		@include min-height(20);
+		@include height(20);
 		@include margin-bottom;
 		
 		@include imghdpi('demo_mire'); 

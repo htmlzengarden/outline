@@ -12,3 +12,6 @@ appels :
 @include exemple-sprite(image);
 @include exemple-sprite(image, $offset-x:100%);
 */
+
+@import 'bg/demo_mires/*.png';
+@include all-demo_mires-sprites;

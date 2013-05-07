@@ -5,10 +5,16 @@
 		<div id="bg"><!-- --></div>
 	
 		<div class="cols">
-			<div class="col nth-child-n">1</div>
-			<div class="col nth-child-n nth-child-2n">2</div>
-			<div class="col nth-child-n">3</div>
+			<div class="col nth-child-n"                        >1</div>
+			<div class="col nth-child-n nth-child-2n"           >2</div>
+			<div class="col nth-child-n"                        >3</div>
 			<div class="col nth-child-n nth-child-2n last-child">4</div>
+		</div>
+		
+		<div id="sprites">
+			<div class="sprite first-child"><!-- --></div>
+			<div class="sprite"            ><!-- --></div>
+			<div class="sprite last-child" ><!-- --></div>
 		</div>
 
 		<ul>

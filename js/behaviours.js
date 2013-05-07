@@ -27,11 +27,11 @@ $(function(){
 	$('.demo .flexslider').flexslider({
 	
 		animation: 'slide',
-		prevText: 'Précédente',
-		nextText: 'Suivante',
+		prevText: '<span>Précédente</span>',
+		nextText: '<span>Suivante</span>',
 		pausePlay: true,
-		pauseText: 'Pause',
-		playText: 'Lecture',
+		pauseText: '<span>Pause</span>',
+		playText: '<span>Lecture</span>',
 		start: function(slider){
 			slider.pause();
 		}

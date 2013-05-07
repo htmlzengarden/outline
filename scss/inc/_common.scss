@@ -7,14 +7,15 @@ audio,
 video,
 canvas,
 svg,
-object
+object,
+table
 {
 	display: block;
 	max-width: 100%;
 }
 table
 {
-	max-width: 100%;
+	display: table;
 }
 small
 {
