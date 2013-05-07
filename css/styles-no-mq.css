@@ -1021,6 +1021,49 @@ button:focus {
   display: block;
 }
 
+#page.demo #bg {
+  min-height: 28.57143em;
+  *height: 28.57143em;
+  margin-bottom: 1.42857em;
+  background-image: url("../img/bg/demo_mire.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+  #page.demo #bg {
+    background-image: url("../img/bg/demo_mire@x2.png");
+    background-size: 200px 200px;
+  }
+}
+
+#page.demo .cols {
+  *zoom: 1;
+}
+#page.demo .cols:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#page.demo .cols .col {
+  background-color: black;
+  color: white;
+  padding-top: 1.42857em;
+  padding-bottom: 1.42857em;
+  margin-bottom: 1.42857em;
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+#page.demo .cols .col.last-child {
+  background-color: red;
+  width: 23.40426%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline;
+}
+
 #page.demo section {
   width: 48.93617%;
   float: left;

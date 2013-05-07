@@ -3,7 +3,7 @@ Dans ce répertoire se trouvent les bibliothèques de fichiers JS. On trouve :
  - `modernizr.js`                      : la bibliothèque [Modernizr](http://modernizr.com/).
  - `jquery.js`                         : la bibliothèque [jQuery](http://jquery.com/).
  - `jquery.hashgrid.js`                : [un _plugin_ jQuery](http://hashgrid.com/) pour sur-imprimer la grille au travail en cours afin de le vérifier.
- - `jquery.baseline.js`                :  un _plugin_ jQuery pour rétablir le rythme vertical quand nécessaire.
+ - `jquery.baseline.js`                :  un _plugin_ jQuery pour rétablir le rythme vertical quand nécessaire (ce _plugin_ ne fonctionne malheureusement que si la taille de texte est par défaut au chargement de la page). 
  - `jquery.migrate.js`                 :  un _plugin_ jQuery pour faciliter la mise à jour depuis les anciennes version de la bibliothèque.
  - `jquery.fontresize.js`              :  un _plugin_ jQuery pour détecter les changements de taille de police.
  - `jquery.rwdimg.js`                  :  un _plugin_ jQuery pour gérer les images responsives et le mode haute définition.

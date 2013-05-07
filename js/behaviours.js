@@ -8,12 +8,6 @@ $(function(){
 		inline: true,
 		width: '80%'
 	});
-
-	function rwd()
-	{
-		rwdimg('.demo noscript.rwdimg');
-	}
-	$(window).resize($.throttle(250, rwd)).trigger('resize');
 	
 	$('.demo div>video, '+
 	  '.demo div>audio, '+
@@ -23,6 +17,12 @@ $(function(){
 	  '.demo div>svg, '+
 	  '.demo div>object, '+
 	  '.demo div>figure').baseline();
+
+	function rwd()
+	{
+		rwdimg('.demo noscript.rwdimg');		
+	}
+	$(window).resize($.throttle(250, rwd)).trigger('resize');
 	
 	$('.demo .flexslider').flexslider({
 	

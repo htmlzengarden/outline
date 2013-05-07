@@ -56,6 +56,70 @@
 		}
 	}
 }
+
+#page.demo
+{
+	#bg
+	{		
+		@include min-height(20);
+		@include margin-bottom;
+		
+		@include imghdpi('demo_mire'); 
+	 // @include imghdpi('demo_mire', '.png', '../img/bg/', 2);
+		
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+}
+#page.demo
+{
+	.cols
+	{
+		@include clearfix;
+		
+		.col
+		{
+			background-color: black;
+			color: white;
+			@include padding-top;
+			@include padding-bottom;
+			@include margin-bottom;
+			
+			@include span-columns(3, $desktop);
+			
+			&.last-child
+			{
+				background-color: red;
+			
+				@include span-columns(3 omega, $desktop);
+			}
+			
+			@include at-breakpoint($tablet 70.5em)
+			{
+				@include span-columns(4, $tablet);
+				
+				&.nth-child-2n
+				{
+					background-color: green;
+				
+					@include span-columns(4 omega, $tablet);
+				}
+			}
+			
+			@include at-breakpoint($smartphone 46.5em)
+			{
+				@include span-columns(4 omega, $smartphone);
+				
+				&.nth-child-n
+				{
+					background-color: blue;
+				
+					@include span-columns(4 omega, $smartphone);
+				}
+			}
+		}
+	}
+}
 #page.demo
 {
 	section

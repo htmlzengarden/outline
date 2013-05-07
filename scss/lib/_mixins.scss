@@ -305,3 +305,29 @@ $fs: $base-font-size;
 }
 
 //------------------------------------------------------------------------------
+
+@mixin hdpi($ratio: 1.3)
+{
+	@media only screen and (-webkit-min-device-pixel-ratio: $ratio),
+		   only screen and (min--moz-device-pixel-ratio: $ratio),
+		   only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
+		   only screen and (min-resolution: #{round($ratio*96)}dpi),
+		   only screen and (min-resolution: #{$ratio}dppx)
+	{
+		@content;
+	}
+}
+
+@mixin imghdpi($file, $ext: '.png', $path: '../img/bg/', $ratio: 1.3)
+{
+	$img   : $path + $file +         $ext;
+	$imgx2 : $path + $file + '@x2' + $ext;
+
+	background-image: url($img);
+	
+	@include hdpi($ratio)
+	{
+		background-image: url($imgx2);
+		background-size: image-width($img) image-height($img);
+	}
+}
