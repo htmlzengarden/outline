@@ -1,224 +1,224 @@
 #page.demo
 {
-	#inline
-	{
-		.js &
-		{
-			@include hide;
-		}
-	}
+    #inline
+    {
+        .js &
+        {
+            @include hide;
+        }
+    }
 
-	#section-article
-	{
-		@include clearfix;
-	}
-	section
-	{
-		background-color: red;
-	}
-	article
-	{
-		background-color: green;	
-	}
-	.flexslider
-	{
-		@include margin-bottom;
-		@include border;
-		
-		.flex-control-nav,
-		.flex-direction-nav
-		{
-			li
-			{
-				&:after
-				{
-					content: ' – ';
-				}
-				&:last-child
-				{
-					&:after
-					{
-						content: '';
-					}
-				}
-			}
-		}
-		.slides
-		{
-			li
-			{
-				.no-js &
-				{
-					float: none;
-					display: block;
-				}
-			}
-		}
-	}
+    #section-article
+    {
+        @include clearfix;
+    }
+    section
+    {
+        background-color: red;
+    }
+    article
+    {
+        background-color: green;    
+    }
+    .flexslider
+    {
+        @include margin-bottom;
+        @include border;
+        
+        .flex-control-nav,
+        .flex-direction-nav
+        {
+            li
+            {
+                &:after
+                {
+                    content: ' – ';
+                }
+                &:last-child
+                {
+                    &:after
+                    {
+                        content: '';
+                    }
+                }
+            }
+        }
+        .slides
+        {
+            li
+            {
+                .no-js &
+                {
+                    float: none;
+                    display: block;
+                }
+            }
+        }
+    }
 }
 #page.demo
 {
-	#arrows
-	{
-		@include height;
-		@include margin-bottom;
-	
-		span
-		{
-			display: inline-block;
-			
-			&.first-child
-			{
-				@include triangle(20px, orange, right);
-			}			
-			&.last-child
-			{
-				@include triangle(14px, orange, down-right); // il faudrait calculer le cette taille automatiquement ainsi que les marges qui compensent
-				margin-bottom: 6px;
-				margin-right:  6px;
-			}	
-		}
-	}
-	#sprites
-	{
-		.sprite
-		{
-			@include height(10);
-			@include margin-bottom;
-			
-			@include demo_mires-sprite(demo_mire-2, $offset-x: 50%);
-			
-			&.first-child
-			{
-				@include demo_mires-sprite(demo_mire-1, $offset-x: 0%);
-			}
-			&.last-child
-			{
-				@include demo_mires-sprite(demo_mire-3, $offset-x: 100%);
-			}
-		}
-	}
+    #arrows
+    {
+        @include height;
+        @include margin-bottom;
+    
+        span
+        {
+            display: inline-block;
+            
+            &.first-child
+            {
+                @include triangle(20px, orange, right);
+            }            
+            &.last-child
+            {
+                @include triangle(14px, orange, down-right); // il faudrait calculer le cette taille automatiquement ainsi que les marges qui compensent
+                margin-bottom: 6px;
+                margin-right:  6px;
+            }    
+        }
+    }
+    #sprites
+    {
+        .sprite
+        {
+            @include height(10);
+            @include margin-bottom;
+            
+            @include demo_mires-sprite(demo_mire-2, $offset-x: 50%);
+            
+            &.first-child
+            {
+                @include demo_mires-sprite(demo_mire-1, $offset-x: 0%);
+            }
+            &.last-child
+            {
+                @include demo_mires-sprite(demo_mire-3, $offset-x: 100%);
+            }
+        }
+    }
 }
 #page.demo
 {
-	#bg
-	{		
-		@include height(20);
-		@include margin-bottom;
-		
-		@include retina-image('../img/bg/demo_mire');
-		
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-	}
+    #bg
+    {        
+        @include height(20);
+        @include margin-bottom;
+        
+        @include retina-image('../img/bg/demo_mire');
+        
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 }
 #page.demo
 {
-	.cols
-	{
-		@include clearfix;
-		
-		.col
-		{
-			background-color: black;
-			color: white;
-			@include padding-top;
-			@include padding-bottom;
-			@include margin-bottom;
-			
-			@include span-columns(3, $desktop);
-			
-			&.last-child
-			{
-				background-color: red;
-			
-				@include span-columns(3 omega, $desktop);
-			}
-			
-			@include at-breakpoint($tablet 70.5em)
-			{
-				@include span-columns(4, $tablet);
-				
-				&.nth-child-2n
-				{
-					background-color: green;
-				
-					@include span-columns(4 omega, $tablet);
-				}
-			}
-			
-			@include at-breakpoint($smartphone 46.5em)
-			{
-				@include span-columns(4 omega, $smartphone);
-				
-				&.nth-child-n
-				{
-					background-color: blue;
-				
-					@include span-columns(4 omega, $smartphone);
-				}
-			}
-		}
-	}
+    .cols
+    {
+        @include clearfix;
+        
+        .col
+        {
+            background-color: black;
+            color: white;
+            @include padding-top;
+            @include padding-bottom;
+            @include margin-bottom;
+            
+            @include span-columns(3, $desktop);
+            
+            &.last-child
+            {
+                background-color: red;
+            
+                @include span-columns(3 omega, $desktop);
+            }
+            
+            @include at-breakpoint($tablet 70.5em)
+            {
+                @include span-columns(4, $tablet);
+                
+                &.nth-child-2n
+                {
+                    background-color: green;
+                
+                    @include span-columns(4 omega, $tablet);
+                }
+            }
+            
+            @include at-breakpoint($smartphone 46.5em)
+            {
+                @include span-columns(4 omega, $smartphone);
+                
+                &.nth-child-n
+                {
+                    background-color: blue;
+                
+                    @include span-columns(4 omega, $smartphone);
+                }
+            }
+        }
+    }
 }
 #page.demo
 {
-	section
-	{
-		@include span-columns(6, $desktop);
-		
-		@include at-breakpoint($tablet 70.5em)
-		{
-			@include span-columns(4, $tablet);
-		}
-		@include at-breakpoint($smartphone 46.5em)
-		{
-			@include span-columns(2, $smartphone);
-		}
-	}
-	article
-	{
-		@include span-columns(6 omega, $desktop);		
-		
-		@include at-breakpoint($tablet 70.5em)
-		{
-			@include span-columns(4 omega, $tablet);
-		}
-		@include at-breakpoint($smartphone 46.5em)
-		{
-			@include span-columns(2 omega, $smartphone);
-		}
-	}
+    section
+    {
+        @include span-columns(6, $desktop);
+        
+        @include at-breakpoint($tablet 70.5em)
+        {
+            @include span-columns(4, $tablet);
+        }
+        @include at-breakpoint($smartphone 46.5em)
+        {
+            @include span-columns(2, $smartphone);
+        }
+    }
+    article
+    {
+        @include span-columns(6 omega, $desktop);        
+        
+        @include at-breakpoint($tablet 70.5em)
+        {
+            @include span-columns(4 omega, $tablet);
+        }
+        @include at-breakpoint($smartphone 46.5em)
+        {
+            @include span-columns(2 omega, $smartphone);
+        }
+    }
 }
 /*
 // mobile first
 #page.demo
 {
-	section
-	{
-		@include span-columns(2, $smartphone);
-		
-		@include at-breakpoint($tablet)
-		{
-			@include span-columns(4, $tablet);
-		}
-		@include at-breakpoint($desktop ie)
-		{
-			@include span-columns(6, $desktop);
-		}
-	}
-	article
-	{
-		@include span-columns(2 omega, $smartphone);		
-		
-		@include at-breakpoint($tablet)
-		{
-			@include span-columns(4 omega, $tablet);
-		}
-		@include at-breakpoint($desktop ie)
-		{
-			@include span-columns(6 omega, $desktop);
-		}
-	}	
+    section
+    {
+        @include span-columns(2, $smartphone);
+        
+        @include at-breakpoint($tablet)
+        {
+            @include span-columns(4, $tablet);
+        }
+        @include at-breakpoint($desktop ie)
+        {
+            @include span-columns(6, $desktop);
+        }
+    }
+    article
+    {
+        @include span-columns(2 omega, $smartphone);        
+        
+        @include at-breakpoint($tablet)
+        {
+            @include span-columns(4 omega, $tablet);
+        }
+        @include at-breakpoint($desktop ie)
+        {
+            @include span-columns(6 omega, $desktop);
+        }
+    }    
 }
 */

@@ -21,15 +21,15 @@ Quelques règles simples définissent son fonctionnement :
 
 Cette structure est proposée par défaut :
 
-	-html
-		-head
-			title
-		-body
-			page
-				header
-				content
-				footer
-				
+    -html
+        -head
+            title
+        -body
+            page
+                header
+                content
+                footer
+                
 Mais elle peut bien sûr être modifiée en fonction des contraintes du projet.
 Les tirets devant les morceaux `html`, `head` et `body` ne sont là que pour mettre en évidence ses blocs essentiels aux pages HTML.
 

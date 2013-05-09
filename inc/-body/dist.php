@@ -4,12 +4,12 @@
 <!--[if IE 7]>  <body class="ie ie7"    ><![endif]-->
 <!--[if IE 6]>  <body class="ie ie6"    ><![endif]-->
 <!--[if !IE]>--><body class="not-ie"><!--<![endif]-->
-	<script src="../js/lib/browserdetect.js"     ></script>
-	<script src="../js/init.js"                  ></script>
-<?php include Z::getFile('page'); ?>		
-	<script src="../js/lib/jquery.js"            ></script>
-	<script src="../js/lib/jquery.migrate.js"    ></script>
-	<script src="../js/behaviours.js"            ></script>
+    <script src="../js/lib/browserdetect.js"     ></script>
+    <script src="../js/init.js"                  ></script>
+<?php include Z::getFile('page'); ?>        
+    <script src="../js/lib/jquery.js"            ></script>
+    <script src="../js/lib/jquery.migrate.js"    ></script>
+    <script src="../js/behaviours.js"            ></script>
 
-	<script src="../js/lib/jquery.hashgrid.js"   ></script>
+    <script src="../js/lib/jquery.hashgrid.js"   ></script>
 </body>

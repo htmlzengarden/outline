@@ -23,21 +23,21 @@
     },
     
     "fr": {
-    	"fr": "Français",
-    	"en": "<span lang=\"fr\">Français</span>",
-    	"it": "<span lang=\"fr\">Français</span>"
+        "fr": "Français",
+        "en": "<span lang=\"fr\">Français</span>",
+        "it": "<span lang=\"fr\">Français</span>"
     },
     
     "en": {
-    	"fr": "<span lang=\"en\">English</span>",
-    	"en": "English",
-    	"it": "<span lang=\"en\">English</span>"
+        "fr": "<span lang=\"en\">English</span>",
+        "en": "English",
+        "it": "<span lang=\"en\">English</span>"
     },
     
     "it": {
-    	"fr": "<span lang=\"it\">Italiano</span>",
-    	"en": "<span lang=\"it\">Italiano</span>",
-    	"it": "Italiano"
+        "fr": "<span lang=\"it\">Italiano</span>",
+        "en": "<span lang=\"it\">Italiano</span>",
+        "it": "Italiano"
     }
   }
 }

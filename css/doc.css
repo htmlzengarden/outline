@@ -120,9 +120,9 @@ audio:not([controls]) {
    ========================================================================== */
 /*
  * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
- *	http://clagnut.com/blog/348/#c790
+ *    http://clagnut.com/blog/348/#c790
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
- *	www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html {
   font-size: 100.01%;
@@ -134,8 +134,8 @@ html {
 }
 
 body {
-  font-size: 87.5%;
-  line-height: 1.42857em;
+  font-size: 81.25%;
+  line-height: 1.53846em;
 }
 
 /*
@@ -185,7 +185,7 @@ a:active {
 /* http://modularscale.com/scale/?px1=14&px2=12&ra1=1.5&ra2=0 */
 h1 {
   margin: 0;
-  font-size: 1.92857em;
+  font-size: 2.07692em;
   line-height: 1.48148em;
   margin-bottom: 0.74074em;
   padding-top: 1.48148em;
@@ -193,7 +193,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.61538em;
   line-height: 1.90476em;
   margin-bottom: 0.95238em;
   padding-top: 1.90476em;
@@ -201,7 +201,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 1.28571em;
+  font-size: 1.38462em;
   line-height: 2.22222em;
   margin-bottom: 1.11111em;
   padding-top: 2.22222em;
@@ -209,7 +209,7 @@ h3 {
 
 h4 {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.07692em;
   line-height: 1.42857em;
   margin-bottom: 1.42857em;
   padding-top: 2.85714em;
@@ -217,7 +217,7 @@ h4 {
 
 h5 {
   margin: 0;
-  font-size: 0.85714em;
+  font-size: 0.92308em;
   line-height: 1.66667em;
   margin-bottom: 1.66667em;
   padding-top: 3.33333em;
@@ -225,7 +225,7 @@ h5 {
 
 h6 {
   margin: 0;
-  font-size: 0.71429em;
+  font-size: 0.76923em;
   line-height: 2em;
   margin-bottom: 2em;
   padding-top: 4em;
@@ -248,7 +248,7 @@ strong {
 
 blockquote {
   margin: 0 6em;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.53846em;
 }
 
 /*
@@ -273,7 +273,7 @@ p,
 pre,
 address {
   margin: 0;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.53846em;
 }
 
 /*
@@ -348,7 +348,7 @@ menu,
 ol,
 ul {
   margin: 0;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.53846em;
 }
 
 dd {
@@ -370,8 +370,8 @@ ul {
 /*
 nav ul,
 nav ol {
-	list-style: none;
-	list-style-image: none;
+    list-style: none;
+    list-style-image: none;
 }
 */
 /* =============================================================================
@@ -380,7 +380,7 @@ nav ol {
 /*
  * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
  * 2. Improves image quality when scaled in IE7
- *	code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
 img {
   border: 0;
@@ -423,9 +423,9 @@ fieldset {
   border: 1px solid silver;
   margin: 0;
   padding: 10px;
-  padding-top: 0.71429em;
-  padding-bottom: 0.71429em;
-  margin-bottom: 1.42857em;
+  padding-top: 0.76923em;
+  padding-bottom: 0.76923em;
+  margin-bottom: 1.53846em;
 }
 
 /*
@@ -475,7 +475,7 @@ input {
  * 1. Improves usability and consistency of cursor style between image-type 'input' and others
  * 2. Corrects inability to style clickable 'input' types in iOS
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
- *	Known issue: inner spacing remains in IE6
+ *    Known issue: inner spacing remains in IE6
  */
 button,
 input[type="button"],
@@ -566,15 +566,15 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.53846em;
 }
 
 td,
 th,
 caption {
   padding: 10px;
-  padding-top: 0.71429em;
-  padding-bottom: 0.71429em;
+  padding-top: 0.76923em;
+  padding-bottom: 0.76923em;
 }
 
 #grid {
@@ -596,7 +596,7 @@ caption {
   margin-left: 0;
 }
 #grid .horiz {
-  height: 1.42857em;
+  height: 1.53846em;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(95%, transparent), color-stop(95%, rgba(100, 100, 225, 0.25)));
   background-image: -webkit-linear-gradient(transparent 95%, rgba(100, 100, 225, 0.25) 95%);
   background-image: -moz-linear-gradient(transparent 95%, rgba(100, 100, 225, 0.25) 95%);
@@ -642,7 +642,7 @@ caption {
 }
 .index table,
 .doc table {
-  font-size: 0.85714em;
+  font-size: 0.92308em;
   line-height: 1.66667em;
   margin-bottom: 1.66667em;
   width: 100%;
@@ -660,7 +660,7 @@ caption {
 .doc table th {
   white-space: nowrap;
 }
-@media (max-width: 52.5em) {
+@media (max-width: 48.75em) {
   .index #conformite + table td:nth-child(2), .index #conformite + table td:nth-child(3), .index #conformite + table td:nth-child(4), .index #conformite + table td:nth-child(5), .index #conformite + table td:nth-child(6), .index #conformite + table td:nth-child(7), .index #conformite + table td:nth-child(8), .index #conformite + table td:nth-child(9), .index #conformite + table td:nth-child(10), .index #conformite + table td:nth-child(11), .index #conformite + table td:nth-child(12),
   .index #conformite + table th:nth-child(2),
   .index #conformite + table th:nth-child(3),
@@ -698,7 +698,7 @@ caption {
     display: none;
   }
 }
-@media (max-width: 52.5em) {
+@media (max-width: 48.75em) {
   .index #bps ~ table td:nth-child(1), .index #bps ~ table td:nth-child(3),
   .index #bps ~ table th:nth-child(1),
   .index #bps ~ table th:nth-child(3),
@@ -711,7 +711,7 @@ caption {
 }
 .index #footnotes,
 .doc #footnotes {
-  font-size: 0.78571em;
+  font-size: 0.84615em;
   line-height: 1.81818em;
   margin-bottom: 1.81818em;
 }

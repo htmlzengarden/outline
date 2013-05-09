@@ -2,248 +2,248 @@ $fs: $base-font-size;
 
 @mixin apply-side-rhythm-border($side, $width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	border-#{$side}:
-	{
-		style: $border-style;
-		width: $width;
-		color: $border-color;
-	};
-	@if $side == top
-	{
-		margin-top: $width * -1;
-	}
-	@if $side == left
-	{
-		margin-left: $width * -1;
-	}
-	@if $side == bottom
-	{
-		margin-top: $width * -1;
-		position: relative;
-		top: $width;
-	}
-	@if $side == right
-	{
-		margin-left: $width * -1;
-		position: relative;
-		left: $width;
-	}
+    border-#{$side}:
+    {
+        style: $border-style;
+        width: $width;
+        color: $border-color;
+    };
+    @if $side == top
+    {
+        margin-top: $width * -1;
+    }
+    @if $side == left
+    {
+        margin-left: $width * -1;
+    }
+    @if $side == bottom
+    {
+        margin-top: $width * -1;
+        position: relative;
+        top: $width;
+    }
+    @if $side == right
+    {
+        margin-left: $width * -1;
+        position: relative;
+        left: $width;
+    }
 }
 
 //------------------------------------------------------------------------------
 
 @mixin position($side, $lines: 1, $font-size: $base-font-size)
 {
-	#{$side}: (1em * ($base-line-height / $font-size)) * $lines;
+    #{$side}: (1em * ($base-line-height / $font-size)) * $lines;
 }
 
 @mixin position-top($lines: 1, $font-size: $base-font-size)
 {
-	@include position(top, $lines, $font-size: $base-font-size);
+    @include position(top, $lines, $font-size: $base-font-size);
 }
 @mixin position-left($lines: 1, $font-size: $base-font-size)
 {
-	@include position(left, $lines: 1, $font-size: $base-font-size);
+    @include position(left, $lines: 1, $font-size: $base-font-size);
 }
 @mixin position-bottom($lines: 1, $font-size: $base-font-size)
 {
-	@include position(bottom, $lines: 1, $font-size: $base-font-size);
+    @include position(bottom, $lines: 1, $font-size: $base-font-size);
 }
 @mixin position-right($lines: 1, $font-size: $base-font-size)
 {
-	@include position(right, $lines: 1, $font-size: $base-font-size);
+    @include position(right, $lines: 1, $font-size: $base-font-size);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	border:
-	{
-		style: $border-style;
-		width: $width;
-		color: $border-color;
-	};
-	position: relative;
-	margin-top:  $width * -2;
-	margin-left: $width * -2;
-	top:  $width;
-	left: $width;
+    border:
+    {
+        style: $border-style;
+        width: $width;
+        color: $border-color;
+    };
+    position: relative;
+    margin-top:  $width * -2;
+    margin-left: $width * -2;
+    top:  $width;
+    left: $width;
 }
 
 //------------------------------------------------------------------------------
 
 @mixin trailing-border   ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include apply-side-rhythm-border(bottom, $width, $border-style, $border-color);
+    @include apply-side-rhythm-border(bottom, $width, $border-style, $border-color);
 }
 @mixin leading-border    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include apply-side-rhythm-border(top,    $width, $border-style, $border-color);
+    @include apply-side-rhythm-border(top,    $width, $border-style, $border-color);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin horizontal-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include leading-border(                  $width, $border-style, $border-color);
-	@include trailing-border(                 $width, $border-style, $border-color);
-	margin-top:  $width * -2;
+    @include leading-border(                  $width, $border-style, $border-color);
+    @include trailing-border(                 $width, $border-style, $border-color);
+    margin-top:  $width * -2;
 }
 @mixin   vertical-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
-	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
-	margin-left: $width * -2;
+    @include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
+    @include apply-side-rhythm-border( right, $width, $border-style, $border-color);
+    margin-left: $width * -2;
 }
 @mixin h-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include horizontal-borders(              $width, $border-style, $border-color);
+    @include horizontal-borders(              $width, $border-style, $border-color);
 }
 @mixin v-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include   vertical-borders(              $width, $border-style, $border-color);
+    @include   vertical-borders(              $width, $border-style, $border-color);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin border            ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include rhythm-borders(                  $width, $border-style, $border-color);
+    @include rhythm-borders(                  $width, $border-style, $border-color);
 }
-@mixin border-top 	     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+@mixin border-top          ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include leading-border(                  $width, $border-style, $border-color);
+    @include leading-border(                  $width, $border-style, $border-color);
 }
 @mixin border-bottom     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include trailing-border(                 $width, $border-style, $border-color);
+    @include trailing-border(                 $width, $border-style, $border-color);
 }
 @mixin border-left       ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
+    @include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
 }
 @mixin border-right      ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
 {
-	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
+    @include apply-side-rhythm-border( right, $width, $border-style, $border-color);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin margin-top($lines: 1, $font-size: $base-font-size)
 {
-	@include       leader($lines, $font-size,  margin);
+    @include       leader($lines, $font-size,  margin);
 }
 @mixin margin-bottom($lines: 1, $font-size: $base-font-size)
 {
-	@include      trailer($lines, $font-size,  margin);
+    @include      trailer($lines, $font-size,  margin);
 }
 @mixin  margin-left($lines: 1, $font-size: $base-font-size)
 {
-	margin-left:   rhythm($lines, $font-size);
+    margin-left:   rhythm($lines, $font-size);
 }
 @mixin margin-right($lines: 1, $font-size: $base-font-size)
 {
-	margin-right:  rhythm($lines, $font-size);
+    margin-right:  rhythm($lines, $font-size);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin padding-top($lines: 1, $font-size: $base-font-size)
 {
-	@include        leader($lines, $font-size, padding);
+    @include        leader($lines, $font-size, padding);
 }
 @mixin padding-bottom($lines: 1, $font-size: $base-font-size)
 {
-	@include       trailer($lines, $font-size, padding);
+    @include       trailer($lines, $font-size, padding);
 }
 @mixin  padding-left($lines: 1, $font-size: $base-font-size)
 {
-	padding-left:  rhythm($lines, $font-size);
+    padding-left:  rhythm($lines, $font-size);
 }
 @mixin padding-right($lines: 1, $font-size: $base-font-size)
 {
-	padding-right: rhythm($lines, $font-size);
+    padding-right: rhythm($lines, $font-size);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin     padding($lines: 1, $font-size: $base-font-size)
 {
-	@include       leader($lines, $font-size, padding);
-	@include      trailer($lines, $font-size, padding);
-	padding-left:  rhythm($lines, $font-size);
-	padding-right: rhythm($lines, $font-size);
+    @include       leader($lines, $font-size, padding);
+    @include      trailer($lines, $font-size, padding);
+    padding-left:  rhythm($lines, $font-size);
+    padding-right: rhythm($lines, $font-size);
 }
 @mixin      margin($lines: 1, $font-size: $base-font-size)
 {
-	@include       leader($lines, $font-size,  margin);
-	@include      trailer($lines, $font-size,  margin);
-	margin-left:   rhythm($lines, $font-size);
-	margin-right:  rhythm($lines, $font-size);
+    @include       leader($lines, $font-size,  margin);
+    @include      trailer($lines, $font-size,  margin);
+    margin-left:   rhythm($lines, $font-size);
+    margin-right:  rhythm($lines, $font-size);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin max-height($lines: 1, $font-size: $base-font-size)
 {
-	max-height: rhythm($lines, $font-size);
+    max-height: rhythm($lines, $font-size);
 }
 @mixin min-height($lines: 1, $font-size: $base-font-size)
 {
-	min-height: rhythm($lines, $font-size);
-	   *height: rhythm($lines, $font-size);
+    min-height: rhythm($lines, $font-size);
+       *height: rhythm($lines, $font-size);
 }
 @mixin     height($lines: 1, $font-size: $base-font-size)
 {
-	    height: rhythm($lines, $font-size);
+        height: rhythm($lines, $font-size);
 }
 @mixin line-height($lines: 1, $font-size: $base-font-size)
 {
-	line-height: rhythm($lines, $font-size);
+    line-height: rhythm($lines, $font-size);
 }
 
 //------------------------------------------------------------------------------
 
 @mixin clearfix
 {
-	@include pie-clearfix;
+    @include pie-clearfix;
 }
 .clearfix
 {
-	@include clearfix;
+    @include clearfix;
 }
 
 //------------------------------------------------------------------------------
 
 @mixin roll
 {
-	@include hover-link;
+    @include hover-link;
 }
 .roll // ce mixin peut être appelé depuis le HTML via une classe
 {
-	@include roll;
+    @include roll;
 }
 
 @mixin resize($direction: vertical)
 {
-	-webkit-resize: $direction;
-	   -moz-resize: $direction;
-	    -ms-resize: $direction;
-	     -o-resize: $direction;
-	        resize: $direction;
+    -webkit-resize: $direction;
+       -moz-resize: $direction;
+        -ms-resize: $direction;
+         -o-resize: $direction;
+            resize: $direction;
 }
 
 //------------------------------------------------------------------------------
 
 @mixin font-size($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
-	@include adjust-font-size-to($to-size, $lines, $from-size);
+    @include adjust-font-size-to($to-size, $lines, $from-size);
 }
 @mixin bloc($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
-	@include font-size($to-size, $lines, $from-size);
-	@include margin-bottom($lines, $to-size);
+    @include font-size($to-size, $lines, $from-size);
+    @include margin-bottom($lines, $to-size);
 }
 
 //------------------------------------------------------------------------------
@@ -252,36 +252,36 @@ $fs: $base-font-size;
 
 @mixin show($type: block) // en paramètre optionnel, le `display` peut-être précisé (`table-cell`, `inline-block`…)
 {
-	display: $type;
+    display: $type;
 }
 @mixin hide
 {
-	display: none;
+    display: none;
 }
 .hide // ce mixin peut être appelé depuis le HTML via une classe
 {
-	@include hide;
+    @include hide;
 }
 @mixin mask($rtl: false) // reste accessible aux lecteurs d'écrans et aux robots
 {
-	position: absolute;
-	width:  1px;
-	height: 1px;
-	overflow: hidden;
-	display: block;
-	
-	@if $rtl == false
-	{
-		left: -9999px;
-	}
-	@else
-	{
-		right: -9999px;		
-	}
+    position: absolute;
+    width:  1px;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+    
+    @if $rtl == false
+    {
+        left: -9999px;
+    }
+    @else
+    {
+        right: -9999px;        
+    }
 }
 .mask // ce mixin peut être appelé depuis le HTML via une classe
 {
-	@include mask;
+    @include mask;
 }
 
 //------------------------------------------------------------------------------
@@ -290,18 +290,18 @@ $fs: $base-font-size;
 
 @mixin list($rtl: false)
 {
-	@include horizontal-list-container;
-	
-	li,
-	dt,
-	dd
-	{
-		@include horizontal-list-item(0, left);
-	}
+    @include horizontal-list-container;
+    
+    li,
+    dt,
+    dd
+    {
+        @include horizontal-list-item(0, left);
+    }
 }
 .list // ce mixin peut être appelé depuis le HTML via une classe
 {
-	@include list;
+    @include list;
 }
 
 //------------------------------------------------------------------------------

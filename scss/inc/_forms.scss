@@ -3,43 +3,43 @@ $input-width-gap :   6px;
 
 fieldset
 {
-	border: none;
-	padding: 0;
-	
-	legend
-	{
-		span
-		{
-			display: block;
-			@include padding-bottom;
-		}
-	}
+    border: none;
+    padding: 0;
+    
+    legend
+    {
+        span
+        {
+            display: block;
+            @include padding-bottom;
+        }
+    }
 }
 span.label
 {
-	@include span-columns(2);
+    @include span-columns(2);
 
 }
 span.help
 {
-	margin-left: gutter($desktop, 1);
-	@include span-columns(2);
+    margin-left: gutter($desktop, 1);
+    @include span-columns(2);
 }
 span.error
 {
-	color: #F00;
-	@include span-columns(3 omega);
+    color: #F00;
+    @include span-columns(3 omega);
 }
 .errors
 {
-	color: #F00;
+    color: #F00;
 }
 span.label,
 span.help,
 span.error
 {
-	float: none;
-	display: inline-block;	
+    float: none;
+    display: inline-block;    
 }
 input,
 select,
@@ -48,36 +48,36 @@ span.label,
 span.help,
 span.error
 {
-	vertical-align: top;
+    vertical-align: top;
 }
 .radio,
 .checkbox
 {
-	.label
-	{
-		width: auto;
-		margin-right: 0;
-	}
-	input
-	{
-		position: relative;
-		top: 2px;
-	}
+    .label
+    {
+        width: auto;
+        margin-right: 0;
+    }
+    input
+    {
+        position: relative;
+        top: 2px;
+    }
 }
 .line
 {
-	@include min-height(2);
-	margin-bottom: 0;
+    @include min-height(2);
+    margin-bottom: 0;
 }
 @mixin input
 {
-	width: $input-width;
-	
-	border: 1px solid #a6a6a6;
-	padding: 2px;
-	
-	@include appearance(none);
-	@include border-radius(0);
+    width: $input-width;
+    
+    border: 1px solid #a6a6a6;
+    padding: 2px;
+    
+    @include appearance(none);
+    @include border-radius(0);
 }
 input.text,
 input.email,
@@ -95,7 +95,7 @@ input.week,
 input.datetime,
 input.datetime-local
 {
-	@include input;
+    @include input;
 }
 input[type=text],
 input[type=email],
@@ -113,87 +113,87 @@ input[type=week],
 input[type=datetime],
 input[type=datetime-local],
 {
-	@include input;
+    @include input;
 }
 select
 {
-	@include input;
-	width: $input-width + $input-width-gap;
-	padding: 1px;
+    @include input;
+    width: $input-width + $input-width-gap;
+    padding: 1px;
 }
 input.file
 {
-	width: $input-width + $input-width-gap;
-	background-color: #FFF;
+    width: $input-width + $input-width-gap;
+    background-color: #FFF;
 }
 input[type=file]
 {
-	width: $input-width + $input-width-gap;
-	background-color: #FFF;
+    width: $input-width + $input-width-gap;
+    background-color: #FFF;
 }
 textarea
 {
-	@include input;
-	@include height     (6);
-	@include min-height (6);
-	@include max-height(12);
-	
-	@include font-size($fs);
-	
-	@include resize;
+    @include input;
+    @include height     (6);
+    @include min-height (6);
+    @include max-height(12);
+    
+    @include font-size($fs);
+    
+    @include resize;
 }
 .textarea
 {
-	@include min-height(7);
+    @include min-height(7);
 }
 input[type=reset],
 input[type=button],
 input[type=submit]
 {
-	@include input;
-	width: $input-width + $input-width-gap;
-	
-	&:focus
-	{
-		outline: thin dotted;
-	}
+    @include input;
+    width: $input-width + $input-width-gap;
+    
+    &:focus
+    {
+        outline: thin dotted;
+    }
 }
 input.reset,
 input.button,
 input.submit
 {
-	@include input;
-	width: $input-width + $input-width-gap;
-	
-	&:focus
-	{
-		outline: thin dotted;
-	}
+    @include input;
+    width: $input-width + $input-width-gap;
+    
+    &:focus
+    {
+        outline: thin dotted;
+    }
 }
 button
 {
-	@include input;
-	width: $input-width + $input-width-gap;
-	
-	&:focus
-	{
-		outline: thin dotted;
-	}
+    @include input;
+    width: $input-width + $input-width-gap;
+    
+    &:focus
+    {
+        outline: thin dotted;
+    }
 }
 /*
 .ch,
 .sa
 {
-	select
-	{
-		@include appearance(none);
-		@include border-radius(0);
-		
-		background-image: url(../img/bg/select.png);
-		background-repeat: no-repeat;
-		background-position: 100% 50%;
-		
-		padding-right: 20px;
-	}
+    select
+    {
+        @include appearance(none);
+        @include border-radius(0);
+        
+        background-image: url(../img/bg/select.png);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        
+        padding-right: 20px;
+    }
 }
 */

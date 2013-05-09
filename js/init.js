@@ -3,10 +3,10 @@
 // définition de variables souvent réutilisées
 
 var classes   = ' js'  , // c'est ici que toutes les classes vont venir s'empiler, l'espace en prefixe permet de les séparer des éventuelles classes existantes
-	addclass  = 'class',
-	html      = document.getElementsByTagName('html')[0],
-	htmlclass = html.className;
-	
+    addclass  = 'class',
+    html      = document.getElementsByTagName('html')[0],
+    htmlclass = html.className;
+    
 // ajout dans les classes qui vont être ajoutées de l'os...
 
 if(BrowserDetect.OS == 'Mac')           classes += ' mac';
@@ -32,28 +32,28 @@ if(BrowserDetect.browser == 'Explorer')
 
 else if(BrowserDetect.OS == 'iPhone' || BrowserDetect.OS == 'iPod' || BrowserDetect.OS == 'iPad')
 {
-	switch(window.orientation){
-		case 0:
-			classes += ' portrait' ;
-			break;
-		case 180:  
-			classes += ' portrait' ;  
-			break;
-		case -90:  
-			classes += ' landscape';  
-			break;  
-		case 90:  
-			classes += ' landscape';  
-			break;  
-	}
-	if(BrowserDetect.OS == 'iPad')
-	{
-		classes += ' ipad ios';
-	}
-	if(BrowserDetect.OS == 'iPod' || BrowserDetect.OS == 'iPhone')
-	{
-		classes += ' iphone ios';
-	}
+    switch(window.orientation){
+        case 0:
+            classes += ' portrait' ;
+            break;
+        case 180:  
+            classes += ' portrait' ;  
+            break;
+        case -90:  
+            classes += ' landscape';  
+            break;  
+        case 90:  
+            classes += ' landscape';  
+            break;  
+    }
+    if(BrowserDetect.OS == 'iPad')
+    {
+        classes += ' ipad ios';
+    }
+    if(BrowserDetect.OS == 'iPod' || BrowserDetect.OS == 'iPhone')
+    {
+        classes += ' iphone ios';
+    }
 }
 
 // on supprime la classe no-js éventuelle et on ajoute les classes calculées au document

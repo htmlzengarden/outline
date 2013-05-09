@@ -1,36 +1,36 @@
 #page,
 #grid
 {
-	@include container($desktop ie);
-	@include container($smartphone, $tablet, $desktop);
+    @include container($desktop ie);
+    @include container($smartphone, $tablet, $desktop);
 }
 
 // desktop first
 #page,
 #grid
 {
-	.vert
-	{
-		@include span-columns(1, $desktop);
-		margin-left: gutter($desktop, 1);
-	}
-	
-	@include at-breakpoint($tablet 70.5em)
-	{
-		.vert
-		{
-			@include span-columns(1, $tablet);
-			margin-left: gutter($tablet, 1);
-		}
-	}
-	@include at-breakpoint($smartphone 46.5em)
-	{
-		.vert
-		{
-			@include span-columns(1, $smartphone);
-			margin-left: gutter($smartphone, 1);		
-		}
-	}
+    .vert
+    {
+        @include span-columns(1, $desktop);
+        margin-left: gutter($desktop, 1);
+    }
+    
+    @include at-breakpoint($tablet 70.5em)
+    {
+        .vert
+        {
+            @include span-columns(1, $tablet);
+            margin-left: gutter($tablet, 1);
+        }
+    }
+    @include at-breakpoint($smartphone 46.5em)
+    {
+        .vert
+        {
+            @include span-columns(1, $smartphone);
+            margin-left: gutter($smartphone, 1);        
+        }
+    }
 }
 
 
@@ -39,27 +39,27 @@
 #page,
 #grid
 {
-	.vert
-	{
-		@include span-columns(1, $smartphone);
-		margin-left: gutter($smartphone, 1);		
-	}
-	
-	@include at-breakpoint($tablet ie)
-	{
-		.vert
-		{
-			@include span-columns(1, $tablet);
-			margin-left: gutter($tablet, 1);		
-		}
-	}
-	@include at-breakpoint($desktop ie)
-	{
-		.vert
-		{
-			@include span-columns(1, $desktop);
-			margin-left: gutter($desktop, 1);		
-		}
-	}
+    .vert
+    {
+        @include span-columns(1, $smartphone);
+        margin-left: gutter($smartphone, 1);        
+    }
+    
+    @include at-breakpoint($tablet ie)
+    {
+        .vert
+        {
+            @include span-columns(1, $tablet);
+            margin-left: gutter($tablet, 1);        
+        }
+    }
+    @include at-breakpoint($desktop ie)
+    {
+        .vert
+        {
+            @include span-columns(1, $desktop);
+            margin-left: gutter($desktop, 1);        
+        }
+    }
 }
 */

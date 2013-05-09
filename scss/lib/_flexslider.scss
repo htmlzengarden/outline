@@ -11,48 +11,48 @@
 
 .flexslider
 {
-	position: relative;
-	zoom: 1;
-	
-	.slides,
-	.flex-control-nav,
-	.flex-direction-nav
-	{
-		@include list;
-	}
-	.flex-control-nav,
-	.flex-direction-nav,
-	.flex-pauseplay
-	{
-		button
-		{
-			cursor: pointer;
-			border:  0;
-			padding: 0;
-			margin:  0;
-			background-color: transparent;
-			width: auto;
-			color: #00F;
-			text-decoration: underline;
-			
-			&.flex-active
-			{
-				color: #000;
-				text-decoration: none;
-				cursor: default;
-			}
-		}
-	}
-	.slides
-	{
-		zoom: 1;
-		
-		li
-		{
-			.js &
-			{
-				@include hide;
-			}
-		}
-	}
+    position: relative;
+    zoom: 1;
+    
+    .slides,
+    .flex-control-nav,
+    .flex-direction-nav
+    {
+        @include list;
+    }
+    .flex-control-nav,
+    .flex-direction-nav,
+    .flex-pauseplay
+    {
+        button
+        {
+            cursor: pointer;
+            border:  0;
+            padding: 0;
+            margin:  0;
+            background-color: transparent;
+            width: auto;
+            color: #00F;
+            text-decoration: underline;
+            
+            &.flex-active
+            {
+                color: #000;
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+    }
+    .slides
+    {
+        zoom: 1;
+        
+        li
+        {
+            .js &
+            {
+                @include hide;
+            }
+        }
+    }
 }

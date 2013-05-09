@@ -1,6 +1,6 @@
 html
 {
-	overflow-y: scroll;
+    overflow-y: scroll;
 }
 img,
 audio,
@@ -10,42 +10,42 @@ svg,
 object,
 table
 {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 table
 {
-	display: table;
+    display: table;
 }
 small
 {
-	line-height: 0;
+    line-height: 0;
 }
 .hr
 {
-	@include border-top(1px, solid, black);
-	@include margin-bottom(1);
-	
-	hr
-	{
-		@include mask;
-	}
+    @include border-top(1px, solid, black);
+    @include margin-bottom(1);
+    
+    hr
+    {
+        @include mask;
+    }
 }
 ul,
 ol
 {
-	ol,
-	ul
-	{
-		margin-bottom: 0;
-	}
+    ol,
+    ul
+    {
+        margin-bottom: 0;
+    }
 }
 code,
 kbd,
 samp
 {
-	.not-ie &
-	{
-		line-height: 0;
-	}
+    .not-ie &
+    {
+        line-height: 0;
+    }
 }

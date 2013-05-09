@@ -36,9 +36,9 @@
 //
 // * legal values are 1, all
 @mixin column-span($columns) {
-	@include experimental(column-span, $columns,
-		-moz, -webkit, -o, -ms, not -khtml, official
-	);
+    @include experimental(column-span, $columns,
+        -moz, -webkit, -o, -ms, not -khtml, official
+    );
 }
 
 // Specify the width of the rule between columns e.g. `1px`

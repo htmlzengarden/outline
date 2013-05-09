@@ -1,5 +1,5 @@
-$base-font-size:   14px;
 $base-line-height: 20px;
+$base-font-size:   round($base-line-height / 3 * 2);
 
 $total-columns  : 12;
 $column-width   : 4.5em;
