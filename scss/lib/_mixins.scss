@@ -306,6 +306,12 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
+@mixin opacity($opacity) {
+  opacity: $opacity;
+}
+
+//------------------------------------------------------------------------------
+
 @mixin retina-image($filename, $extension: png, $retina-filename: null, $asset-pipeline: false) {
   @if $asset-pipeline {
     background-image: image_url($filename + "." + $extension);
