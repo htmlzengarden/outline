@@ -27,13 +27,16 @@ $(function(){
         
         $('.flexslider').flexslider({
         
-            animation: 'slide',
-            prevText: '<span>Précédente</span>',
-            nextText: '<span>Suivante</span>',
-            pausePlay: true,
-            pauseText: '<span>Pause</span>',
-            playText: '<span>Lecture</span>',
-            start: function(slider){
+            pausePlay:    true,
+            controlNav:   true,
+            directionNav: true, 
+            slideshow:    false,
+            animation:   'slide',
+            prevText:    '<span>Précédente</span>',
+            nextText:    '<span>Suivante</span>',
+            pauseText:   '<span>Pause</span>',
+            playText:    '<span>Lecture</span>',
+            start:       function(slider){
                 slider.pause();
             }
         });

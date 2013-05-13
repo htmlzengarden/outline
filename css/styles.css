@@ -182,53 +182,52 @@ a:active {
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
-/* http://modularscale.com/scale/?px1=14&px2=12&ra1=1.5&ra2=0 */
-h1 {
-  margin: 0;
-  font-size: 2.07692em;
-  line-height: 1.48148em;
-  margin-bottom: 0.74074em;
-  padding-top: 1.48148em;
-}
-
-h2 {
-  margin: 0;
-  font-size: 1.61538em;
-  line-height: 1.90476em;
-  margin-bottom: 0.95238em;
-  padding-top: 1.90476em;
-}
-
-h3 {
-  margin: 0;
-  font-size: 1.38462em;
-  line-height: 2.22222em;
-  margin-bottom: 1.11111em;
-  padding-top: 2.22222em;
-}
-
-h4 {
-  margin: 0;
-  font-size: 1.07692em;
-  line-height: 1.42857em;
-  margin-bottom: 1.42857em;
-  padding-top: 2.85714em;
-}
-
-h5 {
-  margin: 0;
-  font-size: 0.92308em;
-  line-height: 1.66667em;
-  margin-bottom: 1.66667em;
-  padding-top: 3.33333em;
-}
-
 h6 {
   margin: 0;
   font-size: 0.76923em;
   line-height: 2em;
   margin-bottom: 2em;
   padding-top: 4em;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.53846em;
+  margin-bottom: 1.53846em;
+  padding-top: 3.07692em;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.23077em;
+  line-height: 1.25em;
+  margin-bottom: 1.25em;
+  padding-top: 2.5em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.53846em;
+  line-height: 2em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.92308em;
+  line-height: 1.6em;
+  margin-bottom: 0.8em;
+  padding-top: 1.6em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.38462em;
+  line-height: 1.29032em;
+  margin-bottom: 0.64516em;
+  padding-top: 1.29032em;
 }
 
 /*

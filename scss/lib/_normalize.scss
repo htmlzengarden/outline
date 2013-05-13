@@ -131,60 +131,54 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
  
-/* http://modularscale.com/scale/?px1=14&px2=12&ra1=1.5&ra2=0 */
+$scale: 5/4;
+$fsh6:  10px;
+$fsh5:  round(modular-scale($fsh6, 1, $scale));
+$fsh4:  round(modular-scale($fsh5, 1, $scale));
+$fsh3:  round(modular-scale($fsh4, 1, $scale));
+$fsh2:  round(modular-scale($fsh3, 1, $scale));
+$fsh1:  round(modular-scale($fsh2, 1, $scale));
 
-h1 {
-    $fs1: 27px;
-
+h6 {
     margin: 0;
-    @include adjust-font-size-to($fs1);
-    @include margin-bottom(1, $fs1);
-    @include padding-top(2, $fs1);
-}
-
-h2 {
-    $fs1: 21px;
-
-    margin: 0;
-    @include adjust-font-size-to($fs1);
-    @include margin-bottom(1, $fs1);
-    @include padding-top(2, $fs1);
-}
-
-h3 {
-    $fs1: 18px;
-
-    margin: 0;
-    @include adjust-font-size-to($fs1);
-    @include margin-bottom(1, $fs1);
-    @include padding-top(2, $fs1);
-}
-
-h4 {
-    $fs1: 14px;
-
-    margin: 0;
-    @include adjust-font-size-to($fs1);
-    @include margin-bottom(1, $fs1);
-    @include padding-top(2, $fs1);
+    @include adjust-font-size-to($fsh6);
+    @include margin-bottom(1,    $fsh6);
+    @include padding-top(2,      $fsh6);
 }
 
 h5 {
-    $fs1: 12px;
-
     margin: 0;
-    @include adjust-font-size-to($fs1);
-    @include margin-bottom(1, $fs1);
-    @include padding-top(2, $fs1);
+    @include adjust-font-size-to($fsh5);
+    @include margin-bottom(1,    $fsh5);
+    @include padding-top(2,      $fsh5);
 }
 
-h6 {
-    $fs1: 10px;
-
+h4 {
     margin: 0;
-    @include adjust-font-size-to($fs1);
-    @include margin-bottom(1, $fs1);
-    @include padding-top(2, $fs1);
+    @include adjust-font-size-to($fsh4);
+    @include margin-bottom(1,    $fsh4);
+    @include padding-top(2,      $fsh4);
+}
+
+h3 {
+    margin: 0;
+    @include adjust-font-size-to($fsh3);
+    @include margin-bottom(1,    $fsh3);
+    @include padding-top(2,      $fsh3);
+}
+
+h2 {
+    margin: 0;
+    @include adjust-font-size-to($fsh2);
+    @include margin-bottom(1,    $fsh2);
+    @include padding-top(2,      $fsh2);
+}
+
+h1 {
+    margin: 0;
+    @include adjust-font-size-to($fsh1);
+    @include margin-bottom(1,    $fsh1);
+    @include padding-top(2,      $fsh1);
 }
 
 /*
