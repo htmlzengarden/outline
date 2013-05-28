@@ -1,4 +1,3 @@
-<!-- include content -->
 <div id="content">
     <div class="page">
     
