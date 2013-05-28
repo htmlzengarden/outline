@@ -1,13 +1,11 @@
-#page,
-#grid
+#page
 {
     @include container($desktop ie);
     @include container($smartphone, $tablet, $desktop);
 }
 
 // desktop first
-#page,
-#grid
+#page
 {
     .vert
     {
@@ -45,14 +43,6 @@
         margin-left: gutter($smartphone, 1);        
     }
     
-    @include at-breakpoint($tablet ie)
-    {
-        .vert
-        {
-            @include span-columns(1, $tablet);
-            margin-left: gutter($tablet, 1);        
-        }
-    }
     @include at-breakpoint($desktop ie)
     {
         .vert

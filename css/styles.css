@@ -641,20 +641,8 @@ appels :
 @include exemple-sprite(image);
 @include exemple-sprite(image, $offset-x:100%);
 */
-.demo_mires-sprite, .demo_mires-demo_mire-1, .demo_mires-demo_mire-2, .demo_mires-demo_mire-3, #page.demo #sprites .sprite, #page.demo #sprites .sprite.first-child, #page.demo #sprites .sprite.last-child {
+.demo_mires-sprite, #page.demo #sprites .sprite, #page.demo #sprites .sprite.first-child, #page.demo #sprites .sprite.last-child {
   background: url('../img/bg/demo_mires.png') no-repeat;
-}
-
-.demo_mires-demo_mire-1 {
-  background-position: 0 -400px;
-}
-
-.demo_mires-demo_mire-2 {
-  background-position: 0 -200px;
-}
-
-.demo_mires-demo_mire-3 {
-  background-position: 0 0;
 }
 
 html {
@@ -970,8 +958,7 @@ button:focus {
     }
 }
 */
-#page,
-#grid {
+#page {
   *zoom: 1;
   max-width: 70.5em;
   _width: 70.5em;
@@ -980,43 +967,37 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
 }
-#page:after,
-#grid:after {
+#page:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 18.28125em) {
-  #page,
-  #grid {
+  #page {
     max-width: 22.5em;
     padding-left: 1.5em;
     padding-right: 1.5em;
     margin-left: auto;
     margin-right: auto;
   }
-  #page:after,
-  #grid:after {
+  #page:after {
     content: "";
     display: table;
     clear: both;
   }
 }
 @media (min-width: 37.78125em) {
-  #page,
-  #grid {
+  #page {
     max-width: 46.5em;
   }
 }
 @media (min-width: 57.28125em) {
-  #page,
-  #grid {
+  #page {
     max-width: 70.5em;
   }
 }
 
-#page .vert,
-#grid .vert {
+#page .vert {
   width: 6.38298%;
   float: left;
   margin-right: 2.12766%;
@@ -1024,8 +1005,7 @@ button:focus {
   margin-left: 2.12766%;
 }
 @media (max-width: 57.28125em) {
-  #page .vert,
-  #grid .vert {
+  #page .vert {
     width: 9.67742%;
     float: left;
     margin-right: 3.22581%;
@@ -1033,8 +1013,7 @@ button:focus {
   }
 }
 @media (max-width: 37.78125em) {
-  #page .vert,
-  #grid .vert {
+  #page .vert {
     width: 20%;
     float: left;
     margin-right: 6.66667%;
