@@ -284,7 +284,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
 }
 
 /*
@@ -419,7 +419,7 @@ form {
  * Define consistent border, margin, and padding
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0;
   padding: 10px;
   padding-top: 0.76923em;
@@ -589,7 +589,7 @@ caption {
 }
 #grid .vert {
   background-color: rgba(100, 100, 225, 0.25);
-  margin-right: 0!important;
+  margin-right: 0 !important;
 }
 #grid .vert.first-line {
   margin-left: 0;
@@ -1264,7 +1264,7 @@ button:focus {
 #colorbox #cboxLoadedContent,
 #colorbox #cboxLoadingOverlay {
   background: #fff;
-  border: 1px solid black;
+  border: 1px solid #000;
   padding-top: 1.53846em;
   padding-bottom: 1.53846em;
   padding-left: 1.53846em;

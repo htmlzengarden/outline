@@ -47,7 +47,6 @@ C'est ce qui est fait dans le répertoire `page` où on trouve : `<div id="page"
 Ce travail de factorisation est avant tout destiné aux intégrateurs, il n'est pas forcément repris côté développement.
 
 Pour faciliter ce travail de reprise, il été convenu que chaque morceau de page était débuté par un commentaire HTML précisant le nom du répertoire courant (`<!-- include footer -->` par exemple).
-(Il faudrait à terme automatiser cela en modifiant Z.)
 
 Ainsi il est facile en parcourant la source du fichier HTML généré de localiser dans quel répertoire se trouve le code initial.
 
