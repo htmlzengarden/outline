@@ -90,7 +90,7 @@ class Z {
         if (count($block)==2)
             $pageName = end($block);
         $block = reset($block);
-
+        echo "\n".'<!-- '.$block.' -->'."\n";
         if (!$pageName)
             return Z::returnError("<p>Erreur : aucune page n&rsquo;est actuellement demand&eacute;e, le nom de la page doit &ecirc;tre d&eacute;finit. </p>");
         if (!$block AND !($block = Z::$ajaxBlock))
