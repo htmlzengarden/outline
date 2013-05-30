@@ -8,11 +8,11 @@ _[Voir la documentation](doc/)_
 
 ### Conformité et affichage {#conformite}
 
-Maquette                                                                     | Validation HTML     | IE 6 | IE 7 | IE 8 | IE 9 | Opera | Chrome | Safari | Fx  | Lynx [^1] | Impression | iPhone | iPad 
------------------------------------------------------------------------------|---------------------|------|------|------|------|-------|--------|--------|-----|-----------|------------|--------|------
-[Page](inc/?page=index)                                                      |                     |      |      |      |      |       |        |        |     |           |            |        |   
-[404](inc/?page=error)                                                       |                     |      |      |      |      |       |        |        |     |           |            |        |   
-[Démo](inc/?page=demo)                                                       |                     |      |      |      |      |       |        |        |     |           |            |        |   
+Maquette                                                                     | Validation HTML     | IE 6 | IE 7 | IE 8 | IE 9 | IE 10 | Opera | Chrome | Safari | Fx  | Lynx [^1] | Impression | iPhone | iPad 
+-----------------------------------------------------------------------------|---------------------|------|------|------|------|-------|-------|--------|--------|-----|-----------|------------|--------|------
+[Page](inc/?page=index)                                                      |                     |      |      |      |      |       |       |        |        |     |           |            |        |   
+[404](inc/?page=error)                                                       |                     |      |      |      |      |       |       |        |        |     |           |            |        |   
+[Démo](inc/?page=demo)                                                       |                     |      |      |      |      |       |       |        |        |     |           |            |        |   
 
 ### Respect des bonnes pratiques [^2] {#bps}
 
