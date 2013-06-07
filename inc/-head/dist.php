@@ -4,8 +4,11 @@
     <meta name="viewport"                            content="width=1024"              />
 <!--<meta name="viewport"                            content="initial-scale=1.0"       />-->
 
-<!--[if IE]>
+<!--[if lte IE 8]>
     <link rel="stylesheet"       type="text/css"     href="../css/styles-no-mq.css"    />
+<![endif]-->
+<!--[if gte IE 9]>
+    <link rel="stylesheet"       type="text/css"     href="../css/styles.css"          />
 <![endif]-->
 <!--[if !IE]>-->
     <link rel="stylesheet"       type="text/css"     href="../css/styles.css"          />

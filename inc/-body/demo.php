@@ -20,7 +20,6 @@
     
     <script src="../js/lib/jquery.flexslider.js"      ></script>
     
-    <script src="../js/lib/matchmedia.js"             ></script>
     <script src="../js/lib/jquery.throttledebounce.js"></script>
     <script src="../js/lib/jquery.rwdimg.js"          ></script>
 

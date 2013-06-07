@@ -28,7 +28,7 @@ var rwdimg = function(selector){
                 var mode  = rwd[i],
                     match = $(this).data(mode + '-' + 'match');
                     
-                if(window.matchMedia(match).matches)
+                if(window.matchMedia(match).matches) // todo : émuler pour ie<9
                 {
                     var   src_mode = $(this).data(mode + '-' + 'src'),
                         width_mode = $(this).data(mode + '-' + 'width'),
