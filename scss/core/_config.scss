@@ -2,10 +2,7 @@ $base-line-height: 20px;
 $base-font-size:   round($base-line-height / 3 * 2);
 
 $total-columns  : 12;
-$column-width   : 4.5em;
-$gutter-width   : 1.5em;
+$column-width   : 60px;
+$gutter-width   : 20px;
 $grid-padding   : $gutter-width;
-
-$smartphone : 4;
-$tablet     : 8;
-$desktop    : $total-columns;
+$desktop        : $total-columns;

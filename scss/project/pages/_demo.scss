@@ -126,37 +126,14 @@
             @include padding-bottom;
             @include margin-bottom;
             
-            @include span-columns(3, $desktop);
+            @include span(3);
             
             &.last-child
             {
                 background-color: red;
             
-                @include span-columns(3 omega, $desktop);
-            }
-            
-            @include at-breakpoint($tablet 70.5em)
-            {
-                @include span-columns(4, $tablet);
-                
-                &.nth-child-2n
-                {
-                    background-color: green;
-                
-                    @include span-columns(4 omega, $tablet);
-                }
-            }
-            
-            @include at-breakpoint($smartphone 46.5em)
-            {
-                @include span-columns(4 omega, $smartphone);
-                
-                &.nth-child-n
-                {
-                    background-color: blue;
-                
-                    @include span-columns(4 omega, $smartphone);
-                }
+                @include span(3);
+                @include last;
             }
         }
     }
@@ -165,60 +142,11 @@
 {
     section
     {
-        @include span-columns(6, $desktop);
-        
-        @include at-breakpoint($tablet 70.5em)
-        {
-            @include span-columns(4, $tablet);
-        }
-        @include at-breakpoint($smartphone 46.5em)
-        {
-            @include span-columns(2, $smartphone);
-        }
+        @include span(6);        
     }
     article
     {
-        @include span-columns(6 omega, $desktop);        
-        
-        @include at-breakpoint($tablet 70.5em)
-        {
-            @include span-columns(4 omega, $tablet);
-        }
-        @include at-breakpoint($smartphone 46.5em)
-        {
-            @include span-columns(2 omega, $smartphone);
-        }
+        @include span(6);        
+        @include last;
     }
 }
-/*
-// mobile first
-#page.demo
-{
-    section
-    {
-        @include span-columns(2, $smartphone);
-        
-        @include at-breakpoint($tablet)
-        {
-            @include span-columns(4, $tablet);
-        }
-        @include at-breakpoint($desktop ie)
-        {
-            @include span-columns(6, $desktop);
-        }
-    }
-    article
-    {
-        @include span-columns(2 omega, $smartphone);        
-        
-        @include at-breakpoint($tablet)
-        {
-            @include span-columns(4 omega, $tablet);
-        }
-        @include at-breakpoint($desktop ie)
-        {
-            @include span-columns(6 omega, $desktop);
-        }
-    }    
-}
-*/

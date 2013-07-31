@@ -497,6 +497,8 @@ table {
   border-spacing: 0;
 }
 
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 .clearfix {
   *zoom: 1;
 }
@@ -509,7 +511,7 @@ table {
 .roll {
   text-decoration: none;
 }
-.roll:hover {
+.roll:hover, .roll:focus {
   text-decoration: underline;
 }
 
@@ -548,6 +550,7 @@ table {
   float: left;
   padding-left: 0;
   padding-right: 0;
+  white-space: normal;
 }
 .list li:first-child, .list li.first,
 .list dt:first-child,
@@ -620,7 +623,7 @@ strong {
 }
 
 blockquote {
-  margin: 0 6em;
+  margin: 0 80px;
   margin-bottom: 1.53846em;
 }
 
@@ -640,13 +643,13 @@ ul {
 }
 
 dd {
-  margin: 0 0 0 6em;
+  margin: 0 0 0 80px;
 }
 
 menu,
 ol,
 ul {
-  padding: 0 0 0 6em;
+  padding: 0 0 0 80px;
 }
 
 fieldset {
@@ -731,27 +734,27 @@ fieldset legend span {
 }
 
 span.label {
-  width: 14.89362%;
   float: left;
-  margin-right: 2.12766%;
   display: inline;
+  margin-right: 20px;
+  width: 140px;
 }
 
 span.help {
-  margin-left: 2.12766%;
-  width: 14.89362%;
+  margin-left: gutter(12, 1);
   float: left;
-  margin-right: 2.12766%;
   display: inline;
+  margin-right: 20px;
+  width: 140px;
 }
 
 span.error {
   color: #F00;
-  width: 23.40426%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1.5em;
+  float: left;
   display: inline;
+  margin-right: 20px;
+  width: 220px;
+  margin-right: 0 !important;
 }
 
 .errors {
@@ -984,13 +987,10 @@ button:focus {
 */
 .index #page,
 .doc #page {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
   *zoom: 1;
-  max-width: 70.5em;
-  _width: 70.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
 }
 .index #page:after,
 .doc #page:after {
@@ -1031,55 +1031,6 @@ button:focus {
 .index table th,
 .doc table th {
   white-space: nowrap;
-}
-@media (max-width: 48.75em) {
-  .index #conformite + table td:nth-child(2), .index #conformite + table td:nth-child(3), .index #conformite + table td:nth-child(4), .index #conformite + table td:nth-child(5), .index #conformite + table td:nth-child(6), .index #conformite + table td:nth-child(7), .index #conformite + table td:nth-child(8), .index #conformite + table td:nth-child(9), .index #conformite + table td:nth-child(10), .index #conformite + table td:nth-child(11), .index #conformite + table td:nth-child(12),
-  .index #conformite + table th:nth-child(2),
-  .index #conformite + table th:nth-child(3),
-  .index #conformite + table th:nth-child(4),
-  .index #conformite + table th:nth-child(5),
-  .index #conformite + table th:nth-child(6),
-  .index #conformite + table th:nth-child(7),
-  .index #conformite + table th:nth-child(8),
-  .index #conformite + table th:nth-child(9),
-  .index #conformite + table th:nth-child(10),
-  .index #conformite + table th:nth-child(11),
-  .index #conformite + table th:nth-child(12),
-  .doc #conformite + table td:nth-child(2),
-  .doc #conformite + table td:nth-child(3),
-  .doc #conformite + table td:nth-child(4),
-  .doc #conformite + table td:nth-child(5),
-  .doc #conformite + table td:nth-child(6),
-  .doc #conformite + table td:nth-child(7),
-  .doc #conformite + table td:nth-child(8),
-  .doc #conformite + table td:nth-child(9),
-  .doc #conformite + table td:nth-child(10),
-  .doc #conformite + table td:nth-child(11),
-  .doc #conformite + table td:nth-child(12),
-  .doc #conformite + table th:nth-child(2),
-  .doc #conformite + table th:nth-child(3),
-  .doc #conformite + table th:nth-child(4),
-  .doc #conformite + table th:nth-child(5),
-  .doc #conformite + table th:nth-child(6),
-  .doc #conformite + table th:nth-child(7),
-  .doc #conformite + table th:nth-child(8),
-  .doc #conformite + table th:nth-child(9),
-  .doc #conformite + table th:nth-child(10),
-  .doc #conformite + table th:nth-child(11),
-  .doc #conformite + table th:nth-child(12) {
-    display: none;
-  }
-}
-@media (max-width: 48.75em) {
-  .index #bps ~ table td:nth-child(1), .index #bps ~ table td:nth-child(3),
-  .index #bps ~ table th:nth-child(1),
-  .index #bps ~ table th:nth-child(3),
-  .doc #bps ~ table td:nth-child(1),
-  .doc #bps ~ table td:nth-child(3),
-  .doc #bps ~ table th:nth-child(1),
-  .doc #bps ~ table th:nth-child(3) {
-    display: none;
-  }
 }
 .index #footnotes,
 .doc #footnotes {

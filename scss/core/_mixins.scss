@@ -1,3 +1,42 @@
+@mixin container()
+{
+    $total-width: (($column-width + $gutter-width) * $total-columns) - $gutter-width;
+    
+     width: $total-width;
+    margin: 0 auto;
+   padding: 0 $grid-padding;
+   
+   @include clearfix;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@mixin column($width:auto)
+{
+    float: left;
+    display: inline;
+    margin-right: $gutter-width;
+    width: $width;
+}
+@mixin last()
+{
+   margin-right: 0!important;
+}
+@mixin first()
+{
+   margin-left: 0!important;
+}
+@mixin span($level:1)
+{
+   @include column(($level * $column-width) + (($level - 1) * $gutter-width));
+}
+@mixin prepend($level:1)
+{
+   padding-left: ($level * $column-width) + ($level * $gutter-width);
+}
+
+/* -------------------------------------------------------------------------- */
+
 $fs: $base-font-size;
 
 @mixin apply-side-rhythm-border($side, $width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
@@ -64,6 +103,7 @@ $fs: $base-font-size;
         width: $width;
         color: $border-color;
     };
+    
     position: relative;
     margin-top:  $width * -2;
     margin-left: $width * -2;
@@ -218,7 +258,13 @@ $fs: $base-font-size;
 
 @mixin roll
 {
-    @include hover-link;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus
+    {
+        text-decoration: underline;
+    }
 }
 .roll // ce mixin peut être appelé depuis le HTML via une classe
 {
@@ -279,6 +325,15 @@ $fs: $base-font-size;
         right: -9999px;        
     }
 }
+@mixin unmask()
+{
+	position: static;
+	width:  auto;
+	height: auto;
+	overflow: visible;
+	left:  auto;
+	right: auto;
+}
 .mask // ce mixin peut être appelé depuis le HTML via une classe
 {
     @include mask;
@@ -297,6 +352,8 @@ $fs: $base-font-size;
     dd
     {
         @include horizontal-list-item(0, left);
+        
+        white-space: normal;
     }
 }
 .list // ce mixin peut être appelé depuis le HTML via une classe

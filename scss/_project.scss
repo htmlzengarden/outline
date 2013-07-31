@@ -1,4 +1,10 @@
-@import "project/ui";
-@import "project/layout";
-@import "project/pages";
-@import "project/print";
+@media screen
+{
+	@import "project/ui";
+	@import "project/layout";
+	@import "project/pages";
+}
+@media print
+{
+	@import "project/print";
+}

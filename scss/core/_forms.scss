@@ -17,18 +17,18 @@ fieldset
 }
 span.label
 {
-    @include span-columns(2);
-
+    @include span(2);
 }
 span.help
 {
     margin-left: gutter($desktop, 1);
-    @include span-columns(2);
+    @include span(2);
 }
 span.error
 {
     color: #F00;
-    @include span-columns(3 omega);
+	@include span(3);
+	@include last;
 }
 .errors
 {
