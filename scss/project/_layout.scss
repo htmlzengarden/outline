@@ -1,7 +1,22 @@
 #page,
 #grid
 {
-    @include container;
+    @include mq($M, true)
+    {
+        @include container($total-columns-M);
+    }
+    @include mq($L)
+    {
+        @include container($total-columns-L);
+    }
+    @include mq($S)
+    {
+        @include container($total-columns-S);
+    }
+    @include mq($XS)
+    {
+        width: auto;
+    }
 }
 #grid
 {
@@ -9,6 +24,14 @@
     {
         width: $column-width;
         margin-left: $gutter-width;
+        
+        @include mq($XS)
+        {
+            &.first-child
+            {
+                width: 100%;
+            }
+        }
     }
 }
 

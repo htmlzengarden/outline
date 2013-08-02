@@ -497,6 +497,15 @@ table {
   border-spacing: 0;
 }
 
+/*
+    XXL
+    XL
+    L
+    M
+    S
+    XS
+    XXS
+*/
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 .clearfix {
@@ -733,7 +742,7 @@ fieldset legend span {
   padding-bottom: 1.53846em;
 }
 
-span.label {
+.label {
   float: left;
   display: inline;
   margin-right: 20px;
@@ -741,7 +750,7 @@ span.label {
 }
 
 span.help {
-  margin-left: gutter(12, 1);
+  margin-left: 20px;
   float: left;
   display: inline;
   margin-right: 20px;
@@ -809,7 +818,7 @@ input.month,
 input.week,
 input.datetime,
 input.datetime-local {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -837,7 +846,7 @@ input[type=month],
 input[type=week],
 input[type=datetime],
 input[type=datetime-local] {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -851,7 +860,7 @@ input[type=datetime-local] {
 }
 
 select {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -862,22 +871,38 @@ select {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  width: 231px;
+  width: 220px;
   padding: 1px;
 }
 
+input.range {
+  padding: 0;
+  border: 0;
+  width: 220px;
+}
+
+input[type=range] {
+  padding: 0;
+  border: 0;
+  width: 220px;
+}
+
 input.file {
-  width: 231px;
-  background-color: #FFF;
+  background-color: transparent;
+  width: auto;
+  border: 0;
+  padding: 0;
 }
 
 input[type=file] {
-  width: 231px;
-  background-color: #FFF;
+  background-color: transparent;
+  width: auto;
+  border: 0;
+  padding: 0;
 }
 
 textarea {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -888,10 +913,10 @@ textarea {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  height: 9.23077em;
-  min-height: 9.23077em;
-  *height: 9.23077em;
-  max-height: 18.46154em;
+  height: 6.15385em;
+  min-height: 6.15385em;
+  *height: 6.15385em;
+  max-height: 9.23077em;
   font-size: 1em;
   line-height: 1.53846em;
   -webkit-resize: vertical;
@@ -909,7 +934,7 @@ textarea {
 input[type=reset],
 input[type=button],
 input[type=submit] {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -920,7 +945,7 @@ input[type=submit] {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  width: 231px;
+  width: 220px;
 }
 input[type=reset]:focus,
 input[type=button]:focus,
@@ -931,7 +956,7 @@ input[type=submit]:focus {
 input.reset,
 input.button,
 input.submit {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -942,7 +967,7 @@ input.submit {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  width: 231px;
+  width: 220px;
 }
 input.reset:focus,
 input.button:focus,
@@ -951,7 +976,7 @@ input.submit:focus {
 }
 
 button {
-  width: 225px;
+  width: 214px;
   border: 1px solid #a6a6a6;
   padding: 2px;
   -webkit-appearance: none;
@@ -962,7 +987,7 @@ button {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  width: 231px;
+  width: 220px;
 }
 button:focus {
   outline: thin dotted;

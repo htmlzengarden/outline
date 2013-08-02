@@ -7,7 +7,11 @@
             @include hide;
         }
     }
-
+    .rwdimg
+    {
+        width: 100%;
+        height: auto;
+    }
     #section-article
     {
         @include clearfix;
@@ -85,16 +89,27 @@
         {
             @include height(10);
             @include margin-bottom;
+            @include border;
             
             @include demo_mires-sprite(demo_mire-2, $offset-x: 50%);
             
             &.first-child
             {
                 @include demo_mires-sprite(demo_mire-1, $offset-x: 0%);
+                
+                @include mq('only screen and (max-width: 260px)')
+                {
+                    @include demo_mires-sprite(demo_mire-1, $offset-x: 50%);        
+                }
             }
             &.last-child
             {
                 @include demo_mires-sprite(demo_mire-3, $offset-x: 100%);
+                
+                @include mq('only screen and (max-width: 260px)')
+                {
+                    @include demo_mires-sprite(demo_mire-3, $offset-x: 50%);        
+                }
             }
         }
     }
@@ -103,8 +118,9 @@
 {
     #bg
     {        
-        @include height(20);
+        @include height(10);
         @include margin-bottom;
+        @include border;
         
         @include retina-image('../img/bg/demo_mire');
         
@@ -126,14 +142,45 @@
             @include padding-bottom;
             @include margin-bottom;
             
-            @include span(3);
-            
-            &.last-child
+            @include mq($M, true)
             {
-                background-color: red;
-            
                 @include span(3);
-                @include last;
+                
+                &.last-child
+                {
+                    @include last;
+                }
+            }
+            @include mq($S)
+            {
+                @include span(4);
+                
+                &.nth-child-2n
+                {
+                    @include last;
+                }
+            }
+            @include mq($XS)
+            {
+                float: none;
+                width: auto;
+                display: block;
+                padding: 0;
+                margin:  0;
+                
+                @include margin-bottom;
+            }
+            @include mq($L)
+            {
+                @include span(4);
+                
+                @include padding-top(2);
+                @include padding-bottom(2);
+                
+                &.last
+                {
+                    @include last;
+                }
             }
         }
     }
@@ -142,11 +189,84 @@
 {
     section
     {
-        @include span(6);        
+        @include mq($M, true)
+        {
+            @include span(6);
+        }
+        @include mq($L)
+        {
+            @include span(8);
+        }
+        @include mq($S)
+        {
+            @include span(4);
+        }
+        @include mq($XS)
+        {
+            float: none;
+            width: auto;
+            display: block;
+            
+            @include last;
+        }
     }
     article
     {
-        @include span(6);        
-        @include last;
+        @include mq($M, true)
+        {
+            @include span(6);
+            @include last;
+        }
+        @include mq($L)
+        {
+            @include span(8);
+            @include last;
+        }
+        @include mq($S)
+        {
+            @include span(4);
+            @include last;
+        }
+        @include mq($XS)
+        {
+            float: none;
+            width: auto;
+            display: block;
+            
+            @include last;
+        }
+    }
+}
+#page.demo
+{
+    video
+    {
+        background-color: #800000;
+    }
+}
+#page.demo
+{
+    form
+    {
+//        @include hide;
+    }
+    #table
+    {
+        overflow: auto;
+        width: 100%;
+    }
+    @include mq($XS)
+    {
+        ul,
+        ol,
+        menu
+        {
+            padding-left: ($column-width + $gutter-width) / 2;
+        }
+        dd,
+        blockquote
+        {
+            margin-left: ($column-width + $gutter-width) / 2;
+        }
     }
 }

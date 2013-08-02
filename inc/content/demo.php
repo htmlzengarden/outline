@@ -10,11 +10,12 @@
         
         <p>
             <noscript class="rwdimg"
-                      data-rwd="media-1 media-2"
-                      data-media-1-match="(max-width: 46.5em)" data-media-1-src="http://maquettes.garden.projects.clever-age.net/img/200/00F/FFF" data-media-1-width="200" data-media-1-height="200" data-media-1-class="media-1"
-                      data-media-2-match="(min-width: 70.5em)" data-media-2-src="http://maquettes.garden.projects.clever-age.net/img/400/F00/FFF" data-media-2-width="400" data-media-2-height="400" data-media-2-class="media-2"
-                      data-src="http://maquettes.garden.projects.clever-age.net/img/300/008000/FFF" data-alt="alt" data-width="300" data-height="300"  ><!--
-             --><img       src="http://maquettes.garden.projects.clever-age.net/img/300/000/FFF"         alt="alt"      width="300"      height="300" /><!--
+                      data-rwd="L S XS"
+                       data-S-match="only screen and (max-width: 1024px)"  data-S-src="http://maquettes.garden.projects.clever-age.net/img/0620x300/FF0000/FFF"  data-S-width="0620"  data-S-height="300"                 data-S-class="s"
+                      data-XS-match="only screen and (max-width: 0680px)" data-XS-src="http://maquettes.garden.projects.clever-age.net/img/0620x300/0000FF/FFF" data-XS-width="0620" data-XS-height="300"                data-XS-class="xs"
+                       data-L-match="only screen and (min-width: 1600px)"  data-L-src="http://maquettes.garden.projects.clever-age.net/img/1260x300/000080/FFF"  data-L-width="1260"  data-L-height="300"                 data-L-class="l"
+                                                                             data-src="http://maquettes.garden.projects.clever-age.net/img/0940x300/008000/FFF"    data-width="0940"    data-height="300" data-alt="alt"  ><!--
+             --><img                                                              src="http://maquettes.garden.projects.clever-age.net/img/0940x300/000000/FFF"         width="0300"         height="300"      alt="alt" /><!--
          --></noscript>
         </p>
     
@@ -337,45 +338,47 @@
 
         <h1>Tabular data</h1>
 
-        <table>
-            <caption>Jimi Hendrix - albums</caption>
-            <thead>
-                <tr>
-                    <th>Album</th>
-                    <th>Year</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <th>Album</th>
-                    <th>Year</th>
-                    <th>Price</th>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <td>Are You Experienced</td>
-                    <td>1967</td>
-                    <td>$10.00</td>
-                </tr>
-                <tr>
-                    <td>Axis: Bold as Love</td>
-                    <td>1967</td>
-                    <td>$12.00</td>
-                </tr>
-                <tr>
-                    <td>Electric Ladyland</td>
-                    <td>1968</td>
-                    <td>$10.00</td>
-                </tr>
-                <tr>
-                    <td>Band of Gypsys</td>
-                    <td>1970</td>
-                    <td>$12.00</td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="table">
+            <table>
+                <caption>Jimi Hendrix - albums</caption>
+                <thead>
+                    <tr>
+                        <th>Album</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Album</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Are You Experienced</td>
+                        <td>1967</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Axis: Bold as Love</td>
+                        <td>1967</td>
+                        <td>$12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Electric Ladyland</td>
+                        <td>1968</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Band of Gypsys</td>
+                        <td>1970</td>
+                        <td>$12.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <h1>Forms</h1>
 

@@ -10,18 +10,19 @@ $(function(){
             inline: true,
             width: '80%'
         });
-        $('div>video, '+
-          'div>audio, '+
-          'div>img, '+
-          'p>.rwdimg, '+
-          'div>a, '+
-          'div>svg, '+
-          'div>object, '+
-          'div>figure').baseline();
           
         function rwd()
         {
-            rwdimg('noscript.rwdimg');        
+            rwdimg('noscript.rwdimg');
+            
+            $('div>video, '+
+              'div>audio, '+
+              'div>img, '+
+              'p>.rwdimg, '+
+              'div>a, '+
+              'div>svg, '+
+              'div>object, '+
+              'div>figure').baseline();
         }
         $(window).resize($.throttle(250, rwd)).trigger('resize');
         

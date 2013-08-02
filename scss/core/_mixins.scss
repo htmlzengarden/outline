@@ -1,4 +1,4 @@
-@mixin container()
+@mixin container($total-columns: $total-columns-M)
 {
     $total-width: (($column-width + $gutter-width) * $total-columns) - $gutter-width;
     
@@ -7,6 +7,29 @@
    padding: 0 $grid-padding;
    
    @include clearfix;
+}
+
+@mixin mq($media, $fallback: false)
+{
+    @if $fallback == true
+    {
+        @content;
+    }
+    @else
+    {
+        @media #{$media}
+        {
+            @content;
+        }
+    }
+}
+
+@mixin lte-ie8
+{
+    @if $lte-ie8
+    {
+        @content;
+    }
 }
 
 /* -------------------------------------------------------------------------- */

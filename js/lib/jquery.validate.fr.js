@@ -4,7 +4,7 @@
  */
 (function ($) {
     $.extend($.validator.messages, {
-        required:                                 'Veuillez compélter ce champ.',
+        required:                                 'Veuillez compléter ce champ.',
         remote:                                   'Veuillez corriger ce champ.',
         email:                                    'Veuillez fournir un <span lang="en">email</span> valide.',
         url:                                      'Veuillez fournir une adresse valide.',

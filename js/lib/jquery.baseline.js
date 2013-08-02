@@ -7,6 +7,8 @@
             rand = Math.floor(Math.random() * 10000),
             elem = jQuery(box).attr('id', pre.substr(1) + rand).append(txt),
             base = $(el);
+            
+        base.parent().height('auto');
 
         base.after(elem);
         

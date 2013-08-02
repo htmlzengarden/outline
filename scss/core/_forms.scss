@@ -1,4 +1,4 @@
-$input-width     : 225px;
+$input-width     : 214px;
 $input-width-gap :   6px;
 
 fieldset
@@ -15,13 +15,13 @@ fieldset
         }
     }
 }
-span.label
+.label
 {
     @include span(2);
 }
 span.help
 {
-    margin-left: gutter($desktop, 1);
+    margin-left: $gutter-width;
     @include span(2);
 }
 span.error
@@ -121,22 +121,38 @@ select
     width: $input-width + $input-width-gap;
     padding: 1px;
 }
+input.range
+{
+    padding: 0;
+    border:  0;
+    width: $input-width + $input-width-gap;
+}
+input[type=range]
+{
+    padding: 0;
+    border:  0;
+    width: $input-width + $input-width-gap;
+}
 input.file
 {
-    width: $input-width + $input-width-gap;
-    background-color: #FFF;
+    background-color: transparent;
+    width: auto;
+    border:  0;
+    padding: 0;
 }
 input[type=file]
 {
-    width: $input-width + $input-width-gap;
-    background-color: #FFF;
+    background-color: transparent;
+    width: auto;
+    border:  0;
+    padding: 0;
 }
 textarea
 {
     @include input;
-    @include height     (6);
-    @include min-height (6);
-    @include max-height(12);
+    @include height     (4);
+    @include min-height (4);
+    @include max-height (6);
     
     @include font-size($fs);
     

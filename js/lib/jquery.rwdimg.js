@@ -8,16 +8,16 @@ var rwdimg = function(selector){
     
     $(selector).each(function(){
     
-        var    src = $(this).data('src'),
-               alt = $(this).data('alt'),
-                id = $(this).data('id'),
-              lang = $(this).data('lang'),
-             title = $(this).data('title'),
-             width = $(this).data('width'),
-            height = $(this).data('height'),
-            classe = $(this).data('class'),
-             style = $(this).data('style'),
-               rwd = $(this).data('rwd');
+        var    src = $(this).attr('data' + '-' + 'src'),
+               alt = $(this).attr('data' + '-' + 'alt'),
+                id = $(this).attr('data' + '-' + 'id'),
+              lang = $(this).attr('data' + '-' + 'lang'),
+             title = $(this).attr('data' + '-' + 'title'),
+             width = $(this).attr('data' + '-' + 'width'),
+            height = $(this).attr('data' + '-' + 'height'),
+            classe = $(this).attr('data' + '-' + 'class'),
+             style = $(this).attr('data' + '-' + 'style'),
+               rwd = $(this).attr('data' + '-' + 'rwd');
             
         if(rwd != undefined)
         {
@@ -26,18 +26,18 @@ var rwdimg = function(selector){
             for(var i=0 ; i< rwd.length ; i++)
             {
                 var mode  = rwd[i],
-                    match = $(this).data(mode + '-' + 'match');
+                    match = $(this).attr('data' + '-' + mode + '-' + 'match');
                     
-                if(window.matchMedia(match).matches) // todo : émuler pour ie<9
+                if(window.matchMedia(match).matches)
                 {
-                    var   src_mode = $(this).data(mode + '-' + 'src'),
-                        width_mode = $(this).data(mode + '-' + 'width'),
-                       height_mode = $(this).data(mode + '-' + 'height'),
-                       classe_mode = $(this).data(mode + '-' + 'class'),
-                           id_mode = $(this).data(mode + '-' + 'id'),
-                         lang_mode = $(this).data(mode + '-' + 'lang'),
-                        style_mode = $(this).data(mode + '-' + 'style'),
-                        title_mode = $(this).data(mode + '-' + 'title');
+                    var   src_mode = $(this).attr('data' + '-' + mode + '-' + 'src'),
+                        width_mode = $(this).attr('data' + '-' + mode + '-' + 'width'),
+                       height_mode = $(this).attr('data' + '-' + mode + '-' + 'height'),
+                       classe_mode = $(this).attr('data' + '-' + mode + '-' + 'class'),
+                           id_mode = $(this).attr('data' + '-' + mode + '-' + 'id'),
+                         lang_mode = $(this).attr('data' + '-' + mode + '-' + 'lang'),
+                        style_mode = $(this).attr('data' + '-' + mode + '-' + 'style'),
+                        title_mode = $(this).attr('data' + '-' + mode + '-' + 'title');
                        
                     if(src_mode != undefined)
                     {
@@ -79,7 +79,7 @@ var rwdimg = function(selector){
             // cette condition est utile pour les intégrations statiques et peut être supprimée en production
             if(src.indexOf(local) != -1){
                                        src = src.replace('http://','');
-                                       src = src.replace('.png',''); // il faudrait idéalement que ça marche aussi pour les jpg
+                                       src = src.replace('.png',''); // il faudrait idéalement que ça marche aussi pour les jpg ou les gif
                             var    options = src.split('/'),
                                 dimensions = options[2].split('x'),
                                    hauteur = dimensions[0],
@@ -101,7 +101,7 @@ var rwdimg = function(selector){
             }
             else
             {
-                src = src.replace(/.(jpg|png)$/ig, '-@x2.$1');
+                src = src.replace(/.(jpg|png|gif)$/ig, '-@x2.$1');
             }
         }
         

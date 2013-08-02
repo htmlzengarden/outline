@@ -133,7 +133,7 @@ var hashgrid = function(set) {
     overlay.height(pageHeight);
     
     // Add the first grid line so that we can measure it
-    overlay.append('<div id="' + options.id + '-horiz" class="horiz first-line">');
+    overlay.append('<div id="' + options.id + '-horiz" class="horiz first-child">');
 
     // Position off-screen and display to calculate height
     top = overlay.css('top');
@@ -175,7 +175,7 @@ var hashgrid = function(set) {
         position: 'absolute',
         top: 0
     });
-    overlayVert.append('<div class="vert first-line"></div>');
+    overlayVert.append('<div class="vert first-child"></div>');
 
     // 50 is an arbitrarily large number...
     // can’t calculate the margin width properly

@@ -1,8 +1,26 @@
 $base-line-height: 20px;
 $base-font-size:   round($base-line-height / 3 * 2);
 
-$total-columns  : 12;
-$column-width   : 60px;
-$gutter-width   : 20px;
-$grid-padding   : $gutter-width;
-$desktop        : $total-columns;
+$column-width: 60px;
+$gutter-width: 20px;
+$grid-padding: $gutter-width;
+
+/*
+    XXL
+    XL
+    L
+    M
+    S
+    XS
+    XXS
+*/
+
+$total-columns-S:   8;
+$total-columns-M:  12;
+$total-columns-L:  16;
+
+$XS: 'only screen and (max-width: 0680px)';
+$S:  'only screen and (max-width: 1024px)';
+$M:  'only screen';
+$L:  'only screen and (min-width: 1600px)';
+
