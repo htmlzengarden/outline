@@ -23,16 +23,7 @@
     }
 }
 
-@mixin container($total-columns: $columns-M)
-{
-    $total-width: (($column-width + $gutter-width) * $total-columns) - $gutter-width;
-    
-     width: unit($total-width);
-    margin: 0 auto;
-   padding: 0 unit($grid-padding);
-   
-   @include clearfix;
-}
+/* -------------------------------------------------------------------------- */
 
 @mixin mq($value, $fallback: false, $min-max: max, $width-height: width)
 {
@@ -75,6 +66,17 @@
 
 /* -------------------------------------------------------------------------- */
 
+@mixin container($total-columns: $columns-M)
+{
+    $total-width: (($column-width + $gutter-width) * $total-columns) - $gutter-width;
+    
+     width: unit($total-width);
+    margin: 0 auto;
+   padding: 0 unit($grid-padding);
+   
+   @include clearfix;
+}
+
 @mixin column($width:auto, $from: $base-font-size)
 {
     @if $rythm-unit == 'px'
@@ -102,6 +104,10 @@
 @mixin prepend($level:1, $from: $base-font-size)
 {
    padding-left: unit(($level * $column-width) + ($level * $gutter-width), $from); 
+}
+@mixin append($level:1, $from: $base-font-size)
+{
+   padding-right: unit(($level * $column-width) + ($level * $gutter-width), $from); 
 }
 
 /* -------------------------------------------------------------------------- */
