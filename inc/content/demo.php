@@ -11,11 +11,11 @@
         <p>
             <noscript class="rwdimg"
                       data-rwd="L S XS"
-                       data-S-match="only screen and (max-width: 1024px)"  data-S-src="http://maquettes.garden.projects.clever-age.net/img/0620x300/FF0000/FFF"  data-S-width="0620"  data-S-height="300"                 data-S-class="s"
-                      data-XS-match="only screen and (max-width: 0680px)" data-XS-src="http://maquettes.garden.projects.clever-age.net/img/0620x300/0000FF/FFF" data-XS-width="0620" data-XS-height="300"                data-XS-class="xs"
-                       data-L-match="only screen and (min-width: 1600px)"  data-L-src="http://maquettes.garden.projects.clever-age.net/img/1260x300/000080/FFF"  data-L-width="1260"  data-L-height="300"                 data-L-class="l"
-                                                                             data-src="http://maquettes.garden.projects.clever-age.net/img/0940x300/008000/FFF"    data-width="0940"    data-height="300" data-alt="alt"  ><!--
-             --><img                                                              src="http://maquettes.garden.projects.clever-age.net/img/0940x300/000000/FFF"         width="0300"         height="300"      alt="alt" /><!--
+                       data-S-match="only screen and (max-width: 74em)"  data-S-src="http://maquettes.garden.projects.clever-age.net/img/0620x300/FF0000/FFF"  data-S-width="0620"  data-S-height="300"                 data-S-class="s"
+                      data-XS-match="only screen and (max-width: 49em)" data-XS-src="http://maquettes.garden.projects.clever-age.net/img/0620x300/0000FF/FFF" data-XS-width="0620" data-XS-height="300"                data-XS-class="xs"
+                       data-L-match="only screen and (min-width: 98em)"  data-L-src="http://maquettes.garden.projects.clever-age.net/img/1260x300/000080/FFF"  data-L-width="1260"  data-L-height="300"                 data-L-class="l"
+                                                                           data-src="http://maquettes.garden.projects.clever-age.net/img/0940x300/008000/FFF"    data-width="0940"    data-height="300" data-alt="alt"  ><!--
+             --><img                                                            src="http://maquettes.garden.projects.clever-age.net/img/0940x300/000000/FFF"         width="0300"         height="300"      alt="alt" /><!--
          --></noscript>
         </p>
     

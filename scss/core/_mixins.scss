@@ -1,15 +1,40 @@
-@mixin container($total-columns: $total-columns-M)
+@if $rythm-unit == 'px'
+{
+    @if $grid-unit == 'em'
+    {
+        @warn "$grid-unit is set to 'em' and $rythm-unit is set to 'px' : doesn't work.";
+        
+        $grid-unit: 'px';
+    }
+
+    $relative-font-sizing: false;
+    $font-unit: $base-font-size;
+}
+
+@function unit($to, $from: $base-font-size)
+{
+    @if $grid-unit == 'px'
+    {
+        @return $to;
+    }
+    @else if $grid-unit == 'em'
+    {
+        @return $font-unit * $to / $from;
+    }
+}
+
+@mixin container($total-columns: $columns-M)
 {
     $total-width: (($column-width + $gutter-width) * $total-columns) - $gutter-width;
     
-     width: $total-width;
+     width: unit($total-width);
     margin: 0 auto;
-   padding: 0 $grid-padding;
+   padding: 0 unit($grid-padding);
    
    @include clearfix;
 }
 
-@mixin mq($media, $fallback: false)
+@mixin mq($value, $fallback: false, $min-max: max, $width-height: width)
 {
     @if $fallback == true
     {
@@ -17,12 +42,28 @@
     }
     @else
     {
-        @media #{$media}
+        @if $value == 0px or $value == '' or $value == 0 or $value == null
         {
             @content;
         }
+        @else
+        {
+            @media only screen and (#{$min-max}-#{$width-height}: unit($value))
+            {
+                @content;
+            }
+        }
     }
 }
+
+@mixin orientation($orientation: landscape)
+{
+    @media (orientation : $orientation)
+    {
+        @content;  
+    }
+}
+
 
 @mixin lte-ie8
 {
@@ -34,12 +75,17 @@
 
 /* -------------------------------------------------------------------------- */
 
-@mixin column($width:auto)
+@mixin column($width:auto, $from: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $from: $base-font-size;
+    }
+    
     float: left;
     display: inline;
-    margin-right: $gutter-width;
-    width: $width;
+    margin-right: unit($gutter-width, $from);
+    width: unit($width, $from);
 }
 @mixin last()
 {
@@ -49,13 +95,13 @@
 {
    margin-left: 0!important;
 }
-@mixin span($level:1)
+@mixin span($level:1, $from: $base-font-size)
 {
-   @include column(($level * $column-width) + (($level - 1) * $gutter-width));
+   @include column(($level * $column-width) + (($level - 1) * $gutter-width), $from);
 }
-@mixin prepend($level:1)
+@mixin prepend($level:1, $from: $base-font-size)
 {
-   padding-left: ($level * $column-width) + ($level * $gutter-width);
+   padding-left: unit(($level * $column-width) + ($level * $gutter-width), $from); 
 }
 
 /* -------------------------------------------------------------------------- */
@@ -96,6 +142,11 @@ $fs: $base-font-size;
 
 @mixin position($side, $lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     #{$side}: (1em * ($base-line-height / $font-size)) * $lines;
 }
 
@@ -196,17 +247,37 @@ $fs: $base-font-size;
 @mixin margin-top($lines: 1, $font-size: $base-font-size)
 {
     @include       leader($lines, $font-size,  margin);
+    
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
 }
 @mixin margin-bottom($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     @include      trailer($lines, $font-size,  margin);
 }
 @mixin  margin-left($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     margin-left:   rhythm($lines, $font-size);
 }
 @mixin margin-right($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     margin-right:  rhythm($lines, $font-size);
 }
 
@@ -214,18 +285,38 @@ $fs: $base-font-size;
 
 @mixin padding-top($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     @include        leader($lines, $font-size, padding);
 }
 @mixin padding-bottom($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     @include       trailer($lines, $font-size, padding);
 }
 @mixin  padding-left($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     padding-left:  rhythm($lines, $font-size);
 }
 @mixin padding-right($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     padding-right: rhythm($lines, $font-size);
 }
 
@@ -233,6 +324,11 @@ $fs: $base-font-size;
 
 @mixin     padding($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     @include       leader($lines, $font-size, padding);
     @include      trailer($lines, $font-size, padding);
     padding-left:  rhythm($lines, $font-size);
@@ -240,6 +336,11 @@ $fs: $base-font-size;
 }
 @mixin      margin($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     @include       leader($lines, $font-size,  margin);
     @include      trailer($lines, $font-size,  margin);
     margin-left:   rhythm($lines, $font-size);
@@ -250,19 +351,39 @@ $fs: $base-font-size;
 
 @mixin max-height($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     max-height: rhythm($lines, $font-size);
 }
 @mixin min-height($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     min-height: rhythm($lines, $font-size);
        *height: rhythm($lines, $font-size);
 }
 @mixin     height($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
         height: rhythm($lines, $font-size);
 }
 @mixin line-height($lines: 1, $font-size: $base-font-size)
 {
+    @if $rythm-unit == 'px'
+    {
+        $font-size: $base-font-size;
+    }
+
     line-height: rhythm($lines, $font-size);
 }
 
@@ -348,6 +469,10 @@ $fs: $base-font-size;
         right: -9999px;        
     }
 }
+.mask // ce mixin peut être appelé depuis le HTML via une classe
+{
+    @include mask;
+}
 @mixin unmask()
 {
 	position: static;
@@ -357,9 +482,9 @@ $fs: $base-font-size;
 	left:  auto;
 	right: auto;
 }
-.mask // ce mixin peut être appelé depuis le HTML via une classe
+.unmask // ce mixin peut être appelé depuis le HTML via une classe
 {
-    @include mask;
+    @include unmask;
 }
 
 //------------------------------------------------------------------------------

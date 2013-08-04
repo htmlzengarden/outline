@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="index" lang="fr">
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"    />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"          />
         <title>Index des maquettes</title>
-        <link rel="stylesheet"    type="text/css"     href="../css/doc.css"  />
-        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"  />
+        <link rel="stylesheet"    type="text/css"     href="../css/styles-doc.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"        />
     </head>
     <body>
         <div id="page">

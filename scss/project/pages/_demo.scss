@@ -12,18 +12,6 @@
         width: 100%;
         height: auto;
     }
-    #section-article
-    {
-        @include clearfix;
-    }
-    section
-    {
-        background-color: red;
-    }
-    article
-    {
-        background-color: green;    
-    }
     .flexslider
     {
         @include margin-bottom;
@@ -97,7 +85,7 @@
             {
                 @include demo_mires-sprite(demo_mire-1, $offset-x: 0%);
                 
-                @include mq('only screen and (max-width: 260px)')
+                @include mq(260px, false, max)
                 {
                     @include demo_mires-sprite(demo_mire-1, $offset-x: 50%);        
                 }
@@ -106,7 +94,7 @@
             {
                 @include demo_mires-sprite(demo_mire-3, $offset-x: 100%);
                 
-                @include mq('only screen and (max-width: 260px)')
+                @include mq(260px, false, max)
                 {
                     @include demo_mires-sprite(demo_mire-3, $offset-x: 50%);        
                 }
@@ -136,15 +124,20 @@
         
         .col
         {
+            $fs: 30px;
+        
             background-color: black;
             color: white;
-            @include padding-top;
-            @include padding-bottom;
-            @include margin-bottom;
+            text-align: center;
+            
+            @include font-size($fs);
+            @include padding-top   (1, $fs);
+            @include padding-bottom(1, $fs);
+            @include margin-bottom (1, $fs);
             
             @include mq($M, true)
             {
-                @include span(3);
+                @include span(3, $fs);
                 
                 &.last-child
                 {
@@ -153,7 +146,7 @@
             }
             @include mq($S)
             {
-                @include span(4);
+                @include span(4, $fs);
                 
                 &.nth-child-2n
                 {
@@ -168,14 +161,14 @@
                 padding: 0;
                 margin:  0;
                 
-                @include margin-bottom;
+                @include margin-bottom(1, $fs);
             }
-            @include mq($L)
+            @include mq($L, false, min)
             {
-                @include span(4);
+                @include span(4, $fs);
                 
-                @include padding-top(2);
-                @include padding-bottom(2);
+                @include padding-top   (2, $fs);
+                @include padding-bottom(2, $fs);
                 
                 &.last
                 {
@@ -187,13 +180,19 @@
 }
 #page.demo
 {
+    #section-article
+    {
+        @include clearfix;
+    }
     section
     {
+        background-color: red;
+        
         @include mq($M, true)
         {
             @include span(6);
         }
-        @include mq($L)
+        @include mq($L, false, min)
         {
             @include span(8);
         }
@@ -212,28 +211,26 @@
     }
     article
     {
+        background-color: green;
+    
         @include mq($M, true)
         {
             @include span(6);
             @include last;
         }
-        @include mq($L)
+        @include mq($L, false, min)
         {
             @include span(8);
-            @include last;
         }
         @include mq($S)
         {
             @include span(4);
-            @include last;
         }
         @include mq($XS)
         {
             float: none;
             width: auto;
             display: block;
-            
-            @include last;
         }
     }
 }
@@ -246,10 +243,6 @@
 }
 #page.demo
 {
-    form
-    {
-//        @include hide;
-    }
     #table
     {
         overflow: auto;

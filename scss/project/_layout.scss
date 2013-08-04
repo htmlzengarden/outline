@@ -3,15 +3,15 @@
 {
     @include mq($M, true)
     {
-        @include container($total-columns-M);
+        @include container($columns-M);
     }
-    @include mq($L)
+    @include mq($L, false, min)
     {
-        @include container($total-columns-L);
+        @include container($columns-L);
     }
     @include mq($S)
     {
-        @include container($total-columns-S);
+        @include container($columns-S);
     }
     @include mq($XS)
     {
@@ -22,8 +22,8 @@
 {
     .vert
     {
-        width: $column-width;
-        margin-left: $gutter-width;
+        width: unit($column-width);
+        margin-left: unit($gutter-width);
         
         @include mq($XS)
         {

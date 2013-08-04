@@ -5,6 +5,7 @@
 /**
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000322}}
 article,
 aside,
 details,
@@ -23,6 +24,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000332}}
 audio,
 canvas,
 video {
@@ -35,6 +37,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000343}}
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -44,6 +47,7 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000353}}
 [hidden] {
   display: none;
 }
@@ -57,6 +61,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000368}}
 html {
   font-size: 100%;
   /* 1 */
@@ -70,6 +75,7 @@ html {
  * Address `font-family` inconsistency between `textarea` and other form
  * elements.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000383}}
 html,
 button,
 input,
@@ -81,6 +87,7 @@ textarea {
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\0000391}}
 body {
   margin: 0;
 }
@@ -91,6 +98,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003103}}
 a:focus {
   outline: thin dotted;
 }
@@ -98,6 +106,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003112}}
 a:active,
 a:hover {
   outline: 0;
@@ -111,31 +120,37 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003126}}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003131}}
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003136}}
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003141}}
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003146}}
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003151}}
 h6 {
   font-size: 0.67em;
   margin: 2.33em 0;
@@ -144,6 +159,7 @@ h6 {
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003160}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -151,11 +167,13 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003169}}
 b,
 strong {
   font-weight: bold;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003173}}
 blockquote {
   margin: 1em 40px;
 }
@@ -163,6 +181,7 @@ blockquote {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003181}}
 dfn {
   font-style: italic;
 }
@@ -171,6 +190,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  * Known issue: no IE 6/7 normalization.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003190}}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -180,6 +200,7 @@ hr {
 /**
  * Address styling not present in IE 6/7/8/9.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003200}}
 mark {
   background: #ff0;
   color: #000;
@@ -188,6 +209,7 @@ mark {
 /**
  * Address margins set differently in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003210}}
 p,
 pre {
   margin: 1em 0;
@@ -196,6 +218,7 @@ pre {
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003221}}
 code,
 kbd,
 pre,
@@ -208,6 +231,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003231}}
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -217,6 +241,7 @@ pre {
 /**
  * Address CSS quotes not supported in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003241}}
 q {
   quotes: none;
 }
@@ -224,6 +249,7 @@ q {
 /**
  * Address `quotes` property not supported in Safari 4.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003250}}
 q:before,
 q:after {
   content: '';
@@ -233,6 +259,7 @@ q:after {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003259}}
 small {
   font-size: 80%;
 }
@@ -240,6 +267,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003268}}
 sub,
 sup {
   font-size: 75%;
@@ -248,10 +276,12 @@ sup {
   vertical-align: baseline;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003275}}
 sup {
   top: -0.5em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003279}}
 sub {
   bottom: -0.25em;
 }
@@ -262,6 +292,7 @@ sub {
 /**
  * Address margins set differently in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003294}}
 dl,
 menu,
 ol,
@@ -269,6 +300,7 @@ ul {
   margin: 1em 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003298}}
 dd {
   margin: 0 0 0 40px;
 }
@@ -276,6 +308,7 @@ dd {
 /**
  * Address paddings set differently in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003308}}
 menu,
 ol,
 ul {
@@ -285,6 +318,7 @@ ul {
 /**
  * Correct list images handled incorrectly in IE 7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003317}}
 nav ul,
 nav ol {
   list-style: none;
@@ -298,6 +332,7 @@ nav ol {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003331}}
 img {
   border: 0;
   /* 1 */
@@ -308,6 +343,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003340}}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -318,6 +354,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003352}}
 figure {
   margin: 0;
 }
@@ -328,6 +365,7 @@ figure {
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003364}}
 form {
   margin: 0;
 }
@@ -335,6 +373,7 @@ form {
 /**
  * Define consistent border, margin, and padding.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003372}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -346,6 +385,7 @@ fieldset {
  * 2. Correct text not wrapping in Firefox 3.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003384}}
 legend {
   border: 0;
   /* 1 */
@@ -362,6 +402,7 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003401}}
 button,
 input,
 select,
@@ -380,6 +421,7 @@ textarea {
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003414}}
 button,
 input {
   line-height: normal;
@@ -391,6 +433,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003426}}
 button,
 select {
   text-transform: none;
@@ -405,6 +448,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003443}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -420,6 +464,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003454}}
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -431,6 +476,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003466}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -448,6 +494,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003479}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -461,6 +508,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003492}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -469,6 +517,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003501}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -479,6 +528,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003511}}
 textarea {
   overflow: auto;
   /* 1 */
@@ -492,42 +542,41 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/_normalize\.scss}line{font-family:\00003524}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/*
-    XXL
-    XL
-    L
-    M
-    S
-    XS
-    XXS
-*/
+/*  XXS - XS - S - M - L - XL - XXL  */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003397}}
 .clearfix {
   *zoom: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003414}}
 .roll {
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003409}}
 .roll:hover, .roll:focus {
   text-decoration: underline;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003452}}
 .hide {
   display: none;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003473}}
 .mask {
   position: absolute;
   width: 1px;
@@ -537,17 +586,30 @@ table {
   left: -9999px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003486}}
+.unmask {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  left: auto;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003508}}
 .list {
   margin: 0;
   padding: 0;
   border: 0;
   *zoom: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .list:after {
   content: "";
   display: table;
   clear: both;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_mixins\.scss}line{font-family:\00003501}}
 .list li,
 .list dt,
 .list dd {
@@ -561,6 +623,7 @@ table {
   padding-right: 0;
   white-space: normal;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000348}}
 .list li:first-child, .list li.first,
 .list dt:first-child,
 .list dt.first,
@@ -568,123 +631,143 @@ table {
 .list dd.first {
   padding-left: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000349}}
 .list li:last-child,
 .list dt:last-child,
 .list dd:last-child {
   padding-right: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/libs\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000350}}
 .list li.last,
 .list dt.last,
 .list dd.last {
   padding-right: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\000032}}
 body {
   font-size: 81.25%;
-  line-height: 1.53846em;
+  line-height: 1.538462em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000315}}
 body h6 {
   margin: 0;
-  font-size: 0.76923em;
+  font-size: 0.769231em;
   line-height: 2em;
   margin-bottom: 2em;
   padding-top: 4em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000322}}
 body h5 {
   margin: 0;
   font-size: 1em;
-  line-height: 1.53846em;
-  margin-bottom: 1.53846em;
-  padding-top: 3.07692em;
+  line-height: 1.538462em;
+  margin-bottom: 1.538462em;
+  padding-top: 3.076923em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000329}}
 body h4 {
   margin: 0;
-  font-size: 1.23077em;
+  font-size: 1.230769em;
   line-height: 1.25em;
   margin-bottom: 1.25em;
   padding-top: 2.5em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000336}}
 body h3 {
   margin: 0;
-  font-size: 1.53846em;
+  font-size: 1.538462em;
   line-height: 2em;
   margin-bottom: 1em;
   padding-top: 2em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000343}}
 body h2 {
   margin: 0;
-  font-size: 1.92308em;
+  font-size: 1.923077em;
   line-height: 1.6em;
   margin-bottom: 0.8em;
   padding-top: 1.6em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000350}}
 body h1 {
   margin: 0;
-  font-size: 2.38462em;
-  line-height: 1.29032em;
-  margin-bottom: 0.64516em;
-  padding-top: 1.29032em;
+  font-size: 2.384615em;
+  line-height: 1.290323em;
+  margin-bottom: 0.645161em;
+  padding-top: 1.290323em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000359}}
 b,
 strong {
   font-weight: bold;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000363}}
 blockquote {
   margin: 0 80px;
-  margin-bottom: 1.53846em;
+  margin-bottom: 1.538462em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000370}}
 p,
 pre,
 address {
   margin: 0;
-  margin-bottom: 1.53846em;
+  margin-bottom: 1.538462em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000378}}
 dl,
 menu,
 ol,
 ul {
   margin: 0;
-  margin-bottom: 1.53846em;
+  margin-bottom: 1.538462em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000383}}
 dd {
   margin: 0 0 0 80px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000389}}
 menu,
 ol,
 ul {
   padding: 0 0 0 80px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\0000393}}
 fieldset {
   margin: 0;
   padding: 10px;
-  padding-top: 0.76923em;
-  padding-bottom: 0.76923em;
-  margin-bottom: 1.53846em;
+  padding-top: 0.769231em;
+  padding-bottom: 0.769231em;
+  margin-bottom: 1.538462em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003101}}
 table {
-  margin-bottom: 1.53846em;
+  margin-bottom: 1.538462em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003108}}
 td,
 th,
 caption {
   padding: 10px;
-  padding-top: 0.76923em;
-  padding-bottom: 0.76923em;
+  padding-top: 0.769231em;
+  padding-bottom: 0.769231em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003114}}
 html {
   overflow-y: scroll;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003124}}
 img,
 audio,
 video,
@@ -696,21 +779,25 @@ table {
   max-width: 100%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003129}}
 table {
   display: table;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003133}}
 small {
   line-height: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003137}}
 .hr {
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: black;
   margin-top: -1px;
-  margin-bottom: 1.53846em;
+  margin-bottom: 1.538462em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003142}}
 .hr hr {
   position: absolute;
   width: 1px;
@@ -720,6 +807,7 @@ small {
   left: -9999px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003151}}
 ul ol,
 ul ul,
 ol ol,
@@ -727,49 +815,57 @@ ol ul {
   margin-bottom: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_generic\.scss}line{font-family:\00003160}}
 .not-ie code, .not-ie
 kbd, .not-ie
 samp {
   line-height: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\000035}}
 fieldset {
   border: none;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000312}}
 fieldset legend span {
   display: block;
-  padding-bottom: 1.53846em;
+  padding-bottom: 1.538462em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000319}}
 .label {
   float: left;
   display: inline;
-  margin-right: 20px;
-  width: 140px;
+  margin-right: 1.538462em;
+  width: 10.769231em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000323}}
 span.help {
   margin-left: 20px;
   float: left;
   display: inline;
-  margin-right: 20px;
-  width: 140px;
+  margin-right: 1.538462em;
+  width: 10.769231em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000328}}
 span.error {
   color: #F00;
   float: left;
   display: inline;
-  margin-right: 20px;
-  width: 220px;
+  margin-right: 1.538462em;
+  width: 16.923077em;
   margin-right: 0 !important;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000334}}
 .errors {
   color: #F00;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000340}}
 span.label,
 span.help,
 span.error {
@@ -777,6 +873,7 @@ span.error {
   display: inline-block;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000350}}
 input,
 select,
 textarea,
@@ -786,23 +883,27 @@ span.error {
   vertical-align: top;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000357}}
 .radio .label,
 .checkbox .label {
   width: auto;
   margin-right: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000362}}
 .radio input,
 .checkbox input {
   position: relative;
   top: 2px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000368}}
 .line {
-  min-height: 3.07692em;
-  *height: 3.07692em;
+  min-height: 3.076923em;
+  *height: 3.076923em;
   margin-bottom: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\0000397}}
 input.text,
 input.email,
 input.search,
@@ -831,6 +932,7 @@ input.datetime-local {
   border-radius: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003115}}
 input[type=text],
 input[type=email],
 input[type=search],
@@ -859,6 +961,7 @@ input[type=datetime-local] {
   border-radius: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003119}}
 select {
   width: 214px;
   border: 1px solid #a6a6a6;
@@ -875,18 +978,21 @@ select {
   padding: 1px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003125}}
 input.range {
   padding: 0;
   border: 0;
   width: 220px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003131}}
 input[type=range] {
   padding: 0;
   border: 0;
   width: 220px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003137}}
 input.file {
   background-color: transparent;
   width: auto;
@@ -894,6 +1000,7 @@ input.file {
   padding: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003144}}
 input[type=file] {
   background-color: transparent;
   width: auto;
@@ -901,6 +1008,7 @@ input[type=file] {
   padding: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003151}}
 textarea {
   width: 214px;
   border: 1px solid #a6a6a6;
@@ -913,12 +1021,12 @@ textarea {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  height: 6.15385em;
-  min-height: 6.15385em;
-  *height: 6.15385em;
-  max-height: 9.23077em;
+  height: 6.153846em;
+  min-height: 6.153846em;
+  *height: 6.153846em;
+  max-height: 9.230769em;
   font-size: 1em;
-  line-height: 1.53846em;
+  line-height: 1.538462em;
   -webkit-resize: vertical;
   -moz-resize: vertical;
   -ms-resize: vertical;
@@ -926,11 +1034,13 @@ textarea {
   resize: vertical;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003162}}
 .textarea {
-  min-height: 10.76923em;
-  *height: 10.76923em;
+  min-height: 10.769231em;
+  *height: 10.769231em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003168}}
 input[type=reset],
 input[type=button],
 input[type=submit] {
@@ -947,12 +1057,14 @@ input[type=submit] {
   border-radius: 0;
   width: 220px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003173}}
 input[type=reset]:focus,
 input[type=button]:focus,
 input[type=submit]:focus {
   outline: thin dotted;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003180}}
 input.reset,
 input.button,
 input.submit {
@@ -969,12 +1081,14 @@ input.submit {
   border-radius: 0;
   width: 220px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003185}}
 input.reset:focus,
 input.button:focus,
 input.submit:focus {
   outline: thin dotted;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003190}}
 button {
   width: 214px;
   border: 1px solid #a6a6a6;
@@ -989,6 +1103,7 @@ button {
   border-radius: 0;
   width: 220px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/core\/_forms\.scss}line{font-family:\00003195}}
 button:focus {
   outline: thin dotted;
 }
@@ -1010,23 +1125,27 @@ button:focus {
     }
 }
 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\000035}}
 .index #page,
 .doc #page {
-  width: 940px;
+  width: 72.307692em;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.538462em;
   *zoom: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .index #page:after,
 .doc #page:after {
   content: "";
   display: table;
   clear: both;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\000039}}
 .index img,
 .doc img {
   max-width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\0000316}}
 .index h1,
 .index h2,
 .index h3,
@@ -1037,32 +1156,37 @@ button:focus {
 .doc h4 {
   padding-top: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\0000320}}
 .index table,
 .doc table {
-  font-size: 0.92308em;
-  line-height: 1.66667em;
-  margin-bottom: 1.66667em;
+  font-size: 0.923077em;
+  line-height: 1.666667em;
+  margin-bottom: 1.666667em;
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\0000329}}
 .index table td,
 .index table th,
 .doc table td,
 .doc table th {
   text-align: left;
   border: 1px solid #333;
-  padding-top: 0.83333em;
-  padding-bottom: 0.83333em;
+  padding-top: 0.833333em;
+  padding-bottom: 0.833333em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\0000338}}
 .index table th,
 .doc table th {
   white-space: nowrap;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\0000343}}
 .index #footnotes,
 .doc #footnotes {
-  font-size: 0.84615em;
-  line-height: 1.81818em;
-  margin-bottom: 1.81818em;
+  font-size: 0.846154em;
+  line-height: 1.818182em;
+  margin-bottom: 1.818182em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Vincent\/Sites\/www\/outline\/scss\/doc\/_screen\.scss}line{font-family:\0000349}}
 .index #footnotes p,
 .doc #footnotes p {
   margin-bottom: 0;

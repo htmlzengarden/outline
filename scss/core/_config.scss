@@ -1,26 +1,19 @@
 $base-line-height: 20px;
-$base-font-size:   round($base-line-height / 3 * 2);
+$base-font-size: round($base-line-height / 3 * 2);
 
-$column-width: 60px;
+$column-width: 60px; 
 $gutter-width: 20px;
 $grid-padding: $gutter-width;
 
-/*
-    XXL
-    XL
-    L
-    M
-    S
-    XS
-    XXS
-*/
+$rythm-unit: 'em';
+ $grid-unit: 'em';
 
-$total-columns-S:   8;
-$total-columns-M:  12;
-$total-columns-L:  16;
+/*  XXS - XS - S - M - L - XL - XXL  */
 
-$XS: 'only screen and (max-width: 0680px)';
-$S:  'only screen and (max-width: 1024px)';
-$M:  'only screen';
-$L:  'only screen and (min-width: 1600px)';
+$columns-S:   8;
+$columns-M:  12;
+$columns-L:  16;
 
+$XS:  680px;
+$S:  1024px;
+$L:  1600px;

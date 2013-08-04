@@ -1,5 +1,13 @@
 $lte-ie8: true;
 
+$XXS: null !default;
+$XS:  null !default;
+$S:   null !default;
+$M:   null !default;
+$L:   null !default;
+$XL:  null !default;
+$XXL: null !default;
+
 @import "libs";
 @import "core";
 @import "plugins";

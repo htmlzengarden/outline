@@ -8,8 +8,8 @@
     
     .vert-container
     {
-        left:  $grid-padding;
-        right: $grid-padding;
+        left:  unit($grid-padding);
+        right: unit($grid-padding);
     }
     .vert
     {

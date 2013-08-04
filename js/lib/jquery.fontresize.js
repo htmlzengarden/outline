@@ -1,6 +1,6 @@
-var function(){
+var fontresize = function(){
 
-    var interval = 250,
+    var interval = 200,
         id       = '#detectsize',
         event    = 'fontresize',
         mask     = 'mask';
@@ -12,16 +12,17 @@ var function(){
     elt.css('height','auto');
     elt.appendTo('body');
 
-    var height = $(id).height();
+    var oldheight = $(id).height();
     
     setInterval(function(){
     
-        var newheight = $().height();
-    
-        if(newheight != height)
+        var newheight = $(id).height();
+        
+        if(newheight != oldheight)
         {
             $(window).trigger(event);
-            height = newheight;
+            oldheight = newheight;
         }
+        
     }, interval);
 }();

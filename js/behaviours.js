@@ -15,16 +15,17 @@ $(function(){
         {
             rwdimg('noscript.rwdimg');
             
-            $('div>video, '+
-              'div>audio, '+
-              'div>img, '+
-              'p>.rwdimg, '+
-              'div>a, '+
-              'div>svg, '+
-              'div>object, '+
+            $('div>video,   '+
+              'div>audio,   '+
+              'div>img,     '+
+              'p>.rwdimg,   '+
+              'div>a,       '+
+              'div>svg,     '+
+              'div>object,  '+
               'div>figure').baseline();
         }
-        $(window).resize($.throttle(250, rwd)).trigger('resize');
+        $(window).resize($.throttle(200, rwd)).trigger('resize');
+        $(window).on('fontresize', function(){rwd();});
         
         $('.flexslider').flexslider({
         

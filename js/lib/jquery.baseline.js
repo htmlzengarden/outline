@@ -8,7 +8,7 @@
             elem = jQuery(box).attr('id', pre.substr(1) + rand).append(txt),
             base = $(el);
             
-        base.parent().height('auto');
+        base.parent().height('');
 
         base.after(elem);
         
