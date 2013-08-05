@@ -1387,26 +1387,26 @@ button:focus {
   background-image: none;
 }
 
+/*
+@font-face
+{
+    font-family: 'exemple';
+    
+    src: url('../font/exemple.eot');
+    src: url('../font/exemple.eot?#iefix') format('embedded-opentype'),
+         url('../font/exemple.woff')       format('woff'),
+         url('../font/exemple.ttf')        format('truetype');
+
+    font-weight: normal;
+    font-style:  normal;
+}
+@mixin exemple
+{
+    font-family: 'exemple',
+                 sans-serif;
+}
+*/
 @media screen {
-  /*
-  @font-face
-  {
-      font-family: 'exemple';
-      
-      src: url('../font/exemple.eot');
-      src: url('../font/exemple.eot?#iefix') format('embedded-opentype'),
-           url('../font/exemple.woff')       format('woff'),
-           url('../font/exemple.ttf')        format('truetype');
-  
-      font-weight: normal;
-      font-style:  normal;
-  }
-  @mixin exemple
-  {
-      font-family: 'exemple',
-                   sans-serif;
-  }
-  */
                    /*
 $exemple-layout: vertical;
 $exemple-spacing: 32px;
