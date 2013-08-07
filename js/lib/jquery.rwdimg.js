@@ -27,8 +27,8 @@ var rwdimg = function(selector){
             {
                 var mode  = rwd[i],
                     match = $(this).attr('data' + '-' + mode + '-' + 'match');
-                    
-                if(window.matchMedia(match).matches)
+                 
+                if(window.matchMedia != undefined && window.matchMedia(match).matches)
                 {
                     var   src_mode = $(this).attr('data' + '-' + mode + '-' + 'src'),
                         width_mode = $(this).attr('data' + '-' + mode + '-' + 'width'),
