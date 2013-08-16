@@ -12,4 +12,6 @@
 
 FileETag MTime Size
 
+SetEnv PHP_VER 5
+
 IndexOptions FancyIndexing SuppressHTMLPreamble FoldersFirst IgnoreCase HTMLTable XHTML ShowForbidden SuppressDescription SuppressIcon SuppressRules NameWidth=* Charset=UTF-8

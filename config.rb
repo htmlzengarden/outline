@@ -8,8 +8,8 @@ javascripts_dir = "js"
 
 Sass::Script::Number.precision = 6
 
-    environment = :development
-#   environment = :production
+#   environment = :development
+	environment = :production
 
 if  environment == :production
     output_style = :compressed
