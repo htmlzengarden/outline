@@ -76,7 +76,6 @@ span.error
     border: 1px solid #a6a6a6;
     padding: 2px;
     
-    @include appearance(none);
     @include border-radius(0);
 }
 input.text,
@@ -96,6 +95,7 @@ input.datetime,
 input.datetime-local
 {
     @include input;
+    @include appearance(none);
 }
 input[type=text],
 input[type=email],
@@ -114,6 +114,7 @@ input[type=datetime],
 input[type=datetime-local],
 {
     @include input;
+    @include appearance(none);
 }
 select
 {
