@@ -45,7 +45,7 @@ Elle est est composée d'un ensemble d'outils existants, soigneusement choisis e
 Ce qui se traduit techniquement par tout un tas de choses :
 
  - [Z](https://github.com/Cerdic/Z) ;
- - [SASS](http://sass-lang.com/) ;
+ - [Sass](http://sass-lang.com/) ;
  - [Compass](http://compass-style.org/) ;
  - [normalize.css](http://necolas.github.com/normalize.css/) ;
  - [#grid](http://hashgrid.com/) ;
