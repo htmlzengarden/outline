@@ -15,7 +15,7 @@ if  environment == :production
     output_style = :compressed
 else
     output_style =   :expanded
-    sass_options = { :debug_info => true }
+#   sass_options = { :debug_info => true }
 end
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
