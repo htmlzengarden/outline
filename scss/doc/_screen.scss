@@ -1,0 +1,56 @@
+/** --- @section DOCUMENTATION SCREEN STYLES --- */
+
+body
+{
+    background-color: white;
+}
+.page-index,
+.doc
+{
+    @include container;    
+
+    img
+    {
+        max-width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4
+    {
+        padding-top: 0;
+    }
+
+    $fs-table: 14px;
+    
+    table
+    {
+        @include block($fs-table);
+        width: 100%;
+    }
+    td,
+    th
+    {
+        text-align: left;
+        padding-left: em($m/2,$fs-table);
+        border: 1px solid #333;
+        
+        @include padding-top   (.5,$fs-table);
+        @include padding-bottom(.5,$fs-table);
+    }
+    th
+    {
+        white-space: nowrap;
+    }        
+    #footnotes
+    {
+        $fs: 11px;
+    
+        @include block($fs);
+        
+        p
+        {
+            margin-bottom: 0;
+        }
+    }
+}

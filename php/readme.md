@@ -1,0 +1,1 @@
+Dans ce répertoire on trouve les fichiers PHP du projet, et plus particulièrement dans `lib` des bibliothèques de fonctions.

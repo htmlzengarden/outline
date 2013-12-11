@@ -1,0 +1,58 @@
+/** --- @section PROJECT CONFIG --- */
+
+$base-line-height: 20px !default;
+$base-font-size:   round($base-line-height / 3 * 2) !default;
+
+$column-width: 60px !default;
+$gutter-width: 20px !default;
+$grid-padding: $gutter-width !default;
+
+$rythm-unit: 'em' !default;
+ $grid-unit: 'em' !default;
+
+$browser-font-size: 16px !default; // Necessary for media queries
+
+/** RWD breakpints */
+
+$columns-S:   8 !default;
+$columns-M:  12 !default;
+$columns-L:  16 !default;
+
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+    (mobile          300px)
+    (tablet          600px)
+    (desktop         1024px)
+    (wide            1400px)
+) !default;
+
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: desktop !default;
+
+
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true !default;
+
+
+/** Shortcuts */
+
+$l: $base-line-height !default;	// line-height
+$m: $gutter-width !default;		// margin
+$fs: $base-font-size !default;   // font-size
+
+/** IE compatibility */
+
+$lte-ie8: false !default;
+
+$legacy-support-for-ie: false !default; 	// Disable Compass compatibility for both IE6 and IE7
+//$legacy-support-for-ie6: false !default;   // Disable Compass compatibility for IE6 only
+//$legacy-support-for-ie7: false !default;   // Disable Compass compatibility for IE7 only

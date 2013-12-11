@@ -1,0 +1,352 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-s",
+				"list-style-position"
+			],
+			[
+				"list-st",
+				"list-style-position"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Toggle Comment"
+			]
+		],
+		"width": 276.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/common.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/_styles.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/_index.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/index.txt",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/5-functions.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/oldtabs.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/buttons.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/blocks/feedback.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/common/screen.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/common/sidebar.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/_print.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/common/print.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/common/header.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/common/footer.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/blocks/b-m_switch.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/blocks/b-login-question.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/blocks/b-callback.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/lib/hashgrid.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/modules/easylist.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/pages/accueil.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/pages/campagnes-comm.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/pages/doc.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/pages/fiche.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/pages/rcp.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/forms.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/img.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/tabs.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/titles.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/ui/tools.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/head/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/b-login-question/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/lib/colorbox.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/js/behaviours.js",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/8-printing.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/7-hacks.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/6-fancy-type.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/4-grid.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/3-forms.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/2-typography.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/1-reset.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/assistance/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/index.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/indemnites/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/content/fiche.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/js/jquery.ui.custom.min.js",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/index-page.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/content/ui-elements.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/blocks/foresight.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/content/questions-juridiques.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/sidebar-prestation/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/sidebar/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/content/qj-resultats.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/less/base/0-config.less",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/en-bref/dist.php",
+		"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/maquettes/inc/login-question/dist.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.less",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".cadre",
+			"callback-controler",
+			"table",
+			".tab",
+			"block",
+			"h2",
+			"margin-b",
+			"h1",
+			".feature",
+			"feature",
+			"h1",
+			"10pt",
+			"p",
+			".foresight",
+			".primary-feature",
+			".block",
+			".very-special-link",
+			".btn;",
+			".block;",
+			".btn",
+			".block",
+			".special-title-sidebar",
+			"block",
+			".bloc",
+			".block",
+			".sprites-common",
+			".arrow-bottom",
+			".arrow-bottom;",
+			".arrow-bottom",
+			"arrow",
+			"bottom-arr",
+			".btn",
+			".border",
+			"@fs",
+			".btn",
+			"fadeout",
+			".box-shadow(2px 2px 1px fadeout(#404d4c, 85%));",
+			".btn",
+			".btn(",
+			".btn()",
+			".btn",
+			".features",
+			".fiche",
+			"rcp",
+			"recp",
+			"colorbox",
+			"opensans",
+			"open sans",
+			"colorbox",
+			"colobro",
+			".sprites-sidebar",
+			".sprites-sidebar();",
+			"alert",
+			"console",
+			"id=\"question-form\"",
+			"jMyControler",
+			"function",
+			"jCancelBtn",
+			"jLoginQuestion",
+			"login-question",
+			"assistance",
+			"tab-6",
+			"<form",
+			"foresight-error",
+			"foresight-col-last",
+			"foresight-col",
+			".foresight-col",
+			"foresight-status",
+			"foresight-status`",
+			"foresight-status",
+			"en inté",
+			"<select",
+			"<select>",
+			".Reset",
+			".reset",
+			".Reset",
+			"sprites-sidebar",
+			".sprites-sidebar();",
+			"intro",
+			"div.intro",
+			".fiche #top-banner div.intro",
+			".b-m_switch",
+			"two-cols",
+			".sidebar",
+			"step-title-1",
+			".campagnes-comm",
+			".step-title-2",
+			"foresight-td-deco-2",
+			"foresight-tr-first",
+			"foresight-macsf",
+			".foresight-th",
+			"E5E4E1",
+			"required=\"true\"",
+			"required=",
+			"js-tooltip",
+			"arrêt",
+			".step-title-content",
+			".js-tooltip",
+			".foresight-expenses",
+			"js-tooltip",
+			"foresight-content",
+			".btn.picture",
+			"invalid-message",
+			".invalid-message",
+			".foresight-form",
+			" foresight-height",
+			"in-3",
+			"foresight-td-in-3",
+			"foresight-th-last",
+			"foresight-th-first",
+			"foresight-th-last",
+			"error-bottom",
+			"error-bott",
+			"-import",
+			"foresight-table",
+			"#FBF9F6`",
+			"<th",
+			"div.fo",
+			"div.t",
+			".foresight-th",
+			"<th",
+			"foresight-th-in-1",
+			"<th",
+			"foresight-tooltip",
+			"foresightth-in-1",
+			"<table",
+			"c8c8c8",
+			"e7e7e7"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".bloc;",
+			"foresight-tr-important",
+			" \n",
+			"foresight-th-in-1",
+			"<p>",
+			"@color-macsf-dark-grey",
+			"%;\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"function",
+				"wp-includes/functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"cfmt",
+				"/Users/marieguillaumet/Sites/MACSF_nouvelle_charte/macsf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 344.0,
+	"status_bar_visible": true
+}

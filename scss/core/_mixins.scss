@@ -1,0 +1,568 @@
+/** --- @section CUSTOM MIXINS --- */
+
+@if $rythm-unit == 'px'
+{
+	@if $grid-unit == 'em'
+	{
+		@warn "$grid-unit is set to 'em' and $rythm-unit is set to 'px' : doesn't work.";
+		
+		$grid-unit: 'px';
+	}
+
+	$relative-font-sizing: false;
+	$font-unit: $base-font-size;
+}
+
+@function outline-unit($to, $from: $base-font-size)
+{
+	@if $grid-unit == 'px'
+	{
+		@return $to;
+	}
+	@else if $grid-unit == 'em'
+	{
+		@return $font-unit * $to / $from;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+
+/** @subsection EM calculator					*/
+/** @author https://gist.github.com/ijy/1441967	*/
+ 
+@function em($target, $context: $base-font-size)
+{
+   @if $target == 0 { @return 0 }
+   @return 1em * $target / $context;
+}
+
+/* -------------------------------------------------------------------------- */
+
+// @mixin mq($value, $fallback: false, $min-max: max, $width-height: width)
+// {
+// 	@if ($fallback == true)
+// 	{
+// 		@content;
+		
+// 		body:before
+// 		{
+// 			content: $fallback;
+// 		}
+// 	}
+// 	@else
+// 	{
+// 		@if $value == 0px or $value == '' or $value == 0 or $value == null
+// 		{
+// 			@content;
+			
+
+// 			body:before
+// 			{
+// 				content: $fallback;
+// 			}
+// 		}
+
+// 		@else
+// 		{
+// 			// We need the media queries to use the browser font size, and NOT the project's font-size. Thus unit($value, $browser-font-size)
+//             @media only screen and (#{$min-max}-#{$width-height}: outline-unit($value, $browser-font-size))
+// 			{
+// 				@content;
+				
+// 				body:before
+// 				{
+// 					content: $fallback;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+@mixin orientation($orientation: landscape)
+{
+	@media (orientation : $orientation)
+	{
+		@content;  
+	}
+}
+
+
+@mixin lte-ie8
+{
+	@if $lte-ie8
+	{
+		@content;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+
+@mixin container($total-columns: $columns-M)
+{
+	$total-width: (($column-width + $gutter-width) * $total-columns) - $gutter-width;
+	
+	width: outline-unit($total-width);
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: outline-unit($grid-padding);
+	padding-left: outline-unit($grid-padding);
+	@include clearfix;
+}
+
+@mixin column($width:auto, $from: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$from: $base-font-size;
+	}
+	
+	float: left;
+	width: outline-unit($width, $from);
+	margin-right: outline-unit($gutter-width, $from);
+	@include box-sizing(content-box);
+}
+@mixin last()
+{
+   margin-right: 0!important;
+}
+@mixin first()
+{
+   margin-left: 0!important;
+}
+@mixin span($level:1, $from: $base-font-size)
+{
+   @include column(($level * $column-width) + (($level - 1) * $gutter-width), $from);
+}
+@mixin prepend($level:1, $from: $base-font-size)
+{
+   padding-left: outline-unit(($level * $column-width) + ($level * $gutter-width), $from); 
+}
+@mixin append($level:1, $from: $base-font-size)
+{
+   padding-right: outline-unit(($level * $column-width) + ($level * $gutter-width), $from); 
+}
+
+/* -------------------------------------------------------------------------- */
+
+$fs: $base-font-size;
+
+@mixin apply-side-rhythm-border($side, $width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	border-#{$side}:
+	{
+		style: $border-style;
+		width: $width;
+		color: $border-color;
+	};
+	@if $side == top
+	{
+		margin-top: $width * -1;
+	}
+	@if $side == left
+	{
+		margin-left: $width * -1;
+	}
+	@if $side == bottom
+	{
+		margin-top: $width * -1;
+		position: relative;
+		top: $width;
+	}
+	@if $side == right
+	{
+		margin-left: $width * -1;
+		position: relative;
+		left: $width;
+	}
+}
+
+//------------------------------------------------------------------------------
+
+@mixin position($side, $lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	#{$side}: (1em * ($base-line-height / $font-size)) * $lines;
+}
+
+@mixin position-top($lines: 1, $font-size: $base-font-size)
+{
+	@include position(top, $lines, $font-size: $base-font-size);
+}
+@mixin position-left($lines: 1, $font-size: $base-font-size)
+{
+	@include position(left, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-bottom($lines: 1, $font-size: $base-font-size)
+{
+	@include position(bottom, $lines: 1, $font-size: $base-font-size);
+}
+@mixin position-right($lines: 1, $font-size: $base-font-size)
+{
+	@include position(right, $lines: 1, $font-size: $base-font-size);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin rhythm-borders    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	border:
+	{
+		style: $border-style;
+		width: $width;
+		color: $border-color;
+	};
+	
+	position: relative;
+	margin-top:  $width * -2;
+	margin-left: $width * -2;
+	top:  $width;
+	left: $width;
+}
+
+//------------------------------------------------------------------------------
+
+@mixin trailing-border   ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include apply-side-rhythm-border(bottom, $width, $border-style, $border-color);
+}
+@mixin leading-border    ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include apply-side-rhythm-border(top,    $width, $border-style, $border-color);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin horizontal-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include leading-border(                  $width, $border-style, $border-color);
+	@include trailing-border(                 $width, $border-style, $border-color);
+	margin-top:  $width * -2;
+}
+@mixin   vertical-borders($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
+	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
+	margin-left: $width * -2;
+}
+@mixin h-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include horizontal-borders(              $width, $border-style, $border-color);
+}
+@mixin v-borders         ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include   vertical-borders(              $width, $border-style, $border-color);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin border            ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include rhythm-borders(                  $width, $border-style, $border-color);
+}
+@mixin border-top          ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include leading-border(                  $width, $border-style, $border-color);
+}
+@mixin border-bottom     ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include trailing-border(                 $width, $border-style, $border-color);
+}
+@mixin border-left       ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include apply-side-rhythm-border(  left, $width, $border-style, $border-color);
+}
+@mixin border-right      ($width: 1px, $border-style: $default-rhythm-border-style, $border-color: #000)
+{
+	@include apply-side-rhythm-border( right, $width, $border-style, $border-color);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin margin-top($lines: 1, $font-size: $base-font-size)
+{
+	@include       leader($lines, $font-size,  margin);
+	
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+}
+@mixin margin-bottom($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	@include      trailer($lines, $font-size,  margin);
+}
+@mixin  margin-left($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	margin-left:   rhythm($lines, $font-size);
+}
+@mixin margin-right($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	margin-right:  rhythm($lines, $font-size);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin padding-top($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	@include        leader($lines, $font-size, padding);
+}
+@mixin padding-bottom($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	@include       trailer($lines, $font-size, padding);
+}
+@mixin  padding-left($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	padding-left:  rhythm($lines, $font-size);
+}
+@mixin padding-right($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	padding-right: rhythm($lines, $font-size);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin     padding($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	@include       leader($lines, $font-size, padding);
+	@include      trailer($lines, $font-size, padding);
+	padding-left:  rhythm($lines, $font-size);
+	padding-right: rhythm($lines, $font-size);
+}
+@mixin      margin($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	@include       leader($lines, $font-size,  margin);
+	@include      trailer($lines, $font-size,  margin);
+	margin-left:   rhythm($lines, $font-size);
+	margin-right:  rhythm($lines, $font-size);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin max-height($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	max-height: rhythm($lines, $font-size);
+}
+@mixin min-height($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	min-height: rhythm($lines, $font-size);
+	   *height: rhythm($lines, $font-size);
+}
+@mixin     height($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+		height: rhythm($lines, $font-size);
+}
+@mixin line-height($lines: 1, $font-size: $base-font-size)
+{
+	@if $rythm-unit == 'px'
+	{
+		$font-size: $base-font-size;
+	}
+
+	line-height: rhythm($lines, $font-size);
+}
+
+//------------------------------------------------------------------------------
+
+@mixin clearfix
+{
+	@include pie-clearfix;
+}
+
+
+//------------------------------------------------------------------------------
+
+@mixin roll
+{
+	text-decoration: none;
+	
+	&:hover,
+	&:focus
+	{
+		text-decoration: underline;
+	}
+}
+
+
+@mixin resize($direction: vertical)
+{
+	-webkit-resize: $direction;
+	   -moz-resize: $direction;
+		-ms-resize: $direction;
+		 -o-resize: $direction;
+			resize: $direction;
+}
+
+//------------------------------------------------------------------------------
+
+@mixin font-size($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
+{
+	@include adjust-font-size-to($to-size, $lines, $from-size);
+}
+@mixin block($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
+{
+	@include font-size($to-size, $lines, $from-size);
+	@include margin-bottom(1, $to-size);
+}
+
+//------------------------------------------------------------------------------
+
+// afficher / masquer / cacher
+
+@mixin show($type: block) // en paramètre optionnel, le `display` peut-être précisé (`table-cell`, `inline-block`…)
+{
+	display: $type;
+}
+@mixin hide
+{
+	display: none;
+}
+
+/**
+ * Hide an element but keep it accessible to screen readers
+ * @author http://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+ */
+@mixin mask()
+{
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); // IE6, IE7
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	margin: 0;
+	border:0;
+	width: 1px !important;
+	height: 1px;
+	overflow: hidden;
+}
+@mixin unmask()
+{
+	position: relative;
+	clip: auto;
+	width:  auto;
+	height: auto;
+	overflow: visible;
+}
+
+//------------------------------------------------------------------------------
+
+// pour réaliser des listes horizontales
+
+@mixin list($rtl: false)
+{
+	@include horizontal-list-container;
+	
+	li,
+	dt,
+	dd
+	{
+		@include horizontal-list-item(0, left);
+		
+		white-space: normal;
+	}
+}
+
+
+//------------------------------------------------------------------------------
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+}
+
+//------------------------------------------------------------------------------
+
+@mixin retina-image($filename, $extension: png, $retina-filename: null, $asset-pipeline: true)
+{
+  @if $asset-pipeline {
+	background-image: image_url($filename + "." + $extension);
+  }
+  @else {
+	background-image: url($filename + "." + $extension);
+  }
+
+  @include hidpi {
+
+	@if $asset-pipeline {
+	  @if $retina-filename {
+		background-image: image_url($retina-filename + "." + $extension);
+	  }
+	  @else {
+		background-image: image_url($filename + "@2x" + "." + $extension);
+	  }
+	}
+
+	@else {
+	  @if $retina-filename {
+		background-image: url($retina-filename + "." + $extension);
+	  }
+	  @else {
+		background-image: url($filename + "@2x" + "." + $extension);
+	  }
+	}
+
+	background-size: image-width($filename + "." + $extension) image-height($filename + "." + $extension);
+
+  }
+}

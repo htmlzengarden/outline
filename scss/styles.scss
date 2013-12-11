@@ -1,25 +1,7 @@
-	// Lib Compass + Blueprint
-	@import "compass"  ;
-	@import "blueprint";
-	
-	// Outils
-	@import "_variables";
-	@import "lib/_mixins";
-	@import "lib/_normalize";
-	@import "lib/_hashgrid" ;
+/** --- @section SCREEN STYLES --- */
+/** NB: styles for Internet Explorer 8 and below are generated through styles-lte-ie8.scss */
 
-	// Styles généraux
-	@import "_forms";
-	@import "_sprites";
-	@import "_typo";
-	@import "_global";
-	@import "_header";	
-	@import "_footer";
-	@import "_screen";
-	@import "_sidebar";
-	
-	// Modules et pages
-
-	
-	// Styles print
-	@import "_print" ;
+@import "libs";
+@import "core";
+@import "plugins";
+@import "project";

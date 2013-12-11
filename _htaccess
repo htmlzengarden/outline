@@ -6,10 +6,12 @@
 </IfModule>
 
 <IfModule mod_deflate.c>
-	SetOutputFilter DEFLATE
-	AddOutputFilterByType DEFLATE text/html text/css text/js application/x-javascript text/plain text/xml application/x-shockwave-flash image/svg+xml
+    SetOutputFilter DEFLATE
+    AddOutputFilterByType DEFLATE text/html text/css text/js application/x-javascript text/plain text/xml application/x-shockwave-flash image/svg+xml
 </IfModule>
 
 FileETag MTime Size
+
+SetEnv PHP_VER 5
 
 IndexOptions FancyIndexing SuppressHTMLPreamble FoldersFirst IgnoreCase HTMLTable XHTML ShowForbidden SuppressDescription SuppressIcon SuppressRules NameWidth=* Charset=UTF-8
