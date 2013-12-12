@@ -1,7 +1,9 @@
 /** --- @section SCREEN STYLES --- */
 /** NB: styles for Internet Explorer 8 and below are generated through styles-lte-ie8.scss */
 
-@import "libs";
-@import "core";
-@import "plugins";
-@import "project";
+@import "partials/_config"; // Necessary to have the proper $legacy-support-for-ie definition
+
+@import "partials/libs";
+@import "partials/core";
+@import "partials/plugins";
+@import "partials/project";

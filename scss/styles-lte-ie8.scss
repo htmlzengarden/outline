@@ -3,7 +3,9 @@
 $lte-ie8: true;
 $mq-responsive: false;
 
-@import "libs";
-@import "core";
-@import "plugins";
-@import "project";
+@import "partials/_config"; // Necessary to have the proper $legacy-support-for-ie definition
+
+@import "partials/libs";
+@import "partials/core";
+@import "partials/plugins";
+@import "partials/project";

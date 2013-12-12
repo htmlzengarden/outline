@@ -1,7 +1,7 @@
 /** --- @section GENERIC STYLES --- */
 
 body
-{
+{	
 	$scale: 5/4;
 	$fsh6:  10px;
 	$fsh5:  round(modular-scale($fsh6, 1, $scale));

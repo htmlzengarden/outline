@@ -1,0 +1,28 @@
+/** --- @section LAYOUT/CONTENT --- */
+
+.l-content
+{
+	// Desktop
+	@include mq(L)
+	{
+		@include container($columns-M);
+	}
+
+	// Wide screens
+	@include mq($from: XL)
+	{
+		@include container($columns-L);
+	}
+
+	// Tablet
+	@include mq($from: M, $to: L)
+	{
+		@include container($columns-S);
+	}
+
+	// Mobile
+	@include mq($to: M)
+	{
+		width: auto;
+	}
+}

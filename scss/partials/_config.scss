@@ -14,6 +14,7 @@ $browser-font-size: 16px !default; // Necessary for media queries
 
 /** RWD breakpints */
 
+// Grid columns
 $columns-S:   8 !default;
 $columns-M:  12 !default;
 $columns-L:  16 !default;
@@ -23,17 +24,17 @@ $columns-L:  16 !default;
 // across team members. It will improve communication between
 // stakeholders, designers, developers, and testers.
 $mq-breakpoints: (
-    (mobile          300px)
-    (tablet          600px)
-    (desktop         1024px)
-    (wide            1400px)
+    (S          300px)  // mobile
+    (M          660px)  // tablet
+    (L         1024px)  // desktop
+    (XL        1400px)  // wide
 ) !default;
 
 
 // Define the breakpoint from the $mq-breakpoints list that should
 // be used as the target width when outputting a static stylesheet
 // (i.e. when $mq-responsive is set to 'false').
-$mq-static-breakpoint: desktop !default;
+$mq-static-breakpoint: L !default;
 
 
 // To enable support for browsers that do not support @media queries,

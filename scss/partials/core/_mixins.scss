@@ -120,6 +120,12 @@
 	width: outline-unit($width, $from);
 	margin-right: outline-unit($gutter-width, $from);
 	@include box-sizing(content-box);
+	
+	// If support for IE6+IE7 or simply for IE6 is true, then let's add the display: inline fix
+	@if $legacy-support-for-ie or $legacy-support-for-ie6
+	{
+		display: inline;
+	}
 }
 @mixin last()
 {

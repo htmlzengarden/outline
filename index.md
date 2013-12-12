@@ -8,10 +8,10 @@ _[Voir la documentation](doc/)_
 
 ### Conformité et affichage {#conformite}
 
-Maquette                                                                     | Validation HTML     | IE 8 | IE 9 | IE 10 | Opera | Chrome | Safari | Fx  | Lynx [^1] | Impression | iPhone | iPad 
------------------------------------------------------------------------------|---------------------|------|------|-------|-------|--------|--------|-----|-----------|------------|--------|------
-[404](inc/?page=error)                                                       |                     |      |      |       |       |        |        |     |           |            |        |   
-[Démo](inc/?page=demo)                                                       |                     |      |      |       |       |        |        |     |           |            |        |   
+Maquette                                                                     | Validation HTML     | IE6 | IE7 | IE8 | IE9 | IE10 | Opera | Chrome | Safari | Fx  | Lynx [^1] | Impression | iPhone | iPad 
+-----------------------------------------------------------------------------|---------------------|-----|-----|-----|-----|------|-------|--------|--------|-----|-----------|------------|--------|-----
+[Index](inc/?page=index)                                                     |                     |     |     |     |     |      |       |        |        |     |           |            |        |   
+[404](inc/?page=error)                                                       |                     |     |     |     |     |      |       |        |        |     |           |            |        |   
 
 ### Respect des bonnes pratiques [^2] {#bps}
 

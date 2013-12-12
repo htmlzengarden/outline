@@ -1,0 +1,58 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+.flexslider
+{
+    position: relative;
+    zoom: 1;
+    
+    .slides,
+    .flex-control-nav,
+    .flex-direction-nav
+    {
+        @include list;
+    }
+    .flex-control-nav,
+    .flex-direction-nav,
+    .flex-pauseplay
+    {
+        button
+        {
+            cursor: pointer;
+            border:  0;
+            padding: 0;
+            margin:  0;
+            background-color: transparent;
+            width: auto;
+            color: #00F;
+            text-decoration: underline;
+            
+            &.flex-active
+            {
+                color: #000;
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+    }
+    .slides
+    {
+        zoom: 1;
+        
+        li
+        {
+            .js &
+            {
+                @include hide;
+            }
+        }
+    }
+}

@@ -8,25 +8,26 @@
 	right: 0;
 	top:   0;
 	
-	@include mq(desktop)
+	// Desktop
+	@include mq(L)
 	{
 		@include container($columns-M);
 	}
 
 	// Wide screens
-	@include mq($from: wide)
+	@include mq($from: XL)
 	{
 		@include container($columns-L);
 	}
 
 	// Tablet
-	@include mq($to: desktop)
+	@include mq($from: M, $to: L)
 	{
 		@include container($columns-S);
 	}
 
 	// Mobile
-	@include mq($to: tablet)
+	@include mq($to: M)
 	{
 		width: auto;
 	}
@@ -48,7 +49,8 @@
 			margin-left: 0;
 		}
 
-		@include mq($to: tablet)
+		// Mobile
+		@include mq($to: M)
 		{
 			&.first-child
 			{

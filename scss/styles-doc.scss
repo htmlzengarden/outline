@@ -1,5 +1,7 @@
 /** --- @section DOC CSS --- */
 
-@import "libs";
-@import "core";
-@import "doc";
+@import "partials/_config"; // Necessary to have the proper $legacy-support-for-ie definition
+
+@import "partials/libs";
+@import "partials/core";
+@import "partials/doc";

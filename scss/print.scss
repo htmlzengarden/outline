@@ -1,6 +1,8 @@
 /** --- @section PRINT CSS --- */
 
-@import "libs";
-@import "core";
-@import "project/ui/font-face";
-@import "project/print/print";
+@import "partials/_config"; // Necessary to have the proper $legacy-support-for-ie definition
+
+@import "partials/libs";
+@import "partials/core";
+@import "partials/project/ui/font-face";
+@import "partials/project/print/print";

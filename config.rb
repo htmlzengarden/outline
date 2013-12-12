@@ -17,8 +17,8 @@ require "compass-growl"
 
 
 # Set the project's environment
-#   environment = :development
-    environment = :production
+   environment = :development
+#    environment = :production
 
 if  environment == :production
     output_style = :compressed
