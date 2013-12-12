@@ -14,6 +14,4 @@
     <link rel="shortcut icon"    type="image/x-icon" href="../favicon.ico"             />
 <!--<link rel="apple-touch-icon-precomposed"         href="../favicon.png"             />-->
 <?php include Z::getFile('_title'); ?>
-	<meta name="description" content="" />
-	<meta name="keywords"    content="" />
 </head>
