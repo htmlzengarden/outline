@@ -38,46 +38,6 @@
 
 /* -------------------------------------------------------------------------- */
 
-// @mixin mq($value, $fallback: false, $min-max: max, $width-height: width)
-// {
-// 	@if ($fallback == true)
-// 	{
-// 		@content;
-		
-// 		body:before
-// 		{
-// 			content: $fallback;
-// 		}
-// 	}
-// 	@else
-// 	{
-// 		@if $value == 0px or $value == '' or $value == 0 or $value == null
-// 		{
-// 			@content;
-			
-
-// 			body:before
-// 			{
-// 				content: $fallback;
-// 			}
-// 		}
-
-// 		@else
-// 		{
-// 			// We need the media queries to use the browser font size, and NOT the project's font-size. Thus unit($value, $browser-font-size)
-//             @media only screen and (#{$min-max}-#{$width-height}: outline-unit($value, $browser-font-size))
-// 			{
-// 				@content;
-				
-// 				body:before
-// 				{
-// 					content: $fallback;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
 @mixin orientation($orientation: landscape)
 {
 	@media (orientation : $orientation)
@@ -393,6 +353,18 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
+/**
+ * @subsection Height Mixins
+ */
+
+// Set up a max-height in em according to the grid
+// 
+// .example
+// {
+//		$fs1: 18px;
+//		@include max-height(2,$fs1);
+// }
+//
 @mixin max-height($lines: 1, $font-size: $base-font-size)
 {
 	@if $rythm-unit == 'px'
@@ -402,6 +374,15 @@ $fs: $base-font-size;
 
 	max-height: rhythm($lines, $font-size);
 }
+
+// Set up a min-height in em according to the grid
+// 
+// .example
+// {
+//		$fs1: 18px;
+//		@include min-height(2,$fs1);
+// }
+//
 @mixin min-height($lines: 1, $font-size: $base-font-size)
 {
 	@if $rythm-unit == 'px'
@@ -412,15 +393,33 @@ $fs: $base-font-size;
 	min-height: rhythm($lines, $font-size);
 	   *height: rhythm($lines, $font-size);
 }
-@mixin     height($lines: 1, $font-size: $base-font-size)
+
+// Set up a height in em according to the grid
+// 
+// .example
+// {
+//		$fs1: 18px;
+//		@include height(2,$fs1);
+// }
+//
+@mixin height($lines: 1, $font-size: $base-font-size)
 {
 	@if $rythm-unit == 'px'
 	{
 		$font-size: $base-font-size;
 	}
 
-		height: rhythm($lines, $font-size);
+	height: rhythm($lines, $font-size);
 }
+
+// Set up a line-height in em according to the grid
+// 
+// .example
+// {
+//		$fs1: 18px;
+//		@include line-height(1,$fs1);
+// }
+//
 @mixin line-height($lines: 1, $font-size: $base-font-size)
 {
 	@if $rythm-unit == 'px'
@@ -433,14 +432,23 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
+/**
+ * @subsection Compass clearfix
+ * NB: there is a .clearfix class declared in /ui/_generic.scss 
+ */
 @mixin clearfix
 {
 	@include pie-clearfix;
 }
 
-
 //------------------------------------------------------------------------------
 
+/**
+ * @subsection Links mixins 
+ * Use these mixins on links to change their decoration
+ */
+
+// NB: there is a .roll class declared in /ui/_links.scss 
 @mixin roll
 {
 	text-decoration: none;
@@ -451,8 +459,22 @@ $fs: $base-font-size;
 		text-decoration: underline;
 	}
 }
+@mixin unroll
+{
+	text-decoration: underline;
+	
+	&:hover,
+	&:focus
+	{
+		text-decoration: none;
+	}
+}
 
+//------------------------------------------------------------------------------
 
+/**
+ * @subsection Resize mixin
+ */
 @mixin resize($direction: vertical)
 {
 	-webkit-resize: $direction;
@@ -464,10 +486,18 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
+/**
+ * @subsection Font Size Mixin
+ */
 @mixin font-size($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
 	@include adjust-font-size-to($to-size, $lines, $from-size);
 }
+
+/**
+ * @subsection Block Mixin
+ * Use this mixin to set up a font-size, a line-height and a margin-bottom equivalent to one line on any block element
+ */
 @mixin block($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
 	@include font-size($to-size, $lines, $from-size);
@@ -476,8 +506,9 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
-// afficher / masquer / cacher
-
+/**
+ * @subsection Show/Hide Mixins
+ */
 @mixin show($type: block) // en paramètre optionnel, le `display` peut-être précisé (`table-cell`, `inline-block`…)
 {
 	display: $type;
@@ -487,7 +518,10 @@ $fs: $base-font-size;
 	display: none;
 }
 
+//------------------------------------------------------------------------------
+
 /**
+ * @subsection Accessible Hide Mixin
  * Hide an element but keep it accessible to screen readers
  * @author http://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
  */
@@ -503,6 +537,8 @@ $fs: $base-font-size;
 	height: 1px;
 	overflow: hidden;
 }
+
+// To cancel the mask() mixin
 @mixin unmask()
 {
 	position: relative;
@@ -514,8 +550,9 @@ $fs: $base-font-size;
 
 //------------------------------------------------------------------------------
 
-// pour réaliser des listes horizontales
-
+/**
+ * @subsection Horizontal Lists Mixin
+ */
 @mixin list($rtl: false)
 {
 	@include horizontal-list-container;
@@ -525,20 +562,25 @@ $fs: $base-font-size;
 	dd
 	{
 		@include horizontal-list-item(0, left);
-		
 		white-space: normal;
 	}
 }
 
-
 //------------------------------------------------------------------------------
 
-@mixin opacity($opacity) {
+/**
+ * @subsection Opacity Mixin
+ */
+@mixin opacity($opacity)
+{
   opacity: $opacity;
 }
 
 //------------------------------------------------------------------------------
 
+/**
+ * @subsection Retina Image Mixin
+ */
 @mixin retina-image($filename, $extension: png, $retina-filename: null, $asset-pipeline: true)
 {
   @if $asset-pipeline {

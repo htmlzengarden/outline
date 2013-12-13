@@ -60,7 +60,7 @@
 	}
 	.horiz
 	{
-		@include height(1,$browser-font-size);
+		@include height(1,$fs);
 		@include background-image(linear-gradient(transparent 95%, $grid-background-column-color 95%)); // on passe par un dégradé pour éviter de devoir calculer avec les hauteurs de bordures
 	}
 	&.grid-1

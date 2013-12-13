@@ -13,12 +13,12 @@ Sass::Script::Number.precision = 8
 
 
 # For those who use Growl to get notifications about Compass compiling
-require "compass-growl"
+#require "compass-growl"
 
 
 # Set the project's environment
-   environment = :development
-#    environment = :production
+#   environment = :development
+    environment = :production
 
 if  environment == :production
     output_style = :compressed
