@@ -46,7 +46,9 @@
 	}
 }
 
-
+/**
+ * @subsection Print CSS only for IE8
+ */
 @mixin lte-ie8
 {
 	@if $lte-ie8

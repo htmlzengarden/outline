@@ -1,75 +1,20 @@
 /** --- @section GENERIC STYLES --- */
 
+/** This is mandatory to respect the project's grid */
 body
 {	
-	$scale: 5/4;
-	$fsh6:  10px;
-	$fsh5:  round(modular-scale($fsh6, 1, $scale));
-	$fsh4:  round(modular-scale($fsh5, 1, $scale));
-	$fsh3:  round(modular-scale($fsh4, 1, $scale));
-	$fsh2:  round(modular-scale($fsh3, 1, $scale));
-	$fsh1:  round(modular-scale($fsh2, 1, $scale));
-
 	font-size: ($base-font-size/1px) * 6.25%;
 	line-height: ($base-line-height / $base-font-size) * 1em;
-	
-	h6
-	{
-		margin: 0;
-		@include adjust-font-size-to($fsh6);
-		@include margin-bottom(1,    $fsh6);
-		@include padding-top(2,      $fsh6);
-	}
-	h5
-	{
-		margin: 0;
-		@include adjust-font-size-to($fsh5);
-		@include margin-bottom(1,    $fsh5);
-		@include padding-top(2,      $fsh5);
-	}
-	h4
-	{
-		margin: 0;
-		@include adjust-font-size-to($fsh4);
-		@include margin-bottom(1,    $fsh4);
-		@include padding-top(2,      $fsh4);
-	}
-	h3
-	{
-		margin: 0;
-		@include adjust-font-size-to($fsh3);
-		@include margin-bottom(1,    $fsh3);
-		@include padding-top(2,      $fsh3);
-	}
-	h2
-	{
-		margin: 0;
-		@include adjust-font-size-to($fsh2);
-		@include margin-bottom(1,    $fsh2);
-		@include padding-top(2,      $fsh2);
-	}
-	h1
-	{
-		margin: 0;
-		@include adjust-font-size-to($fsh1);
-		@include margin-bottom(1,    $fsh1);
-		@include padding-top(2,      $fsh1);
-	}
+}
+/** */
 
-	h1 + h2,
-	h2 + h3,
-	h3 + h4,
-	h4 + h5,
-	h5 + h6
-	{
-		padding-top: 0;
-	}
-}
-b,
-strong
+
+/** You can edit from here : */
+html
 {
-	font-weight: bold;
+	overflow-y: scroll;
 }
+
 blockquote 
 {
 	margin: 0 $column-width + $gutter-width;
@@ -77,15 +22,12 @@ blockquote
 }
 p,
 pre,
-address
-{
-	margin: 0;
-	@include margin-bottom;
-}
+address,
 dl,
 menu,
 ol,
-ul
+ul,
+table
 {
 	margin: 0;
 	@include margin-bottom;
@@ -100,30 +42,14 @@ ul
 {
 	padding: 0 0 0 $column-width + $gutter-width;
 }
-fieldset
+img,
+audio,
+video,
+canvas,
+svg,
+object
 {
-	margin: 0;
-	padding: 10px;
-	@include padding-top(   0.5);
-	@include padding-bottom(0.5);
-	@include  margin-bottom(  1);
-}
-table
-{
-	@include margin-bottom;
-}
-
-td,
-th,
-caption
-{
-	padding: 10px;
-	@include padding-top(   0.5);
-	@include padding-bottom(0.5);
-}
-html
-{
-	overflow-y: scroll;
+	display: block;
 }
 img,
 audio,
@@ -133,36 +59,12 @@ svg,
 object,
 table
 {
-	display: block;
 	max-width: 100%;
 	height: auto;
-}
-table
-{
-	display: table;
 }
 small
 {
 	line-height: 0;
-}
-.hr
-{
-	@include border-top(1px, solid, black);
-	@include margin-bottom(1);
-	
-	hr
-	{
-		@include mask;
-	}
-}
-ul,
-ol
-{
-	ol,
-	ul
-	{
-		margin-bottom: 0;
-	}
 }
 code,
 kbd,
@@ -174,29 +76,61 @@ samp
 	}
 }
 
+
+/**
+ * @subsection Basic Classes
+ */
+
+// The name says it all!
 .clearfix
 {
 	@include clearfix;
 }
 
-.roll // ce mixin peut être appelé depuis le HTML via une classe
+// Links not underlined by default, but underlined on hover and focus
+.roll
 {
 	@include roll;
 }
 
-.hide // ce mixin peut être appelé depuis le HTML via une classe
+// Links underlined by default, but not underlined on hover and focus
+.unroll
+{
+	@include unroll;
+}
+
+// Display none
+.hide
 {
 	@include hide;
 }
-.mask // ce mixin peut être appelé depuis le HTML via une classe
+
+// Hide but keep accessible
+.mask
 {
 	@include mask;
 }
-.unmask // ce mixin peut être appelé depuis le HTML via une classe
+
+// Cancel accessible hiding
+.unmask
 {
 	@include unmask;
 }
-.list // ce mixin peut être appelé depuis le HTML via une classe
+
+// Inline lists
+.list
 {
 	@include list;
+}
+
+// Horizontal separators
+.hr
+{
+	@include border-top(1px, solid, black);
+	@include margin-bottom(1);
+	
+	hr
+	{
+		@include mask;
+	}
 }

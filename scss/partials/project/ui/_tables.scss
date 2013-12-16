@@ -1,0 +1,10 @@
+/** --- @section UI/TABLES --- */
+
+td,
+th,
+caption
+{
+	padding: 10px;
+	@include padding-top(   0.5);
+	@include padding-bottom(0.5);
+}

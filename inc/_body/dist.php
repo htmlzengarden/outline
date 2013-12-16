@@ -5,7 +5,11 @@
 <!--[if !IE]>--><body class="not-ie"><!--<![endif]-->
 	<script src="../assets/js/lib/browserdetect.js"     ></script>
 	<script src="../assets/js/init.js"                  ></script>
-<?php include Z::getFile('_page'); ?>
+	<div class="page-<?php echo Z::getPageName();?>">
+<?php include Z::getFile('_header' ); ?>
+<?php include Z::getFile('content'); ?>
+<?php include Z::getFile('_footer' ); ?>
+	</div>
 	<script src="../assets/js/lib/jquery.js"            ></script>
 	<script src="../assets/js/lib/jquery.migrate.js"    ></script>
 	<script src="../assets/js/behaviours.js"            ></script>

@@ -1,0 +1,58 @@
+/** --- @section UI/TYPOGRAPHY --- */
+
+$fsh6:  10px !default;
+$fsh5:  round(modular-scale($fsh6, 1, $scale)) !default;
+$fsh4:  round(modular-scale($fsh5, 1, $scale)) !default;
+$fsh3:  round(modular-scale($fsh4, 1, $scale)) !default;
+$fsh2:  round(modular-scale($fsh3, 1, $scale)) !default;
+$fsh1:  round(modular-scale($fsh2, 1, $scale)) !default;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	margin: 0;
+}
+
+h6
+{
+	@include block($fsh6);
+	@include padding-top(2,$fsh6);
+}
+h5
+{
+	@include block($fsh5);
+	@include padding-top(2,$fsh5);
+}
+h4
+{
+	@include block($fsh4);
+	@include padding-top(2,$fsh4);
+}
+h3
+{
+	@include block($fsh3);
+	@include padding-top(2,$fsh3);
+}
+h2
+{
+	@include block($fsh2);
+	@include padding-top(2,$fsh2);
+}
+h1
+{
+	@include block($fsh1);
+	@include padding-top(2,$fsh1);
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6
+{
+	padding-top: 0;
+}

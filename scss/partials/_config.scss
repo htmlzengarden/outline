@@ -12,6 +12,12 @@ $rythm-unit: 'em' !default;
 
 $browser-font-size: 16px !default; // Necessary for media queries
 
+
+/** Typographic scale */
+
+$scale: 5/4 !default;
+
+
 /** RWD breakpints */
 
 // Grid columns
@@ -34,7 +40,7 @@ $mq-breakpoints: (
 // Define the breakpoint from the $mq-breakpoints list that should
 // be used as the target width when outputting a static stylesheet
 // (i.e. when $mq-responsive is set to 'false').
-$mq-static-breakpoint: L !default;
+$mq-static-breakpoint: L !default; // L == desktop
 
 
 // To enable support for browsers that do not support @media queries,
@@ -50,10 +56,13 @@ $l: $base-line-height !default;	// line-height
 $m: $gutter-width !default;		// margin
 $fs: $base-font-size !default;   // font-size
 
-/** IE compatibility */
-
-$lte-ie8: false !default;
+/** Compass IE compatibility */
 
 $legacy-support-for-ie: false !default; 	// Disable Compass compatibility for both IE6 and IE7
 //$legacy-support-for-ie6: false !default;   // Disable Compass compatibility for IE6 only
 //$legacy-support-for-ie7: false !default;   // Disable Compass compatibility for IE7 only
+
+
+/** Outline IE8 Mixin */
+
+$lte-ie8: false !default;         // By default, CSS isn't specific to IE8

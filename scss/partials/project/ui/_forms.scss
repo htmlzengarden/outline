@@ -1,1 +1,10 @@
 /** --- @section UI/FORMS --- */
+
+fieldset
+{
+	margin: 0;
+	padding: 10px;
+	@include padding-top(   0.5);
+	@include padding-bottom(0.5);
+	@include  margin-bottom(  1);
+}
