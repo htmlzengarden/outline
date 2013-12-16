@@ -82,3 +82,34 @@
 		}
 	}
 }
+
+
+/**
+ * Display the current media query while working with #grid
+ */
+body
+{
+    &:before
+    {
+        position: fixed;
+        background: #fff;
+        padding: 0 10px;
+        border: 5px solid #000;
+        border-top: none;
+        content: "L (default)";
+        z-index: 30000;
+        
+        @include mq($from: XL)
+        {
+   			content: "XL";
+    	}
+	    @include mq($from: M, $to: L)
+	    {
+	    	content: "M";
+	    }
+	    @include mq($to: M)
+	    {
+	    	content: "S";
+	    }
+    }
+}
