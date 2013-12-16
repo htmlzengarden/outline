@@ -500,7 +500,7 @@ $fs: $base-font-size;
  * @subsection Block Mixin
  * Use this mixin to set up a font-size, a line-height and a margin-bottom equivalent to one line on any block element
  */
-@mixin block($to-size, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
+@mixin block($to-size: $fs, $lines: lines-for-font-size($to-size), $from-size: $base-font-size)
 {
 	@include font-size($to-size, $lines, $from-size);
 	@include margin-bottom(1, $to-size);

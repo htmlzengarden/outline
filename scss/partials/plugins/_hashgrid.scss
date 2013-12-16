@@ -48,6 +48,10 @@
 		{
 			margin-left: 0;
 		}
+		&:nth-child(even)
+		{
+			background-color: darken($grid-background-column-color,15);
+		}
 
 		// Mobile
 		@include mq($to: M)
