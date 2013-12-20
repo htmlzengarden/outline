@@ -29,37 +29,37 @@
 // .element {
 
 //     // mobile to desktop => will be compiled in styles-lte-ie8.scss
-//     @include mq($from: mobile) {
+//     @include mq(S) { // this means: "from the S breakpoint" (min-width)
 //         color: red;
 //     }
 
 //     // Ignored by styles-lte-ie8.scss
-//     @include mq($to: tablet) {
+//     @include mq($to: M) { // this means: "to the M breakpoint" (max-width)
 //         color: blue;
 //     }
 
 //     // Ignored by styles-lte-ie8.scss
-//     @include mq(mobile, tablet) {
+//     @include mq(S, M) { // this means: "from the S breakpoint to the M breakpoint" (min-width + max-width)
 //         color: green;
 //     }
 
 //     // Ignored by styles-lte-ie8.scss
-//     @include mq($from: tablet, $and: '(orientation: landscape)') {
+//     @include mq(M, $and: '(orientation: landscape)') { // this means: "from the M breakpoint, and orientation: landscape" (min-width + orientation)
 //         color: teal;
 //     }
 
 //     // Ignored by styles-lte-ie8.scss
-//     @include mq($from: wide) {
+//     @include mq(XL) { // this means: "from the XL breakpoint" (min-width)
 //         color: cyan;
 //     }
 
 //     // Compiled in styles-lte-ie8.scss
-//     @include mq($to: wide) {
+//     @include mq($to: XL) { // this means: "to the XL breakpoint" (max-width)
 //         color: yellow;
 //     }
 
 //     // Compiled in styles-lte-ie8.scss
-//     @include mq(desktop) {
+//     @include mq(L) { // this means: "from the L breakpoint" (min-width)
 //         color: hotpink;
 //     }
 // }
